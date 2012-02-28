@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>MoodBoxChat</title>
+        
+        <script type="text/javascript" src="chat.js"></script>        
+    </head>
+    <body onload="MoodBox.Chat.instance.init();">
+		<table id="signInScreen">
+			<tr><td>Login:</td><td><input id="loginField" /></td></tr>
+			<tr><td>Password:</td><td><input id="passwordField" /></td></tr>
+			<tr><td></td><td><button id="signInButton">SignIn</button></td></tr>
+		</table>
+        <table id="mainScreen" style="display:none">
+            <tr>
+                <td id="messagesContainer">
+                    Messages
+                </td>
+                <td>
+                    Users & drawing panel
+                </td>
+            </tr>
+        </table>
+        <textarea id="debugConsole">
+            Debug console
+        </textarea>
+    </body>
+</html>

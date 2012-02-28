@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<envelope>
+	<header>
+		<auth_ticket>g2wAAAADYQFuBwBYO4aWElIEbggAAbhronEFIfJq</auth_ticket>
+	</header>
+	<body>
+		<echo>
+			<args>
+				<el>
+					<value>Hello</value>
+				</el>
+				<el>
+					<value>World</value>
+				</el>
+			</args>
+		</echo>
+	</body>
+</envelope>

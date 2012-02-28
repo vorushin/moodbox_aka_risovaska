@@ -1,0 +1,53 @@
+#subToolBarFrame
+{
+	border:none;
+}
+
+#tvIconLabel
+{
+	border:none;
+}
+
+#contactListButton
+{
+	height:36px;
+}
+
+#savePasswordCheck, #autoLogonCheckBox, #advancedSearchCheckBox
+{
+	margin-top:7px;
+}
+
+#emailEdit
+{
+	margin-left:-2px;
+	border:10px;
+}
+
+#receiveNewsCheckBox
+{
+	margin-top:5px;
+}
+
+/*
+#iAcceptLabel, #termsOfUseButton, #andLabel, #privacyPolicyButton
+{
+	font-size:8px;
+}
+
+QLabel[accessibleName="whiteLabel"],
+QCheckBox[accessibleName="whiteLabel"]
+{
+        font-size:8px;
+}
+*/
+
+QPushButton[accessibleName="rectButton"]
+{
+	margin:0 10px;
+}
+
+#drawButton
+{
+	margin:0px 0px;
+}

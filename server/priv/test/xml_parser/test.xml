@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<a>
+  <lu>
+     <string>SomeText</string>
+     <int>11</int>
+     <b>
+	<c>9</c>
+     </b>
+  </lu>
+
+  <u>
+     <b>
+	<c>7</c>
+     </b>
+  </u>
+
+  <l>
+     <li>A1</li>
+     <li>A2</li>
+     <li>A3</li>
+  </l>
+
+  <e>atom3</e>
+
+  <d>1.1</d>
+
+  <b>
+     <c>true</c>
+  </b>
+  
+</a>

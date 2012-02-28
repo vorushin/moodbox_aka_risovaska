@@ -1,0 +1,64 @@
+/*Tabs******************************/
+
+QTabWidget::pane
+{
+	background: rgb(240, 240, 240);
+	border-top: 1px solid rgb(182, 182, 182);
+}
+
+QTabWidget::pane#paletteTabWidget
+{
+	border-top: 1px solid rgb(182, 182, 182);
+	background: url(:/MoodBox/Resources/palette_panel.png) repeat-xy;
+}
+
+QTabWidget::pane#setupTabWidget
+{
+	border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+QTabWidget::tab-bar
+{
+	alignment: left;
+	background: rgb(225, 225, 225);
+}
+
+QTabWidget::tab-bar#paletteTabWidget
+{
+	alignment: center;
+}
+
+#ClipartWindowClass QTabWidget::tab-bar
+{
+	alignment: left;
+}
+
+QTabBar::tab
+{
+    background: rgb(230, 230, 230);
+    border: 1px solid rgb(190, 190, 190);
+    border-bottom-color: rgb(182, 182, 182);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(122, 122, 122);
+    width: 84px;
+    padding: 8px 8px 3px 8px;
+    /* TODO: add gradient text color */
+}
+
+#ClipartWindowClass QTabBar::tab
+{
+	border-left: none;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover
+{
+	background: rgb(240, 240, 240);
+	color: black;
+}
+
+QTabBar::tab:selected
+{
+	border-color: rgb(177, 177, 177);
+	border-bottom-color: transparent;
+}    

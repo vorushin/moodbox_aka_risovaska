@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<envelope>
+  <header>
+	<authTicket>MTIz</authTicket>
+  </header>
+  <body>
+  	<getAuthTicket>
+		<login>test1</login>
+		<password>secret1</passwd>
+	</getAuthTicket>
+  </body>
+</envelope>

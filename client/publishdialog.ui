@@ -1,0 +1,1034 @@
+<ui version="4.0" >
+ <class>PublishDialogClass</class>
+ <widget class="QDialog" name="PublishDialogClass" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>296</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="modal" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_8" >
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <property name="sizeConstraint" >
+    <enum>QLayout::SetFixedSize</enum>
+   </property>
+   <property name="margin" >
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="styledFrame" >
+     <property name="minimumSize" >
+      <size>
+       <width>296</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth" >
+      <number>0</number>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11" >
+      <property name="spacing" >
+       <number>5</number>
+      </property>
+      <property name="sizeConstraint" >
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="leftMargin" >
+       <number>1</number>
+      </property>
+      <property name="topMargin" >
+       <number>0</number>
+      </property>
+      <property name="rightMargin" >
+       <number>1</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>1</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" >
+        <property name="topMargin" >
+         <number>5</number>
+        </property>
+        <property name="rightMargin" >
+         <number>5</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer_4" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>10</width>
+            <height>5</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="closeToolButton" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="accessibleName" >
+           <string>transparentButton</string>
+          </property>
+          <property name="layoutDirection" >
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="popupMode" >
+           <enum>QToolButton::DelayedPopup</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="titleLabel" >
+        <property name="text" >
+         <string>PublishingMoodstripTitle</string>
+        </property>
+        <property name="indent" >
+         <number>11</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget" >
+        <property name="currentIndex" >
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page" >
+         <layout class="QVBoxLayout" name="verticalLayout_7" >
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="mainDialogFrame" >
+            <property name="frameShape" >
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>0</number>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5" >
+             <property name="spacing" >
+              <number>8</number>
+             </property>
+             <property name="sizeConstraint" >
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <property name="leftMargin" >
+              <number>20</number>
+             </property>
+             <property name="topMargin" >
+              <number>45</number>
+             </property>
+             <property name="rightMargin" >
+              <number>20</number>
+             </property>
+             <property name="bottomMargin" >
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="moodstripNameLabel" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text" >
+                <string>NameYourMoodstrip</string>
+               </property>
+               <property name="buddy" >
+                <cstring>moodstripNameEdit</cstring>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="moodstripNameEdit" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize" >
+                <size>
+                 <width>285</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="hiddenCheckBox" >
+               <property name="text" >
+                <string>IsHiddenMoodstrip</string>
+               </property>
+               <property name="checked" >
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="blogCheckBox" >
+               <property name="text" >
+                <string>PostToBlog</string>
+               </property>
+               <property name="checked" >
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" native="1" name="ljControlsWidget" >
+               <layout class="QVBoxLayout" name="verticalLayout" >
+                <property name="spacing" >
+                 <number>10</number>
+                </property>
+                <property name="leftMargin" >
+                 <number>0</number>
+                </property>
+                <property name="topMargin" >
+                 <number>6</number>
+                </property>
+                <property name="rightMargin" >
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin" >
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="Line" name="line" >
+                  <property name="orientation" >
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QGridLayout" name="gridLayout_2" >
+                  <property name="horizontalSpacing" >
+                   <number>5</number>
+                  </property>
+                  <property name="verticalSpacing" >
+                   <number>10</number>
+                  </property>
+                  <item row="1" column="0" >
+                   <widget class="QLabel" name="accountLabel" >
+                    <property name="text" >
+                     <string>LJAccount</string>
+                    </property>
+                    <property name="buddy" >
+                     <cstring>loginCombo</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1" >
+                   <widget class="QComboBox" name="loginCombo" >
+                    <property name="maximumSize" >
+                     <size>
+                      <width>150</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="editable" >
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0" >
+                   <widget class="QLabel" name="passwordLabel" >
+                    <property name="text" >
+                     <string>Password</string>
+                    </property>
+                    <property name="buddy" >
+                     <cstring>passwordEdit</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1" >
+                   <widget class="QLineEdit" name="passwordEdit" >
+                    <property name="sizePolicy" >
+                     <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize" >
+                     <size>
+                      <width>150</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="echoMode" >
+                     <enum>QLineEdit::Password</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" >
+                   <widget class="QLabel" name="methodLabel" >
+                    <property name="text" >
+                     <string>PostMethod</string>
+                    </property>
+                    <property name="buddy" >
+                     <cstring>methodCombo</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1" colspan="2" >
+                   <widget class="QComboBox" name="methodCombo" >
+                    <property name="maximumSize" >
+                     <size>
+                      <width>170</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="3" >
+                   <widget class="QLabel" name="label" >
+                    <property name="text" >
+                     <string>PostTextBeforeMoodstrip</string>
+                    </property>
+                    <property name="buddy" >
+                     <cstring>postText</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0" colspan="3" >
+                   <widget class="QPlainTextEdit" name="postText" >
+                    <property name="maximumSize" >
+                     <size>
+                      <width>16777215</width>
+                      <height>65</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" >
+                   <widget class="QLabel" name="typeLabel" >
+                    <property name="minimumSize" >
+                     <size>
+                      <width>90</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text" >
+                     <string>BlogType</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1" >
+                   <widget class="QComboBox" name="typeCombo" />
+                  </item>
+                  <item row="3" column="1" >
+                   <widget class="QCheckBox" name="savePasswordCheck" >
+                    <property name="text" >
+                     <string>SavePassword</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_3" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType" >
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>1</width>
+                 <height>1</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout" >
+            <property name="spacing" >
+             <number>8</number>
+            </property>
+            <property name="leftMargin" >
+             <number>15</number>
+            </property>
+            <property name="topMargin" >
+             <number>9</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>12</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer" >
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0" >
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="cancelButton" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="accessibleName" >
+               <string>rectButton</string>
+              </property>
+              <property name="text" >
+               <string>CancelButton</string>
+              </property>
+              <property name="autoDefault" >
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="publishingButton" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>90</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="accessibleName" >
+               <string>rectButton</string>
+              </property>
+              <property name="text" >
+               <string>NextButton</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2" >
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0" >
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2" >
+         <layout class="QVBoxLayout" name="verticalLayout_12" >
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="publishingFrame" >
+            <property name="minimumSize" >
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape" >
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>0</number>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4" >
+             <property name="spacing" >
+              <number>11</number>
+             </property>
+             <property name="leftMargin" >
+              <number>20</number>
+             </property>
+             <property name="rightMargin" >
+              <number>20</number>
+             </property>
+             <item>
+              <spacer name="verticalSpacer" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType" >
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>1</width>
+                 <height>1</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="publishingLabel" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text" >
+                <string>Publishing...</string>
+               </property>
+               <property name="textFormat" >
+                <enum>Qt::PlainText</enum>
+               </property>
+               <property name="alignment" >
+                <set>Qt::AlignCenter|Qt::AlignHCenter|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="publishingProgressBar" >
+               <property name="value" >
+                <number>24</number>
+               </property>
+               <property name="textVisible" >
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType" >
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>1</width>
+                 <height>1</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2" >
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <property name="leftMargin" >
+             <number>15</number>
+            </property>
+            <property name="topMargin" >
+             <number>9</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>12</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="cancelPublishingButton" >
+              <property name="minimumSize" >
+               <size>
+                <width>77</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>77</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="accessibleName" >
+               <string>rectButton</string>
+              </property>
+              <property name="text" >
+               <string>CancelButton</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3" >
+         <layout class="QVBoxLayout" name="verticalLayout_9" >
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint" >
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="publishedFrame" >
+            <property name="minimumSize" >
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape" >
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>0</number>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6" >
+             <property name="sizeConstraint" >
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <property name="leftMargin" >
+              <number>20</number>
+             </property>
+             <property name="topMargin" >
+              <number>30</number>
+             </property>
+             <property name="rightMargin" >
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="publishedLabel" >
+               <property name="text" >
+                <string>Published</string>
+               </property>
+               <property name="alignment" >
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType" >
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>1</width>
+                 <height>1</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout" >
+               <property name="sizeConstraint" >
+                <enum>QLayout::SetMaximumSize</enum>
+               </property>
+               <property name="spacing" >
+                <number>10</number>
+               </property>
+               <item row="0" column="0" >
+                <widget class="QLabel" name="ljUrlLabel" >
+                 <property name="text" >
+                  <string>UrlLJ</string>
+                 </property>
+                 <property name="alignment" >
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1" >
+                <layout class="QVBoxLayout" name="verticalLayout_2" >
+                 <property name="spacing" >
+                  <number>4</number>
+                 </property>
+                 <item>
+                  <widget class="MoodBox::ClickedLineEdit" name="ljUrlEdit" >
+                   <property name="alignment" >
+                    <set>Qt::AlignLeading</set>
+                   </property>
+                   <property name="readOnly" >
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6" >
+                   <property name="spacing" >
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin" >
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <spacer name="horizontalSpacer_5" >
+                     <property name="orientation" >
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0" >
+                      <size>
+                       <width>40</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="blogUrlButton" >
+                     <property name="maximumSize" >
+                      <size>
+                       <width>16777215</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font" >
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                       <underline>true</underline>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="cursor" >
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="accessibleName" >
+                      <string>blueButton8</string>
+                     </property>
+                     <property name="text" >
+                      <string>OpenBlogUrlButton</string>
+                     </property>
+                     <property name="autoDefault" >
+                      <bool>false</bool>
+                     </property>
+                     <property name="flat" >
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0" >
+                <widget class="QLabel" name="urlLabel" >
+                 <property name="text" >
+                  <string>URL</string>
+                 </property>
+                 <property name="alignment" >
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                 <property name="buddy" >
+                  <cstring>urlEdit</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" >
+                <layout class="QVBoxLayout" name="verticalLayout_3" >
+                 <property name="spacing" >
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="MoodBox::ClickedLineEdit" name="urlEdit" >
+                   <property name="alignment" >
+                    <set>Qt::AlignLeading</set>
+                   </property>
+                   <property name="readOnly" >
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4" >
+                   <property name="spacing" >
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin" >
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <spacer name="horizontalSpacer_3" >
+                     <property name="orientation" >
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0" >
+                      <size>
+                       <width>40</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="urlButton" >
+                     <property name="maximumSize" >
+                      <size>
+                       <width>16777215</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                     <property name="font" >
+                      <font>
+                       <family>MS Shell Dlg 2</family>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                       <underline>true</underline>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="cursor" >
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="accessibleName" >
+                      <string>blueButton8</string>
+                     </property>
+                     <property name="text" >
+                      <string>OpenUrlButton</string>
+                     </property>
+                     <property name="autoDefault" >
+                      <bool>false</bool>
+                     </property>
+                     <property name="flat" >
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="1" >
+                <widget class="MoodBox::ClickedLineEdit" name="embedEdit" >
+                 <property name="alignment" >
+                  <set>Qt::AlignLeading</set>
+                 </property>
+                 <property name="readOnly" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" >
+                <widget class="QLabel" name="embedLabel" >
+                 <property name="text" >
+                  <string>Embed</string>
+                 </property>
+                 <property name="buddy" >
+                  <cstring>embedEdit</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1" >
+                <widget class="MoodBox::ClickedLineEdit" name="embedMoodstripEdit" >
+                 <property name="alignment" >
+                  <set>Qt::AlignLeading</set>
+                 </property>
+                 <property name="readOnly" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" >
+                <widget class="QLabel" name="moodstripLabel" >
+                 <property name="text" >
+                  <string>EmbedMoodstrip</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" >
+                <widget class="QLabel" name="ljMoodstripCutLabel" >
+                 <property name="text" >
+                  <string>EmbedMoodstripCut</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1" >
+                <widget class="MoodBox::ClickedLineEdit" name="embedMoodstripCutEdit" >
+                 <property name="alignment" >
+                  <set>Qt::AlignLeading</set>
+                 </property>
+                 <property name="readOnly" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_7" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType" >
+                <enum>QSizePolicy::MinimumExpanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>1</width>
+                 <height>1</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" >
+            <property name="leftMargin" >
+             <number>15</number>
+            </property>
+            <property name="topMargin" >
+             <number>9</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>12</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="closeButton" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize" >
+               <size>
+                <width>77</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>77</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="accessibleName" >
+               <string>rectButton</string>
+              </property>
+              <property name="text" >
+               <string>FinishButton</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="0" margin="0" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::ClickedLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>clickedlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>moodstripNameEdit</tabstop>
+  <tabstop>hiddenCheckBox</tabstop>
+  <tabstop>blogCheckBox</tabstop>
+  <tabstop>loginCombo</tabstop>
+  <tabstop>passwordEdit</tabstop>
+  <tabstop>methodCombo</tabstop>
+  <tabstop>postText</tabstop>
+  <tabstop>cancelButton</tabstop>
+  <tabstop>publishingButton</tabstop>
+  <tabstop>cancelPublishingButton</tabstop>
+  <tabstop>blogUrlButton</tabstop>
+  <tabstop>urlButton</tabstop>
+  <tabstop>closeButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

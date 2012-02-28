@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<envelope>
+  <body>
+	  <get_auth_ticket>
+		  <login>test1</login>
+		  <password>topsecret</password>
+	  </get_auth_ticket>
+  </body>
+</envelope>

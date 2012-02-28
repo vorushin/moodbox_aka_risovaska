@@ -1,0 +1,275 @@
+<ui version="4.0" >
+ <class>SoundsFrameClass</class>
+ <widget class="QFrame" name="SoundsFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>SoundsFrame</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <layout class="QGridLayout" name="gridLayout" >
+     <property name="margin" >
+      <number>6</number>
+     </property>
+     <item row="0" column="1" >
+      <widget class="QSlider" name="volumeHSlider" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QCheckBox" name="muteAllCheckBox" >
+       <property name="text" >
+        <string>Mute All</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>Sign in</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" >
+      <widget class="QToolButton" name="signInToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2" >
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>Sign out</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2" >
+      <widget class="QLabel" name="label_3" >
+       <property name="text" >
+        <string>Friends goes Online</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2" >
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>Friends goes Offline</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2" >
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
+        <string>MoodBox update</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0" colspan="2" >
+      <widget class="QLabel" name="label_7" >
+       <property name="text" >
+        <string>Message sent</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0" colspan="2" >
+      <widget class="QLabel" name="label_10" >
+       <property name="text" >
+        <string>Authorization request</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="2" >
+      <widget class="QLabel" name="label_9" >
+       <property name="text" >
+        <string>Authorization received</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2" >
+      <widget class="QLabel" name="label_8" >
+       <property name="text" >
+        <string>Contacts received</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" >
+      <widget class="QToolButton" name="signOutToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2" >
+      <widget class="QToolButton" name="onlineToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2" >
+      <widget class="QToolButton" name="offlineToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2" >
+      <widget class="QToolButton" name="updateToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2" >
+      <widget class="QToolButton" name="receivedToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2" >
+      <widget class="QToolButton" name="sentToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2" >
+      <widget class="QToolButton" name="authRequestToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="2" >
+      <widget class="QToolButton" name="authReceivedToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2" >
+      <widget class="QToolButton" name="contactsReceivedToolButton" >
+       <property name="text" >
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" >
+      <spacer name="verticalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>16</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="7" column="1" >
+      <spacer name="verticalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>16</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="11" column="1" >
+      <spacer name="verticalSpacer_3" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>16</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0" >
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="0" colspan="2" >
+      <widget class="QLabel" name="label_6" >
+       <property name="text" >
+        <string>Message received</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1" >
+      <spacer name="verticalSpacer_4" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1" >
+      <spacer name="verticalSpacer_5" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>16</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

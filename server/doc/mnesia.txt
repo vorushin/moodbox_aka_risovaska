@@ -1,0 +1,42 @@
+Кол-во записей в таблице:
+mnesia:table_info(user_account_sorted, size).
+
+Получить много информации о текущей схеме мнезии:
+mnesia:info().
+
+Добавить новую ноду в схему (mnesia должна быть запущена на этой ноде):
+mnesia:change_config(extra_db_nodes, [test@localhost]).
+
+Изменить тип ноды на дисковый:
+mnesia:change_table_copy_type(schema, node(), disc_copies).
+
+Добавить копию таблицы на другую ноду:
+mnesia:add_table_copy(session, node(), disc_copies).
+mnesia:add_table_copy(notification_server, node(), ram_copies).
+
+Сделать данную ноду главной в схеме:
+mnesia:set_master_node([MasterNode]).
+
+Подключиться к событиям mnesia:
+
+ - mnesia:subscribe(Event-Category) - ensures that a copy of all events of type Event-Category are
+sent to the calling process.
+ - mnesia:unsubscribe(Event-Category) - removes the subscription on events of type Event-Category
+
+Event-Category may either be the atom 'system', or one of the tuples {table, Tab, simple}.
+
+Наиболее интересные события:
+
+{mnesia down, Node} - Mnesia has been stopped on a node. Node is the name of the node. By default
+this event is ignored.
+
+{inconsistent database, Context, Node} - Mnesia regards the database as potential inconsistent and
+gives its applications a chance to recover from the inconsistency, e.g. by installing a consistent
+backup as fallback and then restart the system or pick a MasterNode from
+mnesia:system info(db nodes) and invoke mnesia:set_master_node([MasterNode]). By default an error 
+is reported to the error logger.
+
+{mnesia fatal, Format, Args, BinaryCore} - mnesia has encountered a fatal error and will (in a
+short period of time) be terminated. The reason for the fatal error is explained in Format and Args
+which may be given as input to io:format/2 or sent to the error logger.
+

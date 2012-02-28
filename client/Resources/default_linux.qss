@@ -1,0 +1,14 @@
+#receiveNewsCheckBox
+{
+	margin-top:0px;
+}
+
+QPushButton[accessibleName="rectButton"]
+{
+	margin:0 10px;
+}
+
+#drawButton
+{
+	margin:0px 0px;
+}

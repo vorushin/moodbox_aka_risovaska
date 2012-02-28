@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Mood-test-Box</title>
+
+<script src='tools.js'></script>
+<script src='request.js'></script>
+
+<style>
+    textarea {
+        width: 800px;
+        height: 200px;
+    }
+</style>
+
+</head>
+<body>
+
+<table>
+<tr>
+<td>
+
+<textarea id='request'>
+<?xml version="1.0" encoding="utf-8"?>
+<envelope>
+  <body>
+	  <get_auth_ticket>
+		  <login>test1</login>
+		  <password>test1</password>
+	  </get_auth_ticket>
+  </body>
+</envelope>
+</textarea>
+
+<div style="padding: 20px 0px; text-align: right;">
+    <button onclick='doRequest("request", "response", "/json")'>Request!</button>
+</div>
+
+<textarea id='response'>
+</textarea>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

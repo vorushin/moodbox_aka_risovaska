@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Velasquez" >
+        <file>Resources/Eyedropper.png</file>
+        <file>Resources/OilBrush.png</file>
+        <file>Resources/Pen.png</file>
+        <file>Resources/Spray.png</file>
+    </qresource>
+</RCC>

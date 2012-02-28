@@ -1,0 +1,243 @@
+<ui version="4.0" >
+ <class>TextSettingsBarClass</class>
+ <widget class="QWidget" name="TextSettingsBarClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>82</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <property name="leftMargin" >
+    <number>0</number>
+   </property>
+   <property name="topMargin" >
+    <number>0</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="MoodBox::PaletteWidget2" native="1" name="paletteWidget" >
+       <property name="minimumSize" >
+        <size>
+         <width>47</width>
+         <height>139</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>47</width>
+         <height>139</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>ColorsWidgetHint</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QToolButton" name="paletteManagerButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>47</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>47</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>PalettesButtonHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>transparentButton</string>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+       <property name="arrowType" >
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <property name="bottomMargin" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="italicButton" >
+       <property name="font" >
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>ItalicButtonHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>I</string>
+       </property>
+       <property name="checkable" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="boldButton" >
+       <property name="font" >
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>BoldButtonHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>B</string>
+       </property>
+       <property name="checkable" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="underlineButton" >
+       <property name="font" >
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>true</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>UnderlineButtonHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>U</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <property name="leftMargin" >
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="MoodBox::TextStyleButton" name="styleButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>FontButtonHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::PaletteWidget2</class>
+   <extends>QWidget</extends>
+   <header>palettewidget2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::TextStyleButton</class>
+   <extends>QToolButton</extends>
+   <header>textstylebutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

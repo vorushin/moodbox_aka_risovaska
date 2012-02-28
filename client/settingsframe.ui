@@ -1,0 +1,304 @@
+<ui version="4.0" >
+ <class>SettingsFrameClass</class>
+ <widget class="QFrame" name="SettingsFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="lineWidth" >
+   <number>0</number>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <layout class="QGridLayout" name="gridLayout" >
+     <property name="verticalSpacing" >
+      <number>14</number>
+     </property>
+     <item row="0" column="0" >
+      <widget class="QCheckBox" name="launchOnStartupCheckBox" >
+       <property name="text" >
+        <string>LaunchOnStartupCheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QCheckBox" name="autoUpdateCheckBox" >
+       <property name="minimumSize" >
+        <size>
+         <width>260</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>AutoCheckNewVersionsCheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2" >
+      <widget class="QPushButton" name="checkForNewVersionButton" >
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>CheckNowButton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QCheckBox" name="playSoundCheckBox" >
+       <property name="text" >
+        <string>PlaySoundCheckBox</string>
+       </property>
+       <property name="checked" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" >
+      <widget class="QPushButton" name="clearHistoryButton" >
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>ClearHistoryButton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>1</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="Line" name="line" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3" >
+     <property name="leftMargin" >
+      <number>30</number>
+     </property>
+     <property name="topMargin" >
+      <number>8</number>
+     </property>
+     <property name="rightMargin" >
+      <number>30</number>
+     </property>
+     <property name="horizontalSpacing" >
+      <number>30</number>
+     </property>
+     <property name="verticalSpacing" >
+      <number>8</number>
+     </property>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="serverConnectionPortLabel" >
+       <property name="text" >
+        <string>ServerConnectionPort</string>
+       </property>
+       <property name="buddy" >
+        <cstring>serverPortCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QComboBox" name="serverPortCombo" />
+     </item>
+     <item row="0" column="1" >
+      <spacer name="verticalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_4" >
+     <property name="leftMargin" >
+      <number>30</number>
+     </property>
+     <property name="topMargin" >
+      <number>8</number>
+     </property>
+     <property name="rightMargin" >
+      <number>30</number>
+     </property>
+     <property name="verticalSpacing" >
+      <number>8</number>
+     </property>
+     <item row="0" column="0" colspan="3" >
+      <widget class="QCheckBox" name="useProxyCheckBox" >
+       <property name="text" >
+        <string>UseProxyCheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="proxyTypeLabel" >
+       <property name="minimumSize" >
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>ProxyType</string>
+       </property>
+       <property name="buddy" >
+        <cstring>proxyTypeCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QLabel" name="proxyHostLabel" >
+       <property name="text" >
+        <string>Address</string>
+       </property>
+       <property name="buddy" >
+        <cstring>proxyHostEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2" >
+      <widget class="QComboBox" name="proxyTypeCombo" />
+     </item>
+     <item row="2" column="1" colspan="2" >
+      <widget class="QLineEdit" name="proxyHostEdit" />
+     </item>
+     <item row="3" column="0" >
+      <widget class="QLabel" name="proxyPortLabel" >
+       <property name="text" >
+        <string>Port</string>
+       </property>
+       <property name="buddy" >
+        <cstring>proxyPortEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" >
+      <widget class="QLineEdit" name="proxyPortEdit" />
+     </item>
+     <item row="4" column="0" colspan="3" >
+      <widget class="QCheckBox" name="proxyRequiresAuthenticationCheckBox" >
+       <property name="text" >
+        <string>ProxyRequiresAuthorizationCheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" >
+      <widget class="QLabel" name="proxyLoginLabel" >
+       <property name="text" >
+        <string>Login</string>
+       </property>
+       <property name="buddy" >
+        <cstring>proxyLoginEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" >
+      <widget class="QLabel" name="proxyPasswordLabel" >
+       <property name="text" >
+        <string>Password</string>
+       </property>
+       <property name="buddy" >
+        <cstring>proxyPasswordEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" colspan="2" >
+      <widget class="QLineEdit" name="proxyPasswordEdit" >
+       <property name="echoMode" >
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" >
+      <widget class="QPushButton" name="setStandardProxyPortButton" >
+       <property name="accessibleName" >
+        <string>rectButton</string>
+       </property>
+       <property name="text" >
+        <string>StandardButton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2" >
+      <widget class="QLineEdit" name="proxyLoginEdit" />
+     </item>
+     <item row="7" column="1" >
+      <spacer name="verticalSpacer_3" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <tabstops>
+  <tabstop>launchOnStartupCheckBox</tabstop>
+  <tabstop>autoUpdateCheckBox</tabstop>
+  <tabstop>checkForNewVersionButton</tabstop>
+  <tabstop>serverPortCombo</tabstop>
+  <tabstop>useProxyCheckBox</tabstop>
+  <tabstop>proxyTypeCombo</tabstop>
+  <tabstop>proxyHostEdit</tabstop>
+  <tabstop>proxyPortEdit</tabstop>
+  <tabstop>setStandardProxyPortButton</tabstop>
+  <tabstop>proxyRequiresAuthenticationCheckBox</tabstop>
+  <tabstop>proxyLoginEdit</tabstop>
+  <tabstop>proxyPasswordEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

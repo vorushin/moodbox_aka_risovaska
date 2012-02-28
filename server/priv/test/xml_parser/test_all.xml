@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<all>
+  <u>
+     <b>
+	<c>7</c>
+     </b>
+  </u>
+
+  <u2>
+     <string>union text</string>
+  </u2>
+
+  <u3>
+     <float>1.3</float>
+  </u3>
+
+  <u4>
+     <list type = "float">
+        <li>1.3</li>
+	<li>1.5</li>
+	<li>1.7</li>
+     </list>
+  </u4>
+
+  <atom>atom1</atom>
+
+  <e>atom3</e>
+
+  <i>11</i>
+
+  <f>1.1</f>
+
+  <s>test text</s>
+
+  <b>true</b>
+
+  <bin>MTIz</bin>
+
+  <d>2008-07-25T15:33:22.000</d>
+
+  <t>
+    <c>some string</c>
+  </t>
+
+  <u5>
+     <list type = "string">
+        <string>text1</string>
+	<string>text2</string>
+	<string>text3</string>
+     </list>
+  </u5>
+
+  <l>
+     <li>Li1</li>
+     <li>Li2</li>
+     <li>Li3</li>
+  </l>
+
+  <l2>
+     <string>S1</string>
+     <string>S2</string>
+     <string>S3</string>
+  </l2>
+
+  <l3>
+     <bool>true</bool>
+     <bool>false</bool>
+     <bool>true</bool>
+  </l3>
+
+  <lu>
+     <string>SomeText</string>
+     <datetime>2007-07-25T09:31:15.000</datetime>
+     <int>11</int>
+     <b>
+	<c>9</c>
+     </b>
+  
+  </lu>
+  
+</all>

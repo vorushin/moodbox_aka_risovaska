@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00EAB1589E15CCFAC90D1825 /* simplebrushtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FCC19F6DF8EDCA361343B283 /* simplebrushtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		01845E6047DA93ED2CE3FDAD /* QtCore in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = A818493B5DD1FF8A379EAF56 /* QtCore */; };
+		019A54713FF242EA26542B22 /* colorselectioncontrol.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 72B2652C9533142115EE5E0D /* colorselectioncontrol.cpp */; settings = {ATTRIBUTES = (); }; };
+		02BA8F74CD1543AF3D99EDF8 /* moc_transformabletool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 73048450E2D34116B09FF93F /* moc_transformabletool.cpp */; settings = {ATTRIBUTES = (); }; };
+		05817ACAB40025C3317140A1 /* palettelist.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2265F1F765BD5D77013C5850 /* palettelist.cpp */; settings = {ATTRIBUTES = (); }; };
+		060ED94AFA8EA3344915D9D3 /* moc_spraytool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 731F22BA3BF58C054E680E37 /* moc_spraytool.cpp */; settings = {ATTRIBUTES = (); }; };
+		0BC779A8FBF91F98E4B327E7 /* drawingelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 155BFB4BF7986FE3A296F567 /* drawingelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		0F29FF9E67EC7A944A23F165 /* palettelistwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C25337107AA1F4342A32D118 /* palettelistwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		0F47D10FF0C0CDEFCBA60099 /* toolbox.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EC8D020DE1DD45AEB2885250 /* toolbox.cpp */; settings = {ATTRIBUTES = (); }; };
+		12AAEFF563ACF45AD647A8AC /* drawingutils.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4D051040CF69C95DDC7F897D /* drawingutils.cpp */; settings = {ATTRIBUTES = (); }; };
+		14266A75088113F5FE5347A0 /* coloreditdialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A1070EB43B8BEAF01113DF0E /* coloreditdialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		14DF00C0DC32AE1ABC9727AC /* moc_colorvolumewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 429E86155E1E5AC54727FA97 /* moc_colorvolumewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		180924731AA01AECBC89DC12 /* oilbrushelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5D80639C430A0EDF3D4ACB1 /* oilbrushelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		18B29CBD0F7F65E000DD13B6 /* Velasquez.app in Project Copy */ = {isa = PBXBuildFile; fileRef = 18B29CBA0F7F65E000DD13B6 /* Velasquez.app */; };
+		1FD0E24BFF6E2C15BD7B9B3F /* hoverpoints.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 45A730ACC771832B1282F387 /* hoverpoints.cpp */; settings = {ATTRIBUTES = (); }; };
+		23BD11BBDD1D24D2B35AAD00 /* brushstylebutton.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CDAE61A2DC33CDF94A255E42 /* brushstylebutton.cpp */; settings = {ATTRIBUTES = (); }; };
+		24A6F922102342535F3BF9C5 /* svgtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E0EA49D4076084A27321EB2A /* svgtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		24FAD3DE4FBF24DF87AA9901 /* transformableelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DF801F69A7B3232126B22682 /* transformableelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		26BE39A393D62EBD11E412DA /* qgif in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4E6D2202CFE879C37115E7DF /* qgif */; };
+		2785A5CE69FFD61E50FC1690 /* drawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 12B58950FD6F88F2A611329C /* drawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 118FCBAABA162BA17933C789 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		2F5865A2D7F5C7EC5F8C1B9B /* moc_scenecursorlayer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B414CC17321BF6F95CAC40E4 /* moc_scenecursorlayer.cpp */; settings = {ATTRIBUTES = (); }; };
+		307601D3457BAD4749D241C1 /* textcursorpointer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DAD0F2934313A3EF4FDF5A64 /* textcursorpointer.cpp */; settings = {ATTRIBUTES = (); }; };
+		36CEEEBB120FB80E7FB4989D /* moc_brushstylewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AE7DCB3EE0C689F37737DC76 /* moc_brushstylewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		3D464D58605C7CF3B957C48D /* moc_imageelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9D579033A2FA99AB4CB328FB /* moc_imageelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		3DFDA568999E43A0310FA151 /* QtSvg in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 6B5610B67C68462E67CF318C /* QtSvg */; };
+		4259A6FF2C9AC724A760F23B /* moc_editorform.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 63AC43836CB3B3874DDEE99A /* moc_editorform.cpp */; settings = {ATTRIBUTES = (); }; };
+		4458781DA1800DFD8709F1CF /* penelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 794203082DA9A77885133973 /* penelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		44AB5FE5C94A52387927000A /* moc_colorwheelwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A88899263FC94A83A6BAEB6F /* moc_colorwheelwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		44C974841006D10D12AB1E6A /* moc_backgroundtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9A7D98964C48B422AF55748A /* moc_backgroundtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		455D04F8EFCCADB846B8B563 /* mousedrawingelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EF995B616E5BA617375BF19F /* mousedrawingelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		4ECE9609ED9C8C3DD4F9EFF6 /* moc_vtest.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 104F56262916755EF5DDC024 /* moc_vtest.cpp */; settings = {ATTRIBUTES = (); }; };
+		51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 821416211D63F190AAAD016A /* AppKit.framework */; };
+		5279AC551377C88E427DE2E1 /* imageelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 44727D57EC0517889C63CDB4 /* imageelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		54E69BE854277ED5949F6A25 /* moc_palettemanager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7A5B3764BA97A46C61350765 /* moc_palettemanager.cpp */; settings = {ATTRIBUTES = (); }; };
+		588F47421F1CBEB7D48296B4 /* brushdrawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7975311B81AD6F6DE199520E /* brushdrawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		58A6264983ECE0E46CB947CC /* oilbrushtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E253A708216DFB0E86AFED6B /* oilbrushtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		6055C42B839C72FF82D1C0D8 /* svgelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 560D51B48145DFF4F9270EE7 /* svgelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		60F8207C8150687AC5093591 /* moc_hoverpoints.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 399A3397C1E034334DABA332 /* moc_hoverpoints.cpp */; settings = {ATTRIBUTES = (); }; };
+		61347241B927F62548D7D700 /* qjpeg in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 928AA2F9F5B5C70CCA70654E /* qjpeg */; };
+		616072B3E0215223301E031A /* textelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4B4F5481BD4F1CB4C6F3FE6B /* textelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		626874F4CDEEA1D6837A37B3 /* moc_editorscene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 270AA7C3F182B7F9B74B3147 /* moc_editorscene.cpp */; settings = {ATTRIBUTES = (); }; };
+		62CB71C698A070A83C49E39B /* editorform.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1C45214F488EA3B455B5D526 /* editorform.cpp */; settings = {ATTRIBUTES = (); }; };
+		6611FDEE081687DB3FEAC7FB /* moc_svgtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4835879EC19E2FF6D700394B /* moc_svgtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		6854CD61E33EF02CC74C3CD2 /* pentool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3903685B6DE7EC852CB61666 /* pentool.cpp */; settings = {ATTRIBUTES = (); }; };
+		6BA3BAEC490BD1EA9906A216 /* vtest.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 59D63E3F36A50AE79ECF4A82 /* vtest.cpp */; settings = {ATTRIBUTES = (); }; };
+		6D3FB3C25DBA2390D2C80A2F /* brushdrawingelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 654DF773A96EC8747374BB59 /* brushdrawingelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		70D28EC4C88D2C5E82387C3C /* colorcontrol.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 02B591DD0000F0AB80514806 /* colorcontrol.cpp */; settings = {ATTRIBUTES = (); }; };
+		71EB11E47A01495D14EBA423 /* eyedroppertool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 24CD27AB763F55D5A5A57425 /* eyedroppertool.cpp */; settings = {ATTRIBUTES = (); }; };
+		738CAEF4E155CF4DC7A86EA3 /* spraytool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F21D2A51117D5E8DA1EA73A5 /* spraytool.cpp */; settings = {ATTRIBUTES = (); }; };
+		7467EE6DE3261B0A561B828C /* moc_textelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2D92B6F1B6FC0F16BC51BDAF /* moc_textelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		76447AD2019B2849688D64D7 /* brushstyle.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D93615D96B0E75687A5176A9 /* brushstyle.cpp */; settings = {ATTRIBUTES = (); }; };
+		768BD6B28924DE346CAF3A9D /* moc_brushdrawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D02EFBC0EA07792E64F04FCE /* moc_brushdrawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		77D14C5E1C2E26AE751D3E44 /* mtrandom.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CEB53C05F9EF3BA898D6DDED /* mtrandom.cpp */; settings = {ATTRIBUTES = (); }; };
+		7877E325431B9A8CD09FA653 /* QtGui in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4E6E331D666A3A0BE5DD6B8C /* QtGui */; };
+		79FDC570B1B74D428C719EE9 /* transformation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1B2DF560EDF54D40E6C7088A /* transformation.cpp */; settings = {ATTRIBUTES = (); }; };
+		7A56DD63CC36031DF6EFB9C9 /* moc_pentool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FB46D477BBB66487DC68A9A4 /* moc_pentool.cpp */; settings = {ATTRIBUTES = (); }; };
+		7B2308E8020FC141D2E113BE /* palette.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 28D5D0645AA7C01CE9A60864 /* palette.cpp */; settings = {ATTRIBUTES = (); }; };
+		8177C91F719100ECB31EDFA5 /* transformabletool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 47361852C58D9F20499C11FC /* transformabletool.cpp */; settings = {ATTRIBUTES = (); }; };
+		8B5C8DEB59A6A6C0287DFFC6 /* moc_transformableelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 610865F697BCBAA006170309 /* moc_transformableelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		8C27E0EBF1CDF6463B9A5F34 /* moc_drawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 13BB90282C9608C50696F997 /* moc_drawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		929793715C08087CD89F8B15 /* texttool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A10EF4B5D97570E5DF44BE0C /* texttool.cpp */; settings = {ATTRIBUTES = (); }; };
+		957CE777B1883C21D3AD52D6 /* moc_coloreditdialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 56C2C32BDD550BAD1D410A29 /* moc_coloreditdialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		9835CA02DD8CB9481C24F4B6 /* moc_brushstylebutton.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 909ADC3BF1C0D53B38143FF9 /* moc_brushstylebutton.cpp */; settings = {ATTRIBUTES = (); }; };
+		9BB6D6BC1B0D09E6877B528F /* metainfoprovider.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 128D110D6C0FEF21F3652717 /* metainfoprovider.cpp */; settings = {ATTRIBUTES = (); }; };
+		9BF9CFC3FB9F34671E84AD7E /* editorscene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3C8EBF4D06DEACC541EB578E /* editorscene.cpp */; settings = {ATTRIBUTES = (); }; };
+		9D613E4F29E42AC28F08296C /* backgroundtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 54C5B54E5DB8D582FE38C2CA /* backgroundtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		A28CBC1AC7376740116BCC9F /* moc_palettewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F51D71A830883B3F8C14F55A /* moc_palettewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		A2B5FD63936DD2246B2CF9C9 /* moc_texttool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AE52AAAAEBC62040DE7985C1 /* moc_texttool.cpp */; settings = {ATTRIBUTES = (); }; };
+		A33A34857BEE2C6F8CA866D6 /* undocommands.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 28F12F56B2618DB0FFD0AC50 /* undocommands.cpp */; settings = {ATTRIBUTES = (); }; };
+		A4EE415A1C12B84D6A7D12FF /* eraserelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3F87B3F26F7CEAA4BBB0418A /* eraserelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		AA3A585801B6057DEE49F906 /* imagetool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C3510F827B1F93E1B8AC26E5 /* imagetool.cpp */; settings = {ATTRIBUTES = (); }; };
+		AA5B75498B3B94C5A71ACCE5 /* QtNetwork in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = EDB78A80F6B7895312EDE49F /* QtNetwork */; };
+		ACDA915617D617756205E325 /* qtiff in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = CF36673E73B137A24CF329FE /* qtiff */; };
+		AE1D54CE56DF1EFF514B1C9A /* xmlserializable.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DF517F90B494DD9BBFB9FDDD /* xmlserializable.cpp */; settings = {ATTRIBUTES = (); }; };
+		AE537128CD03829099091C18 /* scenecursorlayer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AC96A5281D9E80709AABBAF7 /* scenecursorlayer.cpp */; settings = {ATTRIBUTES = (); }; };
+		B0A05EFA293371CDA6918C63 /* SystemConfiguration.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 60EF245C130E8583D7F93F3C /* SystemConfiguration.framework */; };
+		B1FC4216D999FFAEDAB3F823 /* moc_textcursorpointer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B7C87D2A4E55800E278E27D3 /* moc_textcursorpointer.cpp */; settings = {ATTRIBUTES = (); }; };
+		B43723698F5D328362A747AC /* palettewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 379F354EA4995ADD83FA0385 /* palettewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		B791F7FF3EA5AD5FE2FCFDC2 /* qmng in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4C51326AB5B13470EA83256A /* qmng */; };
+		BBA7369290479FD9826AFA88 /* brushstroke.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8E291D50CFDBB2E92C8CD4BF /* brushstroke.cpp */; settings = {ATTRIBUTES = (); }; };
+		BD7D7343EF8D44ABCFE14F97 /* moc_svgelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6655C8E520C9BA5CEF186574 /* moc_svgelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		C73B9583F805F5E580F5EC67 /* simplebrushelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6BB4FCD03050153808BA3B04 /* simplebrushelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		C73E9D252A0888939D28412B /* moc_oilbrushtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 99B7DA1F99E45C6D7649CF84 /* moc_oilbrushtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA138F75C9F545CDAE7FB264 /* Carbon.framework */; };
+		C9E8FBE03407A251437B6785 /* moc_colorselectioncontrol.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FAE69BF00F8DDE67AECF7AFC /* moc_colorselectioncontrol.cpp */; settings = {ATTRIBUTES = (); }; };
+		CB2847B5C95EBE2B0D01D2F2 /* color.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4EEC2D6F21C202B0C566780D /* color.cpp */; settings = {ATTRIBUTES = (); }; };
+		CBD77CE39E893721A2C94C41 /* moc_palettelistwidgetitem.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 08F3E17F3043F6E72E3EC42B /* moc_palettelistwidgetitem.cpp */; settings = {ATTRIBUTES = (); }; };
+		D1DBE0C72B92958EDB14CDC3 /* palettelistwidgetitem.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4F7BFC6A0A2470CDA69EB74B /* palettelistwidgetitem.cpp */; settings = {ATTRIBUTES = (); }; };
+		D68C57D3E7B16D857320CBB8 /* moc_settingsprovider.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C65339B9B804FE4615B3DE83 /* moc_settingsprovider.cpp */; settings = {ATTRIBUTES = (); }; };
+		D74A6BF7F5A70BA686CBC4B2 /* mousedrawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 761FAEA2CA368A42C95030EF /* mousedrawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		D90FEDEA6743E2FBA63E8785 /* moc_simplebrushtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FE4382AD4468814F3376F3E1 /* moc_simplebrushtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		D9266DFEC108C3AE617A3FDF /* moc_eyedroppertool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F30A37F8573DC08E5E954862 /* moc_eyedroppertool.cpp */; settings = {ATTRIBUTES = (); }; };
+		DA20D11B6E5B5AF4B0688BBC /* varianthash.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C5EBEE9573A454E72EC73501 /* varianthash.cpp */; settings = {ATTRIBUTES = (); }; };
+		DC16A1D7E1F3D5B03EF4C191 /* moc_erasertool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1DB9FA3654551481D0A17FFF /* moc_erasertool.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF3080751D8A58F5E9CE99E7 /* moc_palettelistwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7AA2BB7EB27DCF8DEB225560 /* moc_palettelistwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF4B4F056CD7BD2225D12457 /* moc_colorwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2A50A3FC323E2EB21733 /* moc_colorwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		E0BAAD76D510BBAFC6DE4063 /* moc_imagetool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6B22F0EB166291D97C176C42 /* moc_imagetool.cpp */; settings = {ATTRIBUTES = (); }; };
+		E21C04DB18F9197BAE241045 /* colorwheelwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4BDA5E3094A90040984CC431 /* colorwheelwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		E3FF135848BB21E47CC8BA91 /* moc_mousedrawingtool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 86C2571B43693F646352B6B4 /* moc_mousedrawingtool.cpp */; settings = {ATTRIBUTES = (); }; };
+		E46DE4086B05449D189A897C /* moc_toolbox.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 385135110F22C7E4195DC06F /* moc_toolbox.cpp */; settings = {ATTRIBUTES = (); }; };
+		E90462B082DEFEFC1DD034FC /* backgroundelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F124F4568A6F319CBB3D298E /* backgroundelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		E9EEAF6F631389B7DBE20184 /* colorvolumewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3EBAB476B04C8632A77F8A82 /* colorvolumewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		EA70FC0B446CE015C4FCBE0A /* colorwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 59EDBED4F4E515C0C61B50D8 /* colorwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		ECDAF1D8D0F71B550CB22401 /* qsvg in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C0BF05DADC4B0B703400F841 /* qsvg */; };
+		EE3FFDE219F07B914578D74F /* erasertool.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CA27511FD66477F3B9A4A7F7 /* erasertool.cpp */; settings = {ATTRIBUTES = (); }; };
+		EE91CEECE89CAF1BC315024E /* settingsprovider.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3DD435951E4D1737387FB3EF /* settingsprovider.cpp */; settings = {ATTRIBUTES = (); }; };
+		EEFC94B4816180F70E01F98D /* sprayelement.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 46FD0ECE7EDCA64DF158267F /* sprayelement.cpp */; settings = {ATTRIBUTES = (); }; };
+		F0DE5B02724AAEC19E88FE11 /* palettemanager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5AF896179C3AE18B93CDF483 /* palettemanager.cpp */; settings = {ATTRIBUTES = (); }; };
+		F5454DDA3F98C69B44D95DD6 /* brushstylewidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9D91933FE2D742D6C60ACF65 /* brushstylewidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		F668019DF68916E4529CE1A2 /* qrc_vtest.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C7EF05B844FD9694D31F6395 /* qrc_vtest.cpp */; settings = {ATTRIBUTES = (); }; };
+		F7AC3F51D13800EFBC0D22D5 /* moc_colorcontrol.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C651C1735B61F0154E8C61CB /* moc_colorcontrol.cpp */; settings = {ATTRIBUTES = (); }; };
+		F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */; };
+		FD645041A299A5C79F3A262C /* QtXml in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 741BA7C2149FFB354E582BC4 /* QtXml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt;
+			dstSubfolderSpec = 0;
+			files = (
+				18B29CBD0F7F65E000DD13B6 /* Velasquez.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02B591DD0000F0AB80514806 /* colorcontrol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = colorcontrol.cpp; path = prototype/colorcontrol.cpp; sourceTree = "<group>"; };
+		0483BB2079ADC3936E07B79B /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		04ADA685AECC6EBD9EFE0213 /* colorselectioncontrol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colorselectioncontrol.h; path = prototype/colorselectioncontrol.h; sourceTree = "<group>"; };
+		05854036A77503EC08E41038 /* editorform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editorform.h; sourceTree = "<group>"; };
+		05D664750E46566D7027E993 /* ui_coloreditdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_coloreditdialog.h; sourceTree = "<group>"; };
+		08F3E17F3043F6E72E3EC42B /* moc_palettelistwidgetitem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_palettelistwidgetitem.cpp; sourceTree = "<group>"; };
+		0A1D8A23D4D3005E02A854F6 /* simplebrushelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simplebrushelement.h; sourceTree = "<group>"; };
+		0BE6523DA1AED65536B69AFF /* mtrandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mtrandom.h; sourceTree = "<group>"; };
+		0F1E91B7C754C297ABC116C7 /* texttool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texttool.h; sourceTree = "<group>"; };
+		104F56262916755EF5DDC024 /* moc_vtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_vtest.cpp; sourceTree = "<group>"; };
+		118FCBAABA162BA17933C789 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		128D110D6C0FEF21F3652717 /* metainfoprovider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = metainfoprovider.cpp; sourceTree = "<group>"; };
+		12B58950FD6F88F2A611329C /* drawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawingtool.cpp; sourceTree = "<group>"; };
+		13BB90282C9608C50696F997 /* moc_drawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_drawingtool.cpp; sourceTree = "<group>"; };
+		155BFB4BF7986FE3A296F567 /* drawingelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawingelement.cpp; sourceTree = "<group>"; };
+		176A9CF95690EE0F4D95C734 /* hoverpoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hoverpoints.h; sourceTree = "<group>"; };
+		17AA8AAE0B80F545B1134D91 /* vtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vtest.h; sourceTree = "<group>"; };
+		18B29CBA0F7F65E000DD13B6 /* Velasquez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Velasquez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		196DD9468FF47E9CAED671B2 /* mousedrawingelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mousedrawingelement.h; sourceTree = "<group>"; };
+		1A242A3323D71650DA0196AA /* brushstylewidget.ui */ = {isa = PBXFileReference; lastKnownFileType = text; name = brushstylewidget.ui; path = prototype/brushstylewidget.ui; sourceTree = "<group>"; };
+		1B2DF560EDF54D40E6C7088A /* transformation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transformation.cpp; sourceTree = "<group>"; };
+		1C45214F488EA3B455B5D526 /* editorform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = editorform.cpp; sourceTree = "<group>"; };
+		1DB9FA3654551481D0A17FFF /* moc_erasertool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_erasertool.cpp; sourceTree = "<group>"; };
+		1FAD32AFC49FECAE871ADEB8 /* transformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transformation.h; sourceTree = "<group>"; };
+		2265F1F765BD5D77013C5850 /* palettelist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palettelist.cpp; path = prototype/palettelist.cpp; sourceTree = "<group>"; };
+		24CD27AB763F55D5A5A57425 /* eyedroppertool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = eyedroppertool.cpp; sourceTree = "<group>"; };
+		270AA7C3F182B7F9B74B3147 /* moc_editorscene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_editorscene.cpp; sourceTree = "<group>"; };
+		27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		28D5D0645AA7C01CE9A60864 /* palette.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palette.cpp; path = prototype/palette.cpp; sourceTree = "<group>"; };
+		28F12F56B2618DB0FFD0AC50 /* undocommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = undocommands.cpp; sourceTree = "<group>"; };
+		297865E401E6A62C426374DF /* colorcontrol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colorcontrol.h; path = prototype/colorcontrol.h; sourceTree = "<group>"; };
+		29ADB86A3768323205AD2F98 /* palettelistwidgetitem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palettelistwidgetitem.h; path = prototype/palettelistwidgetitem.h; sourceTree = "<group>"; };
+		2D92B6F1B6FC0F16BC51BDAF /* moc_textelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_textelement.cpp; sourceTree = "<group>"; };
+		311E04A895BB443F8FC0701A /* transformableelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transformableelement.h; sourceTree = "<group>"; };
+		3212F0DD799297650524FA7B /* palettemanager.ui */ = {isa = PBXFileReference; lastKnownFileType = text; name = palettemanager.ui; path = prototype/palettemanager.ui; sourceTree = "<group>"; };
+		375612AE36D519F01029B0BA /* oilbrushelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oilbrushelement.h; sourceTree = "<group>"; };
+		379F354EA4995ADD83FA0385 /* palettewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palettewidget.cpp; path = prototype/palettewidget.cpp; sourceTree = "<group>"; };
+		385135110F22C7E4195DC06F /* moc_toolbox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_toolbox.cpp; sourceTree = "<group>"; };
+		3903685B6DE7EC852CB61666 /* pentool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pentool.cpp; sourceTree = "<group>"; };
+		399A3397C1E034334DABA332 /* moc_hoverpoints.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_hoverpoints.cpp; sourceTree = "<group>"; };
+		3C73AE67D27042CE00323BAA /* coloreditdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = coloreditdialog.h; path = prototype/coloreditdialog.h; sourceTree = "<group>"; };
+		3C8EBF4D06DEACC541EB578E /* editorscene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = editorscene.cpp; sourceTree = "<group>"; };
+		3DD435951E4D1737387FB3EF /* settingsprovider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = settingsprovider.cpp; sourceTree = "<group>"; };
+		3EBAB476B04C8632A77F8A82 /* colorvolumewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = colorvolumewidget.cpp; path = prototype/colorvolumewidget.cpp; sourceTree = "<group>"; };
+		3F87B3F26F7CEAA4BBB0418A /* eraserelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = eraserelement.cpp; sourceTree = "<group>"; };
+		4021F07674256618F5B54AB7 /* palettemanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palettemanager.h; path = prototype/palettemanager.h; sourceTree = "<group>"; };
+		429E86155E1E5AC54727FA97 /* moc_colorvolumewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_colorvolumewidget.cpp; sourceTree = "<group>"; };
+		44727D57EC0517889C63CDB4 /* imageelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imageelement.cpp; sourceTree = "<group>"; };
+		455FE356A589972ABC252640 /* drawingelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingelement.h; sourceTree = "<group>"; };
+		45A730ACC771832B1282F387 /* hoverpoints.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hoverpoints.cpp; sourceTree = "<group>"; };
+		46FD0ECE7EDCA64DF158267F /* sprayelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sprayelement.cpp; sourceTree = "<group>"; };
+		47361852C58D9F20499C11FC /* transformabletool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transformabletool.cpp; sourceTree = "<group>"; };
+		4835879EC19E2FF6D700394B /* moc_svgtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_svgtool.cpp; sourceTree = "<group>"; };
+		4998EFE8CF856DDE02D840C3 /* Velasquez.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = Velasquez.pro; sourceTree = "<group>"; };
+		4AFE2A50A3FC323E2EB21733 /* moc_colorwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_colorwidget.cpp; sourceTree = "<group>"; };
+		4B4F5481BD4F1CB4C6F3FE6B /* textelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textelement.cpp; sourceTree = "<group>"; };
+		4BDA5E3094A90040984CC431 /* colorwheelwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = colorwheelwidget.cpp; path = prototype/colorwheelwidget.cpp; sourceTree = "<group>"; };
+		4C51326AB5B13470EA83256A /* qmng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmng; path = /Developer/Qt/plugins/imageformats/libqmng.a; sourceTree = "<absolute>"; };
+		4D051040CF69C95DDC7F897D /* drawingutils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawingutils.cpp; sourceTree = "<group>"; };
+		4E6D2202CFE879C37115E7DF /* qgif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgif; path = /Developer/Qt/plugins/imageformats/libqgif.a; sourceTree = "<absolute>"; };
+		4E6E331D666A3A0BE5DD6B8C /* QtGui */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtGui; path = /Developer/Qt/lib/libQtGui.a; sourceTree = "<absolute>"; };
+		4EEC2D6F21C202B0C566780D /* color.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = color.cpp; path = prototype/color.cpp; sourceTree = "<group>"; };
+		4F7BFC6A0A2470CDA69EB74B /* palettelistwidgetitem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palettelistwidgetitem.cpp; path = prototype/palettelistwidgetitem.cpp; sourceTree = "<group>"; };
+		5214AA57D1A947A70AB48A2B /* brushstylewidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = brushstylewidget.h; path = prototype/brushstylewidget.h; sourceTree = "<group>"; };
+		54C5B54E5DB8D582FE38C2CA /* backgroundtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = backgroundtool.cpp; sourceTree = "<group>"; };
+		560D51B48145DFF4F9270EE7 /* svgelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = svgelement.cpp; sourceTree = "<group>"; };
+		5629AB316A269BC9FCA0B1DD /* backgroundelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backgroundelement.h; sourceTree = "<group>"; };
+		564A03D7BC57E854D6FFEE73 /* colorwheelwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colorwheelwidget.h; path = prototype/colorwheelwidget.h; sourceTree = "<group>"; };
+		56C2C32BDD550BAD1D410A29 /* moc_coloreditdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_coloreditdialog.cpp; sourceTree = "<group>"; };
+		59D63E3F36A50AE79ECF4A82 /* vtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vtest.cpp; sourceTree = "<group>"; };
+		59EDBED4F4E515C0C61B50D8 /* colorwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = colorwidget.cpp; path = prototype/colorwidget.cpp; sourceTree = "<group>"; };
+		5AF896179C3AE18B93CDF483 /* palettemanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palettemanager.cpp; path = prototype/palettemanager.cpp; sourceTree = "<group>"; };
+		60EF245C130E8583D7F93F3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		610865F697BCBAA006170309 /* moc_transformableelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_transformableelement.cpp; sourceTree = "<group>"; };
+		620C9A6A9590A6D85315103A /* brushdrawingtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brushdrawingtool.h; sourceTree = "<group>"; };
+		63335F37A527AE95C610ECBB /* varianthash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = varianthash.h; sourceTree = "<group>"; };
+		63AC43836CB3B3874DDEE99A /* moc_editorform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_editorform.cpp; sourceTree = "<group>"; };
+		64A79DE514E6775F73DA4F72 /* palettewidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palettewidget.h; path = prototype/palettewidget.h; sourceTree = "<group>"; };
+		654DF773A96EC8747374BB59 /* brushdrawingelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = brushdrawingelement.cpp; sourceTree = "<group>"; };
+		6655C8E520C9BA5CEF186574 /* moc_svgelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_svgelement.cpp; sourceTree = "<group>"; };
+		6B22F0EB166291D97C176C42 /* moc_imagetool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_imagetool.cpp; sourceTree = "<group>"; };
+		6B5610B67C68462E67CF318C /* QtSvg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtSvg; path = /Developer/Qt/lib/libQtSvg.a; sourceTree = "<absolute>"; };
+		6B7F61B154D0B078AF93630F /* drawingutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingutils.h; sourceTree = "<group>"; };
+		6BAF1FD3F94C0B9F285F50A3 /* xmlserializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xmlserializable.h; path = prototype/xmlserializable.h; sourceTree = "<group>"; };
+		6BB4FCD03050153808BA3B04 /* simplebrushelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simplebrushelement.cpp; sourceTree = "<group>"; };
+		72B2652C9533142115EE5E0D /* colorselectioncontrol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = colorselectioncontrol.cpp; path = prototype/colorselectioncontrol.cpp; sourceTree = "<group>"; };
+		73048450E2D34116B09FF93F /* moc_transformabletool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_transformabletool.cpp; sourceTree = "<group>"; };
+		731F22BA3BF58C054E680E37 /* moc_spraytool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_spraytool.cpp; sourceTree = "<group>"; };
+		7380B14E07E2E005B8A37E69 /* editorform.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = editorform.ui; sourceTree = "<group>"; };
+		741BA7C2149FFB354E582BC4 /* QtXml */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtXml; path = /Developer/Qt/lib/libQtXml.a; sourceTree = "<absolute>"; };
+		761FAEA2CA368A42C95030EF /* mousedrawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mousedrawingtool.cpp; sourceTree = "<group>"; };
+		77070F99E9DAB60B09F83D57 /* drawingtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingtool.h; sourceTree = "<group>"; };
+		7895957701D51671AA67EEDD /* sprayelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sprayelement.h; sourceTree = "<group>"; };
+		794203082DA9A77885133973 /* penelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = penelement.cpp; sourceTree = "<group>"; };
+		7975311B81AD6F6DE199520E /* brushdrawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = brushdrawingtool.cpp; sourceTree = "<group>"; };
+		7A5B3764BA97A46C61350765 /* moc_palettemanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_palettemanager.cpp; sourceTree = "<group>"; };
+		7AA2BB7EB27DCF8DEB225560 /* moc_palettelistwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_palettelistwidget.cpp; sourceTree = "<group>"; };
+		7E7ECE344DBECC5476D6C1EF /* ui_editorform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_editorform.h; sourceTree = "<group>"; };
+		821416211D63F190AAAD016A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		8368A8DC3901A0DCBE9C856E /* erasertool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = erasertool.h; sourceTree = "<group>"; };
+		86C2571B43693F646352B6B4 /* moc_mousedrawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mousedrawingtool.cpp; sourceTree = "<group>"; };
+		8866EBA3883CD894007EE899 /* colorvolumewidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colorvolumewidget.h; path = prototype/colorvolumewidget.h; sourceTree = "<group>"; };
+		8A356D0DD6DBEF43FFF905C7 /* colorwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colorwidget.h; path = prototype/colorwidget.h; sourceTree = "<group>"; };
+		8AE919EB4397A54D13BD9342 /* transformabletool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transformabletool.h; sourceTree = "<group>"; };
+		8CE3895B7690AE83D3BAE4FB /* textcursorpointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textcursorpointer.h; sourceTree = "<group>"; };
+		8E291D50CFDBB2E92C8CD4BF /* brushstroke.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = brushstroke.cpp; sourceTree = "<group>"; };
+		909ADC3BF1C0D53B38143FF9 /* moc_brushstylebutton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_brushstylebutton.cpp; sourceTree = "<group>"; };
+		917416B390CEA942864BB5C3 /* palette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palette.h; path = prototype/palette.h; sourceTree = "<group>"; };
+		928AA2F9F5B5C70CCA70654E /* qjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qjpeg; path = /Developer/Qt/plugins/imageformats/libqjpeg.a; sourceTree = "<absolute>"; };
+		99B7DA1F99E45C6D7649CF84 /* moc_oilbrushtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_oilbrushtool.cpp; sourceTree = "<group>"; };
+		9A7D98964C48B422AF55748A /* moc_backgroundtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_backgroundtool.cpp; sourceTree = "<group>"; };
+		9D579033A2FA99AB4CB328FB /* moc_imageelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_imageelement.cpp; sourceTree = "<group>"; };
+		9D91933FE2D742D6C60ACF65 /* brushstylewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = brushstylewidget.cpp; path = prototype/brushstylewidget.cpp; sourceTree = "<group>"; };
+		A1070EB43B8BEAF01113DF0E /* coloreditdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = coloreditdialog.cpp; path = prototype/coloreditdialog.cpp; sourceTree = "<group>"; };
+		A10EF4B5D97570E5DF44BE0C /* texttool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texttool.cpp; sourceTree = "<group>"; };
+		A6144AAD0F8F70A4FB5F89B8 /* eyedroppertool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eyedroppertool.h; sourceTree = "<group>"; };
+		A818493B5DD1FF8A379EAF56 /* QtCore */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtCore; path = /Developer/Qt/lib/libQtCore.a; sourceTree = "<absolute>"; };
+		A88899263FC94A83A6BAEB6F /* moc_colorwheelwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_colorwheelwidget.cpp; sourceTree = "<group>"; };
+		AB92B1385FB32479001E9A6C /* palettelist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palettelist.h; path = prototype/palettelist.h; sourceTree = "<group>"; };
+		AC96A5281D9E80709AABBAF7 /* scenecursorlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scenecursorlayer.cpp; sourceTree = "<group>"; };
+		AE52AAAAEBC62040DE7985C1 /* moc_texttool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_texttool.cpp; sourceTree = "<group>"; };
+		AE7AC5E5B86C446A86BE29CF /* ui_vtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_vtest.h; sourceTree = "<group>"; };
+		AE7DCB3EE0C689F37737DC76 /* moc_brushstylewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_brushstylewidget.cpp; sourceTree = "<group>"; };
+		B414CC17321BF6F95CAC40E4 /* moc_scenecursorlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_scenecursorlayer.cpp; sourceTree = "<group>"; };
+		B5256303C00D77F2A6B5DB11 /* spraytool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spraytool.h; sourceTree = "<group>"; };
+		B7C87D2A4E55800E278E27D3 /* moc_textcursorpointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_textcursorpointer.cpp; sourceTree = "<group>"; };
+		BA76211C5D77BE6AB493D1BE /* textelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textelement.h; sourceTree = "<group>"; };
+		BDFCD6129630A42F3AF854D6 /* metainfoprovider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metainfoprovider.h; sourceTree = "<group>"; };
+		BE1A6846A2E1545400A5FBCD /* coloreditdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; name = coloreditdialog.ui; path = prototype/coloreditdialog.ui; sourceTree = "<group>"; };
+		BE960518B0CB6DBEB9B8F4F4 /* scenecursorlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scenecursorlayer.h; sourceTree = "<group>"; };
+		BFB10F6412B44C2A6EEC9215 /* color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = color.h; path = prototype/color.h; sourceTree = "<group>"; };
+		C09D415C147533214190E6C2 /* imagetool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imagetool.h; sourceTree = "<group>"; };
+		C0BF05DADC4B0B703400F841 /* qsvg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qsvg; path = /Developer/Qt/plugins/imageformats/libqsvg.a; sourceTree = "<absolute>"; };
+		C1B5C7DE2A492338FB7A886F /* vtest.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = vtest.ui; sourceTree = "<group>"; };
+		C25337107AA1F4342A32D118 /* palettelistwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = palettelistwidget.cpp; path = prototype/palettelistwidget.cpp; sourceTree = "<group>"; };
+		C3510F827B1F93E1B8AC26E5 /* imagetool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imagetool.cpp; sourceTree = "<group>"; };
+		C4BE75FC1A2823F087971771 /* mousedrawingtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mousedrawingtool.h; sourceTree = "<group>"; };
+		C51D4D601AA99BC4F2E7EEDC /* svgelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svgelement.h; sourceTree = "<group>"; };
+		C5EBEE9573A454E72EC73501 /* varianthash.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = varianthash.cpp; sourceTree = "<group>"; };
+		C651C1735B61F0154E8C61CB /* moc_colorcontrol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_colorcontrol.cpp; sourceTree = "<group>"; };
+		C65339B9B804FE4615B3DE83 /* moc_settingsprovider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settingsprovider.cpp; sourceTree = "<group>"; };
+		C7EF05B844FD9694D31F6395 /* qrc_vtest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_vtest.cpp; sourceTree = "<group>"; };
+		CA27511FD66477F3B9A4A7F7 /* erasertool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = erasertool.cpp; sourceTree = "<group>"; };
+		CC2939146CE062F6B1E575C6 /* vcommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vcommon.h; sourceTree = "<group>"; };
+		CD0C6B8F09D4965597EC043A /* eraserelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eraserelement.h; sourceTree = "<group>"; };
+		CDAE61A2DC33CDF94A255E42 /* brushstylebutton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = brushstylebutton.cpp; path = prototype/brushstylebutton.cpp; sourceTree = "<group>"; };
+		CE509DB3C3A54E87098A5268 /* vtest.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = vtest.qrc; sourceTree = "<group>"; };
+		CEB53C05F9EF3BA898D6DDED /* mtrandom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mtrandom.cpp; sourceTree = "<group>"; };
+		CECE9794926B6154A0DCDCAB /* brushstroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brushstroke.h; sourceTree = "<group>"; };
+		CF36673E73B137A24CF329FE /* qtiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtiff; path = /Developer/Qt/plugins/imageformats/libqtiff.a; sourceTree = "<absolute>"; };
+		D02EFBC0EA07792E64F04FCE /* moc_brushdrawingtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_brushdrawingtool.cpp; sourceTree = "<group>"; };
+		D3DC53441D7A6D2AA6B3B021 /* toolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolbox.h; sourceTree = "<group>"; };
+		D58D2574D0EBCA2724165BF0 /* undocommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = undocommands.h; sourceTree = "<group>"; };
+		D6BC18291441A760768666A3 /* brushstyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = brushstyle.h; path = prototype/brushstyle.h; sourceTree = "<group>"; };
+		D93615D96B0E75687A5176A9 /* brushstyle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = brushstyle.cpp; path = prototype/brushstyle.cpp; sourceTree = "<group>"; };
+		DA138F75C9F545CDAE7FB264 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		DAD0F2934313A3EF4FDF5A64 /* textcursorpointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textcursorpointer.cpp; sourceTree = "<group>"; };
+		DF517F90B494DD9BBFB9FDDD /* xmlserializable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = xmlserializable.cpp; path = prototype/xmlserializable.cpp; sourceTree = "<group>"; };
+		DF801F69A7B3232126B22682 /* transformableelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transformableelement.cpp; sourceTree = "<group>"; };
+		E0EA49D4076084A27321EB2A /* svgtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = svgtool.cpp; sourceTree = "<group>"; };
+		E1B86F7BBDE7B5E24CED2C31 /* penelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = penelement.h; sourceTree = "<group>"; };
+		E253A708216DFB0E86AFED6B /* oilbrushtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oilbrushtool.cpp; sourceTree = "<group>"; };
+		E38D4CEB526944F99AD12DF8 /* palettelistwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = palettelistwidget.h; path = prototype/palettelistwidget.h; sourceTree = "<group>"; };
+		E4FAB39FF3C87E82752B29CD /* oilbrushtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oilbrushtool.h; sourceTree = "<group>"; };
+		E586427663AE3FCDC7D8665A /* simplebrushtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simplebrushtool.h; sourceTree = "<group>"; };
+		E8F038CEB43EB5EC60615935 /* backgroundtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backgroundtool.h; sourceTree = "<group>"; };
+		E97444301BFEC4739D3F12C7 /* brushstylebutton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = brushstylebutton.h; path = prototype/brushstylebutton.h; sourceTree = "<group>"; };
+		EB012AEFEEA965896E48784E /* ui_brushstylewidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_brushstylewidget.h; sourceTree = "<group>"; };
+		EC8D020DE1DD45AEB2885250 /* toolbox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = toolbox.cpp; sourceTree = "<group>"; };
+		EDB78A80F6B7895312EDE49F /* QtNetwork */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtNetwork; path = /Developer/Qt/lib/libQtNetwork.a; sourceTree = "<absolute>"; };
+		EF995B616E5BA617375BF19F /* mousedrawingelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mousedrawingelement.cpp; sourceTree = "<group>"; };
+		F124F4568A6F319CBB3D298E /* backgroundelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = backgroundelement.cpp; sourceTree = "<group>"; };
+		F21D2A51117D5E8DA1EA73A5 /* spraytool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spraytool.cpp; sourceTree = "<group>"; };
+		F30A37F8573DC08E5E954862 /* moc_eyedroppertool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_eyedroppertool.cpp; sourceTree = "<group>"; };
+		F3449CC27C68EBA2BD0FD3FA /* ui_palettemanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_palettemanager.h; sourceTree = "<group>"; };
+		F37BDFD0294ECB0E71B01ED1 /* pentool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pentool.h; sourceTree = "<group>"; };
+		F51D71A830883B3F8C14F55A /* moc_palettewidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_palettewidget.cpp; sourceTree = "<group>"; };
+		F5D80639C430A0EDF3D4ACB1 /* oilbrushelement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oilbrushelement.cpp; sourceTree = "<group>"; };
+		F71D6E4012F350C59DFB353D /* svgtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svgtool.h; sourceTree = "<group>"; };
+		F7AF54E1C3BCEEE2A42AA7D0 /* settingsprovider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settingsprovider.h; sourceTree = "<group>"; };
+		F88376C4E9C715DD95AE4D3A /* imageelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageelement.h; sourceTree = "<group>"; };
+		F8D63FF9A296697055B8C97D /* editorscene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editorscene.h; sourceTree = "<group>"; };
+		FACB90B3FE454F39FCBEF5CC /* brushdrawingelement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brushdrawingelement.h; sourceTree = "<group>"; };
+		FAE69BF00F8DDE67AECF7AFC /* moc_colorselectioncontrol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_colorselectioncontrol.cpp; sourceTree = "<group>"; };
+		FB46D477BBB66487DC68A9A4 /* moc_pentool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_pentool.cpp; sourceTree = "<group>"; };
+		FCC19F6DF8EDCA361343B283 /* simplebrushtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simplebrushtool.cpp; sourceTree = "<group>"; };
+		FE4382AD4468814F3376F3E1 /* moc_simplebrushtool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_simplebrushtool.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61347241B927F62548D7D700 /* qjpeg in Frameworks & Libraries */,
+				26BE39A393D62EBD11E412DA /* qgif in Frameworks & Libraries */,
+				B791F7FF3EA5AD5FE2FCFDC2 /* qmng in Frameworks & Libraries */,
+				ECDAF1D8D0F71B550CB22401 /* qsvg in Frameworks & Libraries */,
+				ACDA915617D617756205E325 /* qtiff in Frameworks & Libraries */,
+				3DFDA568999E43A0310FA151 /* QtSvg in Frameworks & Libraries */,
+				FD645041A299A5C79F3A262C /* QtXml in Frameworks & Libraries */,
+				7877E325431B9A8CD09FA653 /* QtGui in Frameworks & Libraries */,
+				C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */,
+				51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */,
+				AA5B75498B3B94C5A71ACCE5 /* QtNetwork in Frameworks & Libraries */,
+				B0A05EFA293371CDA6918C63 /* SystemConfiguration.framework in Frameworks & Libraries */,
+				01845E6047DA93ED2CE3FDAD /* QtCore in Frameworks & Libraries */,
+				F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* Velasquez */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				52C235EBF1C9B07808119459 /* Sources [RCC] */,
+				EEC299C65D5017EB9DD513B0 /* Sources [UIC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				18B29CBB0F7F65E000DD13B6 /* Products */,
+			);
+			name = Velasquez;
+			sourceTree = "<group>";
+		};
+		18B29CBB0F7F65E000DD13B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B29CBA0F7F65E000DD13B6 /* Velasquez.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D98964C48B422AF55748A /* moc_backgroundtool.cpp */,
+				D02EFBC0EA07792E64F04FCE /* moc_brushdrawingtool.cpp */,
+				13BB90282C9608C50696F997 /* moc_drawingtool.cpp */,
+				63AC43836CB3B3874DDEE99A /* moc_editorform.cpp */,
+				270AA7C3F182B7F9B74B3147 /* moc_editorscene.cpp */,
+				1DB9FA3654551481D0A17FFF /* moc_erasertool.cpp */,
+				F30A37F8573DC08E5E954862 /* moc_eyedroppertool.cpp */,
+				399A3397C1E034334DABA332 /* moc_hoverpoints.cpp */,
+				9D579033A2FA99AB4CB328FB /* moc_imageelement.cpp */,
+				6B22F0EB166291D97C176C42 /* moc_imagetool.cpp */,
+				86C2571B43693F646352B6B4 /* moc_mousedrawingtool.cpp */,
+				99B7DA1F99E45C6D7649CF84 /* moc_oilbrushtool.cpp */,
+				FB46D477BBB66487DC68A9A4 /* moc_pentool.cpp */,
+				B414CC17321BF6F95CAC40E4 /* moc_scenecursorlayer.cpp */,
+				C65339B9B804FE4615B3DE83 /* moc_settingsprovider.cpp */,
+				FE4382AD4468814F3376F3E1 /* moc_simplebrushtool.cpp */,
+				731F22BA3BF58C054E680E37 /* moc_spraytool.cpp */,
+				6655C8E520C9BA5CEF186574 /* moc_svgelement.cpp */,
+				4835879EC19E2FF6D700394B /* moc_svgtool.cpp */,
+				B7C87D2A4E55800E278E27D3 /* moc_textcursorpointer.cpp */,
+				2D92B6F1B6FC0F16BC51BDAF /* moc_textelement.cpp */,
+				AE52AAAAEBC62040DE7985C1 /* moc_texttool.cpp */,
+				385135110F22C7E4195DC06F /* moc_toolbox.cpp */,
+				610865F697BCBAA006170309 /* moc_transformableelement.cpp */,
+				73048450E2D34116B09FF93F /* moc_transformabletool.cpp */,
+				104F56262916755EF5DDC024 /* moc_vtest.cpp */,
+				909ADC3BF1C0D53B38143FF9 /* moc_brushstylebutton.cpp */,
+				AE7DCB3EE0C689F37737DC76 /* moc_brushstylewidget.cpp */,
+				C651C1735B61F0154E8C61CB /* moc_colorcontrol.cpp */,
+				56C2C32BDD550BAD1D410A29 /* moc_coloreditdialog.cpp */,
+				FAE69BF00F8DDE67AECF7AFC /* moc_colorselectioncontrol.cpp */,
+				429E86155E1E5AC54727FA97 /* moc_colorvolumewidget.cpp */,
+				A88899263FC94A83A6BAEB6F /* moc_colorwheelwidget.cpp */,
+				4AFE2A50A3FC323E2EB21733 /* moc_colorwidget.cpp */,
+				7AA2BB7EB27DCF8DEB225560 /* moc_palettelistwidget.cpp */,
+				08F3E17F3043F6E72E3EC42B /* moc_palettelistwidgetitem.cpp */,
+				7A5B3764BA97A46C61350765 /* moc_palettemanager.cpp */,
+				F51D71A830883B3F8C14F55A /* moc_palettewidget.cpp */,
+				C7EF05B844FD9694D31F6395 /* qrc_vtest.cpp */,
+				7E7ECE344DBECC5476D6C1EF /* ui_editorform.h */,
+				AE7AC5E5B86C446A86BE29CF /* ui_vtest.h */,
+				EB012AEFEEA965896E48784E /* ui_brushstylewidget.h */,
+				05D664750E46566D7027E993 /* ui_coloreditdialog.h */,
+				F3449CC27C68EBA2BD0FD3FA /* ui_palettemanager.h */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		52C235EBF1C9B07808119459 /* Sources [RCC] */ = {
+			isa = PBXGroup;
+			children = (
+				CE509DB3C3A54E87098A5268 /* vtest.qrc */,
+			);
+			name = "Sources [RCC]";
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				4998EFE8CF856DDE02D840C3 /* Velasquez.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				5629AB316A269BC9FCA0B1DD /* backgroundelement.h */,
+				E8F038CEB43EB5EC60615935 /* backgroundtool.h */,
+				FACB90B3FE454F39FCBEF5CC /* brushdrawingelement.h */,
+				620C9A6A9590A6D85315103A /* brushdrawingtool.h */,
+				CECE9794926B6154A0DCDCAB /* brushstroke.h */,
+				0483BB2079ADC3936E07B79B /* debug.h */,
+				455FE356A589972ABC252640 /* drawingelement.h */,
+				77070F99E9DAB60B09F83D57 /* drawingtool.h */,
+				6B7F61B154D0B078AF93630F /* drawingutils.h */,
+				05854036A77503EC08E41038 /* editorform.h */,
+				F8D63FF9A296697055B8C97D /* editorscene.h */,
+				CD0C6B8F09D4965597EC043A /* eraserelement.h */,
+				8368A8DC3901A0DCBE9C856E /* erasertool.h */,
+				A6144AAD0F8F70A4FB5F89B8 /* eyedroppertool.h */,
+				176A9CF95690EE0F4D95C734 /* hoverpoints.h */,
+				F88376C4E9C715DD95AE4D3A /* imageelement.h */,
+				C09D415C147533214190E6C2 /* imagetool.h */,
+				BDFCD6129630A42F3AF854D6 /* metainfoprovider.h */,
+				196DD9468FF47E9CAED671B2 /* mousedrawingelement.h */,
+				C4BE75FC1A2823F087971771 /* mousedrawingtool.h */,
+				0BE6523DA1AED65536B69AFF /* mtrandom.h */,
+				375612AE36D519F01029B0BA /* oilbrushelement.h */,
+				E4FAB39FF3C87E82752B29CD /* oilbrushtool.h */,
+				E1B86F7BBDE7B5E24CED2C31 /* penelement.h */,
+				F37BDFD0294ECB0E71B01ED1 /* pentool.h */,
+				BE960518B0CB6DBEB9B8F4F4 /* scenecursorlayer.h */,
+				F7AF54E1C3BCEEE2A42AA7D0 /* settingsprovider.h */,
+				0A1D8A23D4D3005E02A854F6 /* simplebrushelement.h */,
+				E586427663AE3FCDC7D8665A /* simplebrushtool.h */,
+				7895957701D51671AA67EEDD /* sprayelement.h */,
+				B5256303C00D77F2A6B5DB11 /* spraytool.h */,
+				C51D4D601AA99BC4F2E7EEDC /* svgelement.h */,
+				F71D6E4012F350C59DFB353D /* svgtool.h */,
+				8CE3895B7690AE83D3BAE4FB /* textcursorpointer.h */,
+				BA76211C5D77BE6AB493D1BE /* textelement.h */,
+				0F1E91B7C754C297ABC116C7 /* texttool.h */,
+				D3DC53441D7A6D2AA6B3B021 /* toolbox.h */,
+				311E04A895BB443F8FC0701A /* transformableelement.h */,
+				8AE919EB4397A54D13BD9342 /* transformabletool.h */,
+				1FAD32AFC49FECAE871ADEB8 /* transformation.h */,
+				D58D2574D0EBCA2724165BF0 /* undocommands.h */,
+				63335F37A527AE95C610ECBB /* varianthash.h */,
+				CC2939146CE062F6B1E575C6 /* vcommon.h */,
+				17AA8AAE0B80F545B1134D91 /* vtest.h */,
+				9A08936CA83F8842CEDAA483 /* prototype */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		9A08936CA83F8842CEDAA483 /* prototype */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC18291441A760768666A3 /* brushstyle.h */,
+				E97444301BFEC4739D3F12C7 /* brushstylebutton.h */,
+				5214AA57D1A947A70AB48A2B /* brushstylewidget.h */,
+				BFB10F6412B44C2A6EEC9215 /* color.h */,
+				297865E401E6A62C426374DF /* colorcontrol.h */,
+				3C73AE67D27042CE00323BAA /* coloreditdialog.h */,
+				04ADA685AECC6EBD9EFE0213 /* colorselectioncontrol.h */,
+				8866EBA3883CD894007EE899 /* colorvolumewidget.h */,
+				564A03D7BC57E854D6FFEE73 /* colorwheelwidget.h */,
+				8A356D0DD6DBEF43FFF905C7 /* colorwidget.h */,
+				917416B390CEA942864BB5C3 /* palette.h */,
+				AB92B1385FB32479001E9A6C /* palettelist.h */,
+				E38D4CEB526944F99AD12DF8 /* palettelistwidget.h */,
+				29ADB86A3768323205AD2F98 /* palettelistwidgetitem.h */,
+				4021F07674256618F5B54AB7 /* palettemanager.h */,
+				64A79DE514E6775F73DA4F72 /* palettewidget.h */,
+				6BAF1FD3F94C0B9F285F50A3 /* xmlserializable.h */,
+			);
+			name = prototype;
+			sourceTree = "<group>";
+		};
+		B04EC06D4578CFE2899D2C6A /* prototype */ = {
+			isa = PBXGroup;
+			children = (
+				1A242A3323D71650DA0196AA /* brushstylewidget.ui */,
+				BE1A6846A2E1545400A5FBCD /* coloreditdialog.ui */,
+				3212F0DD799297650524FA7B /* palettemanager.ui */,
+			);
+			name = prototype;
+			sourceTree = "<group>";
+		};
+		CC2EB0575E98B1AB42B3E58F /* prototype */ = {
+			isa = PBXGroup;
+			children = (
+				D93615D96B0E75687A5176A9 /* brushstyle.cpp */,
+				CDAE61A2DC33CDF94A255E42 /* brushstylebutton.cpp */,
+				9D91933FE2D742D6C60ACF65 /* brushstylewidget.cpp */,
+				4EEC2D6F21C202B0C566780D /* color.cpp */,
+				02B591DD0000F0AB80514806 /* colorcontrol.cpp */,
+				A1070EB43B8BEAF01113DF0E /* coloreditdialog.cpp */,
+				72B2652C9533142115EE5E0D /* colorselectioncontrol.cpp */,
+				3EBAB476B04C8632A77F8A82 /* colorvolumewidget.cpp */,
+				4BDA5E3094A90040984CC431 /* colorwheelwidget.cpp */,
+				59EDBED4F4E515C0C61B50D8 /* colorwidget.cpp */,
+				28D5D0645AA7C01CE9A60864 /* palette.cpp */,
+				2265F1F765BD5D77013C5850 /* palettelist.cpp */,
+				C25337107AA1F4342A32D118 /* palettelistwidget.cpp */,
+				4F7BFC6A0A2470CDA69EB74B /* palettelistwidgetitem.cpp */,
+				5AF896179C3AE18B93CDF483 /* palettemanager.cpp */,
+				379F354EA4995ADD83FA0385 /* palettewidget.cpp */,
+				DF517F90B494DD9BBFB9FDDD /* xmlserializable.cpp */,
+			);
+			name = prototype;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				928AA2F9F5B5C70CCA70654E /* qjpeg */,
+				4E6D2202CFE879C37115E7DF /* qgif */,
+				4C51326AB5B13470EA83256A /* qmng */,
+				C0BF05DADC4B0B703400F841 /* qsvg */,
+				CF36673E73B137A24CF329FE /* qtiff */,
+				6B5610B67C68462E67CF318C /* QtSvg */,
+				741BA7C2149FFB354E582BC4 /* QtXml */,
+				4E6E331D666A3A0BE5DD6B8C /* QtGui */,
+				DA138F75C9F545CDAE7FB264 /* Carbon.framework */,
+				821416211D63F190AAAD016A /* AppKit.framework */,
+				EDB78A80F6B7895312EDE49F /* QtNetwork */,
+				60EF245C130E8583D7F93F3C /* SystemConfiguration.framework */,
+				A818493B5DD1FF8A379EAF56 /* QtCore */,
+				27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		EEC299C65D5017EB9DD513B0 /* Sources [UIC] */ = {
+			isa = PBXGroup;
+			children = (
+				7380B14E07E2E005B8A37E69 /* editorform.ui */,
+				C1B5C7DE2A492338FB7A886F /* vtest.ui */,
+				B04EC06D4578CFE2899D2C6A /* prototype */,
+			);
+			name = "Sources [UIC]";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F124F4568A6F319CBB3D298E /* backgroundelement.cpp */,
+				54C5B54E5DB8D582FE38C2CA /* backgroundtool.cpp */,
+				654DF773A96EC8747374BB59 /* brushdrawingelement.cpp */,
+				7975311B81AD6F6DE199520E /* brushdrawingtool.cpp */,
+				8E291D50CFDBB2E92C8CD4BF /* brushstroke.cpp */,
+				155BFB4BF7986FE3A296F567 /* drawingelement.cpp */,
+				12B58950FD6F88F2A611329C /* drawingtool.cpp */,
+				4D051040CF69C95DDC7F897D /* drawingutils.cpp */,
+				1C45214F488EA3B455B5D526 /* editorform.cpp */,
+				3C8EBF4D06DEACC541EB578E /* editorscene.cpp */,
+				3F87B3F26F7CEAA4BBB0418A /* eraserelement.cpp */,
+				CA27511FD66477F3B9A4A7F7 /* erasertool.cpp */,
+				24CD27AB763F55D5A5A57425 /* eyedroppertool.cpp */,
+				45A730ACC771832B1282F387 /* hoverpoints.cpp */,
+				44727D57EC0517889C63CDB4 /* imageelement.cpp */,
+				C3510F827B1F93E1B8AC26E5 /* imagetool.cpp */,
+				118FCBAABA162BA17933C789 /* main.cpp */,
+				128D110D6C0FEF21F3652717 /* metainfoprovider.cpp */,
+				EF995B616E5BA617375BF19F /* mousedrawingelement.cpp */,
+				761FAEA2CA368A42C95030EF /* mousedrawingtool.cpp */,
+				CEB53C05F9EF3BA898D6DDED /* mtrandom.cpp */,
+				F5D80639C430A0EDF3D4ACB1 /* oilbrushelement.cpp */,
+				E253A708216DFB0E86AFED6B /* oilbrushtool.cpp */,
+				794203082DA9A77885133973 /* penelement.cpp */,
+				3903685B6DE7EC852CB61666 /* pentool.cpp */,
+				AC96A5281D9E80709AABBAF7 /* scenecursorlayer.cpp */,
+				3DD435951E4D1737387FB3EF /* settingsprovider.cpp */,
+				6BB4FCD03050153808BA3B04 /* simplebrushelement.cpp */,
+				FCC19F6DF8EDCA361343B283 /* simplebrushtool.cpp */,
+				46FD0ECE7EDCA64DF158267F /* sprayelement.cpp */,
+				F21D2A51117D5E8DA1EA73A5 /* spraytool.cpp */,
+				560D51B48145DFF4F9270EE7 /* svgelement.cpp */,
+				E0EA49D4076084A27321EB2A /* svgtool.cpp */,
+				DAD0F2934313A3EF4FDF5A64 /* textcursorpointer.cpp */,
+				4B4F5481BD4F1CB4C6F3FE6B /* textelement.cpp */,
+				A10EF4B5D97570E5DF44BE0C /* texttool.cpp */,
+				EC8D020DE1DD45AEB2885250 /* toolbox.cpp */,
+				DF801F69A7B3232126B22682 /* transformableelement.cpp */,
+				47361852C58D9F20499C11FC /* transformabletool.cpp */,
+				1B2DF560EDF54D40E6C7088A /* transformation.cpp */,
+				28F12F56B2618DB0FFD0AC50 /* undocommands.cpp */,
+				C5EBEE9573A454E72EC73501 /* varianthash.cpp */,
+				59D63E3F36A50AE79ECF4A82 /* vtest.cpp */,
+				CC2EB0575E98B1AB42B3E58F /* prototype */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D76A1A48E2B78942388E8CF /* Velasquez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B29CD00F7F65FF00DD13B6 /* Build configuration list for PBXNativeTarget "Velasquez" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Velasquez;
+			productName = Velasquez;
+			productReference = 18B29CBA0F7F65E000DD13B6 /* Velasquez.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "Velasquez" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* Velasquez */;
+			productRefGroup = 18B29CBB0F7F65E000DD13B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D76A1A48E2B78942388E8CF /* Velasquez */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt -f Velasquez.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt -f Velasquez.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90462B082DEFEFC1DD034FC /* backgroundelement.cpp in Build Sources */,
+				9D613E4F29E42AC28F08296C /* backgroundtool.cpp in Build Sources */,
+				6D3FB3C25DBA2390D2C80A2F /* brushdrawingelement.cpp in Build Sources */,
+				588F47421F1CBEB7D48296B4 /* brushdrawingtool.cpp in Build Sources */,
+				BBA7369290479FD9826AFA88 /* brushstroke.cpp in Build Sources */,
+				0BC779A8FBF91F98E4B327E7 /* drawingelement.cpp in Build Sources */,
+				2785A5CE69FFD61E50FC1690 /* drawingtool.cpp in Build Sources */,
+				12AAEFF563ACF45AD647A8AC /* drawingutils.cpp in Build Sources */,
+				62CB71C698A070A83C49E39B /* editorform.cpp in Build Sources */,
+				9BF9CFC3FB9F34671E84AD7E /* editorscene.cpp in Build Sources */,
+				A4EE415A1C12B84D6A7D12FF /* eraserelement.cpp in Build Sources */,
+				EE3FFDE219F07B914578D74F /* erasertool.cpp in Build Sources */,
+				71EB11E47A01495D14EBA423 /* eyedroppertool.cpp in Build Sources */,
+				1FD0E24BFF6E2C15BD7B9B3F /* hoverpoints.cpp in Build Sources */,
+				5279AC551377C88E427DE2E1 /* imageelement.cpp in Build Sources */,
+				AA3A585801B6057DEE49F906 /* imagetool.cpp in Build Sources */,
+				2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */,
+				9BB6D6BC1B0D09E6877B528F /* metainfoprovider.cpp in Build Sources */,
+				455D04F8EFCCADB846B8B563 /* mousedrawingelement.cpp in Build Sources */,
+				D74A6BF7F5A70BA686CBC4B2 /* mousedrawingtool.cpp in Build Sources */,
+				77D14C5E1C2E26AE751D3E44 /* mtrandom.cpp in Build Sources */,
+				180924731AA01AECBC89DC12 /* oilbrushelement.cpp in Build Sources */,
+				58A6264983ECE0E46CB947CC /* oilbrushtool.cpp in Build Sources */,
+				4458781DA1800DFD8709F1CF /* penelement.cpp in Build Sources */,
+				6854CD61E33EF02CC74C3CD2 /* pentool.cpp in Build Sources */,
+				AE537128CD03829099091C18 /* scenecursorlayer.cpp in Build Sources */,
+				EE91CEECE89CAF1BC315024E /* settingsprovider.cpp in Build Sources */,
+				C73B9583F805F5E580F5EC67 /* simplebrushelement.cpp in Build Sources */,
+				00EAB1589E15CCFAC90D1825 /* simplebrushtool.cpp in Build Sources */,
+				EEFC94B4816180F70E01F98D /* sprayelement.cpp in Build Sources */,
+				738CAEF4E155CF4DC7A86EA3 /* spraytool.cpp in Build Sources */,
+				6055C42B839C72FF82D1C0D8 /* svgelement.cpp in Build Sources */,
+				24A6F922102342535F3BF9C5 /* svgtool.cpp in Build Sources */,
+				307601D3457BAD4749D241C1 /* textcursorpointer.cpp in Build Sources */,
+				616072B3E0215223301E031A /* textelement.cpp in Build Sources */,
+				929793715C08087CD89F8B15 /* texttool.cpp in Build Sources */,
+				0F47D10FF0C0CDEFCBA60099 /* toolbox.cpp in Build Sources */,
+				24FAD3DE4FBF24DF87AA9901 /* transformableelement.cpp in Build Sources */,
+				8177C91F719100ECB31EDFA5 /* transformabletool.cpp in Build Sources */,
+				79FDC570B1B74D428C719EE9 /* transformation.cpp in Build Sources */,
+				A33A34857BEE2C6F8CA866D6 /* undocommands.cpp in Build Sources */,
+				DA20D11B6E5B5AF4B0688BBC /* varianthash.cpp in Build Sources */,
+				6BA3BAEC490BD1EA9906A216 /* vtest.cpp in Build Sources */,
+				76447AD2019B2849688D64D7 /* brushstyle.cpp in Build Sources */,
+				23BD11BBDD1D24D2B35AAD00 /* brushstylebutton.cpp in Build Sources */,
+				F5454DDA3F98C69B44D95DD6 /* brushstylewidget.cpp in Build Sources */,
+				CB2847B5C95EBE2B0D01D2F2 /* color.cpp in Build Sources */,
+				70D28EC4C88D2C5E82387C3C /* colorcontrol.cpp in Build Sources */,
+				14266A75088113F5FE5347A0 /* coloreditdialog.cpp in Build Sources */,
+				019A54713FF242EA26542B22 /* colorselectioncontrol.cpp in Build Sources */,
+				E9EEAF6F631389B7DBE20184 /* colorvolumewidget.cpp in Build Sources */,
+				E21C04DB18F9197BAE241045 /* colorwheelwidget.cpp in Build Sources */,
+				EA70FC0B446CE015C4FCBE0A /* colorwidget.cpp in Build Sources */,
+				7B2308E8020FC141D2E113BE /* palette.cpp in Build Sources */,
+				05817ACAB40025C3317140A1 /* palettelist.cpp in Build Sources */,
+				0F29FF9E67EC7A944A23F165 /* palettelistwidget.cpp in Build Sources */,
+				D1DBE0C72B92958EDB14CDC3 /* palettelistwidgetitem.cpp in Build Sources */,
+				F0DE5B02724AAEC19E88FE11 /* palettemanager.cpp in Build Sources */,
+				B43723698F5D328362A747AC /* palettewidget.cpp in Build Sources */,
+				AE1D54CE56DF1EFF514B1C9A /* xmlserializable.cpp in Build Sources */,
+				44C974841006D10D12AB1E6A /* moc_backgroundtool.cpp in Build Sources */,
+				768BD6B28924DE346CAF3A9D /* moc_brushdrawingtool.cpp in Build Sources */,
+				8C27E0EBF1CDF6463B9A5F34 /* moc_drawingtool.cpp in Build Sources */,
+				4259A6FF2C9AC724A760F23B /* moc_editorform.cpp in Build Sources */,
+				626874F4CDEEA1D6837A37B3 /* moc_editorscene.cpp in Build Sources */,
+				DC16A1D7E1F3D5B03EF4C191 /* moc_erasertool.cpp in Build Sources */,
+				D9266DFEC108C3AE617A3FDF /* moc_eyedroppertool.cpp in Build Sources */,
+				60F8207C8150687AC5093591 /* moc_hoverpoints.cpp in Build Sources */,
+				3D464D58605C7CF3B957C48D /* moc_imageelement.cpp in Build Sources */,
+				E0BAAD76D510BBAFC6DE4063 /* moc_imagetool.cpp in Build Sources */,
+				E3FF135848BB21E47CC8BA91 /* moc_mousedrawingtool.cpp in Build Sources */,
+				C73E9D252A0888939D28412B /* moc_oilbrushtool.cpp in Build Sources */,
+				7A56DD63CC36031DF6EFB9C9 /* moc_pentool.cpp in Build Sources */,
+				2F5865A2D7F5C7EC5F8C1B9B /* moc_scenecursorlayer.cpp in Build Sources */,
+				D68C57D3E7B16D857320CBB8 /* moc_settingsprovider.cpp in Build Sources */,
+				D90FEDEA6743E2FBA63E8785 /* moc_simplebrushtool.cpp in Build Sources */,
+				060ED94AFA8EA3344915D9D3 /* moc_spraytool.cpp in Build Sources */,
+				BD7D7343EF8D44ABCFE14F97 /* moc_svgelement.cpp in Build Sources */,
+				6611FDEE081687DB3FEAC7FB /* moc_svgtool.cpp in Build Sources */,
+				B1FC4216D999FFAEDAB3F823 /* moc_textcursorpointer.cpp in Build Sources */,
+				7467EE6DE3261B0A561B828C /* moc_textelement.cpp in Build Sources */,
+				A2B5FD63936DD2246B2CF9C9 /* moc_texttool.cpp in Build Sources */,
+				E46DE4086B05449D189A897C /* moc_toolbox.cpp in Build Sources */,
+				8B5C8DEB59A6A6C0287DFFC6 /* moc_transformableelement.cpp in Build Sources */,
+				02BA8F74CD1543AF3D99EDF8 /* moc_transformabletool.cpp in Build Sources */,
+				4ECE9609ED9C8C3DD4F9EFF6 /* moc_vtest.cpp in Build Sources */,
+				9835CA02DD8CB9481C24F4B6 /* moc_brushstylebutton.cpp in Build Sources */,
+				36CEEEBB120FB80E7FB4989D /* moc_brushstylewidget.cpp in Build Sources */,
+				F7AC3F51D13800EFBC0D22D5 /* moc_colorcontrol.cpp in Build Sources */,
+				957CE777B1883C21D3AD52D6 /* moc_coloreditdialog.cpp in Build Sources */,
+				C9E8FBE03407A251437B6785 /* moc_colorselectioncontrol.cpp in Build Sources */,
+				14DF00C0DC32AE1ABC9727AC /* moc_colorvolumewidget.cpp in Build Sources */,
+				44AB5FE5C94A52387927000A /* moc_colorwheelwidget.cpp in Build Sources */,
+				DF4B4F056CD7BD2225D12457 /* moc_colorwidget.cpp in Build Sources */,
+				DF3080751D8A58F5E9CE99E7 /* moc_palettelistwidget.cpp in Build Sources */,
+				CBD77CE39E893721A2C94C41 /* moc_palettelistwidgetitem.cpp in Build Sources */,
+				54E69BE854277ED5949F6A25 /* moc_palettemanager.cpp in Build Sources */,
+				A28CBC1AC7376740116BCC9F /* moc_palettewidget.cpp in Build Sources */,
+				F668019DF68916E4529CE1A2 /* qrc_vtest.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18B29CCA0F7F65E100DD13B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Developer/Qt/include/QtCore,
+					/Developer/Qt/include/QtNetwork,
+					/Developer/Qt/include/QtGui,
+					/Developer/Qt/include/QtXml,
+					/Developer/Qt/include/QtSvg,
+					/Developer/Qt/include,
+					.,
+					prototype,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/Developer/Qt/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Developer/Qt/lib,
+					/Developer/Qt/plugins/imageformats,
+					/Developer/Qt/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Developer/Qt/lib",
+					"-L/Developer/Qt/plugins/imageformats",
+					"-L/Developer/Qt/lib",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Velasquez;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		18B29CCB0F7F65E100DD13B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Developer/Qt/include/QtCore,
+					/Developer/Qt/include/QtNetwork,
+					/Developer/Qt/include/QtGui,
+					/Developer/Qt/include/QtXml,
+					/Developer/Qt/include/QtSvg,
+					/Developer/Qt/include,
+					.,
+					prototype,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/Developer/Qt/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Developer/Qt/lib,
+					/Developer/Qt/plugins/imageformats,
+					/Developer/Qt/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Developer/Qt/lib",
+					"-L/Developer/Qt/plugins/imageformats",
+					"-L/Developer/Qt/lib",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Velasquez;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		18B29CCC0F7F65E100DD13B6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/apple/Documents/Projects/Local/InstantArt/trunk/Velasquez/Qt;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Developer/Qt/include/QtCore,
+					/Developer/Qt/include/QtNetwork,
+					/Developer/Qt/include/QtGui,
+					/Developer/Qt/include/QtXml,
+					/Developer/Qt/include/QtSvg,
+					/Developer/Qt/include,
+					.,
+					prototype,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/Developer/Qt/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Developer/Qt/lib,
+					/Developer/Qt/plugins/imageformats,
+					/Developer/Qt/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-Os",
+					"-Wall",
+					"-W",
+					"-DQT_NO_DEBUG",
+					"-DQT_SVG_LIB",
+					"-DQT_XML_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Developer/Qt/lib",
+					"-L/Developer/Qt/plugins/imageformats",
+					"-L/Developer/Qt/lib",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Velasquez;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B29CD00F7F65FF00DD13B6 /* Build configuration list for PBXNativeTarget "Velasquez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B29CCA0F7F65E100DD13B6 /* Debug */,
+				18B29CCB0F7F65E100DD13B6 /* Release */,
+				18B29CCC0F7F65E100DD13B6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "Velasquez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

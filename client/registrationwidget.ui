@@ -1,0 +1,795 @@
+<ui version="4.0" >
+ <class>RegistrationWidgetClass</class>
+ <widget class="QWidget" name="RegistrationWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <widget class="QFrame" name="frame_2" >
+   <property name="geometry" >
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>370</width>
+     <height>249</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth" >
+    <number>0</number>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" >
+    <property name="spacing" >
+     <number>3</number>
+    </property>
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="topTitleFrame" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth" >
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" >
+       <property name="bottomMargin" >
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="titleLabel" >
+         <property name="accessibleName" >
+          <string>redLabel</string>
+         </property>
+         <property name="text" >
+          <string>Title</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" >
+         <property name="spacing" >
+          <number>0</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer" >
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>40</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3" >
+           <property name="accessibleName" >
+            <string>redLabel</string>
+           </property>
+           <property name="text" >
+            <string>* </string>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2" >
+           <property name="accessibleName" >
+            <string>greyLabel</string>
+           </property>
+           <property name="text" >
+            <string>- </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelMandatoryFields" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>MandatoryFields</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4" >
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame" >
+      <property name="frameShape" >
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth" >
+       <number>0</number>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4" >
+       <property name="spacing" >
+        <number>5</number>
+       </property>
+       <property name="margin" >
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout" >
+         <property name="leftMargin" >
+          <number>0</number>
+         </property>
+         <property name="topMargin" >
+          <number>9</number>
+         </property>
+         <property name="rightMargin" >
+          <number>8</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing" >
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing" >
+          <number>5</number>
+         </property>
+         <item row="0" column="2" >
+          <widget class="QLineEdit" name="nameEdit" >
+           <property name="maxLength" >
+            <number>256</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2" >
+          <widget class="QLineEdit" name="password2Edit" >
+           <property name="maxLength" >
+            <number>32</number>
+           </property>
+           <property name="echoMode" >
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2" >
+          <layout class="QVBoxLayout" name="verticalLayout_3" >
+           <property name="spacing" >
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QCheckBox" name="receiveNewsCheckBox" >
+             <property name="accessibleName" >
+              <string>whiteLabel</string>
+             </property>
+             <property name="text" >
+              <string>NewsAndOffersCheckBox</string>
+             </property>
+             <property name="checked" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="iAcceptCheckBox" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="accessibleName" >
+              <string>whiteLabel</string>
+             </property>
+             <property name="text" >
+              <string>I accept</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2" >
+             <property name="spacing" >
+              <number>0</number>
+             </property>
+             <property name="bottomMargin" >
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6" >
+               <property name="spacing" >
+                <number>4</number>
+               </property>
+               <property name="leftMargin" >
+                <number>0</number>
+               </property>
+               <property name="rightMargin" >
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="termOfUseButton" >
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font" >
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                   <underline>true</underline>
+                   <strikeout>false</strikeout>
+                  </font>
+                 </property>
+                 <property name="cursor" >
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="accessibleName" >
+                  <string>smallRedButton</string>
+                 </property>
+                 <property name="text" >
+                  <string>terms of use</string>
+                 </property>
+                 <property name="flat" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="andLabel" >
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="accessibleName" >
+                  <string>whiteLabel</string>
+                 </property>
+                 <property name="text" >
+                  <string>and</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="privacyPolicyButton" >
+                 <property name="sizePolicy" >
+                  <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font" >
+                  <font>
+                   <family>MS Shell Dlg 2</family>
+                   <pointsize>8</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                   <underline>true</underline>
+                   <strikeout>false</strikeout>
+                  </font>
+                 </property>
+                 <property name="cursor" >
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="accessibleName" >
+                  <string>smallRedButton</string>
+                 </property>
+                 <property name="text" >
+                  <string>privacy policy</string>
+                 </property>
+                 <property name="flat" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_4" >
+                 <property name="orientation" >
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0" >
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="2" >
+          <widget class="QLineEdit" name="passwordEdit" >
+           <property name="maxLength" >
+            <number>32</number>
+           </property>
+           <property name="echoMode" >
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2" >
+          <widget class="QLineEdit" name="loginEdit" >
+           <property name="maxLength" >
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" >
+          <widget class="QLabel" name="nameLabel" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>Name</string>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buddy" >
+            <cstring>nameEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" >
+          <widget class="QLabel" name="loginLabel" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>Login</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buddy" >
+            <cstring>loginEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" >
+          <widget class="QLabel" name="labelRequest_8" >
+           <property name="accessibleName" >
+            <string>redLabel</string>
+           </property>
+           <property name="text" >
+            <string>* </string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" >
+          <widget class="QLabel" name="passwordLabel" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>Password</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buddy" >
+            <cstring>passwordEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" >
+          <widget class="QLabel" name="labelRequest_9" >
+           <property name="accessibleName" >
+            <string>redLabel</string>
+           </property>
+           <property name="text" >
+            <string>*</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" >
+          <widget class="QLabel" name="password2Label" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>Password2</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buddy" >
+            <cstring>password2Edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" >
+          <widget class="QLabel" name="labelRequest_7" >
+           <property name="accessibleName" >
+            <string>redLabel</string>
+           </property>
+           <property name="text" >
+            <string>*</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" >
+          <widget class="QLabel" name="emailLabel" >
+           <property name="accessibleName" >
+            <string>whiteLabel</string>
+           </property>
+           <property name="text" >
+            <string>Email</string>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+           </property>
+           <property name="buddy" >
+            <cstring>emailEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2" >
+          <widget class="QLineEdit" name="emailEdit" />
+         </item>
+         <item row="4" column="1" >
+          <widget class="QLabel" name="labelRequest_11" >
+           <property name="accessibleName" >
+            <string>redLabel</string>
+           </property>
+           <property name="text" >
+            <string>*</string>
+           </property>
+           <property name="textFormat" >
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_5" >
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="bottomLinksFrame" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth" >
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" >
+       <property name="spacing" >
+        <number>30</number>
+       </property>
+       <property name="topMargin" >
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_2" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>10</width>
+           <height>14</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="backButton" >
+         <property name="font" >
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor" >
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="accessibleName" >
+          <string>blueButton</string>
+         </property>
+         <property name="text" >
+          <string>Back</string>
+         </property>
+         <property name="flat" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="nextButton" >
+         <property name="font" >
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor" >
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="accessibleName" >
+          <string>blueButton</string>
+         </property>
+         <property name="text" >
+          <string>Next</string>
+         </property>
+         <property name="default" >
+          <bool>true</bool>
+         </property>
+         <property name="flat" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>10</width>
+           <height>14</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="transBorder_4" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>0</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>16777215</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="accessibleName" >
+    <string>transBorder</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="transBorder" >
+   <property name="geometry" >
+    <rect>
+     <x>386</x>
+     <y>2</y>
+     <width>2</width>
+     <height>263</height>
+    </rect>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>2</width>
+     <height>263</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>2</width>
+     <height>263</height>
+    </size>
+   </property>
+   <property name="accessibleName" >
+    <string>transBorder</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth" >
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="transBorder_2" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>2</y>
+     <width>2</width>
+     <height>263</height>
+    </rect>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>2</width>
+     <height>263</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>2</width>
+     <height>263</height>
+    </size>
+   </property>
+   <property name="accessibleName" >
+    <string>transBorder</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="transBorder_3" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>265</y>
+     <width>401</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>0</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>16777215</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="accessibleName" >
+    <string>transBorder</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="0" margin="0" />
+ <tabstops>
+  <tabstop>nameEdit</tabstop>
+  <tabstop>loginEdit</tabstop>
+  <tabstop>passwordEdit</tabstop>
+  <tabstop>password2Edit</tabstop>
+  <tabstop>receiveNewsCheckBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="moodbox.qrc" />
+ </resources>
+ <connections/>
+</ui>

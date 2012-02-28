@@ -1,0 +1,63 @@
+<ui version="4.0" >
+ <class>VTestClass</class>
+ <widget class="QMainWindow" name="VTestClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>VTest</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" />
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest" >
+    <property name="title" >
+     <string>Test</string>
+    </property>
+    <addaction name="editorFormAction" />
+    <addaction name="separator" />
+    <addaction name="exitAction" />
+   </widget>
+   <addaction name="menuTest" />
+  </widget>
+  <widget class="QToolBar" name="mainToolBar" >
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar" />
+  <action name="editorFormAction" >
+   <property name="text" >
+    <string>Editor Form</string>
+   </property>
+  </action>
+  <action name="exitAction" >
+   <property name="text" >
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="viewerFormAction" >
+   <property name="text" >
+    <string>Viewer Form</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

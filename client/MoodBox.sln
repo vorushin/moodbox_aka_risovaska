@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoodBox", "MoodBox.vcproj", "{CB71D7C0-E3A5-4D70-AC6C-6BE80703E74D}"
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB71D7C0-E3A5-4D70-AC6C-6BE80703E74D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB71D7C0-E3A5-4D70-AC6C-6BE80703E74D}.Debug|Win32.Build.0 = Debug|Win32
+		{CB71D7C0-E3A5-4D70-AC6C-6BE80703E74D}.Release|Win32.ActiveCfg = Release|Win32
+		{CB71D7C0-E3A5-4D70-AC6C-6BE80703E74D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

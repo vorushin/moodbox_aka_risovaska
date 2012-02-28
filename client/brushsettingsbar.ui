@@ -1,0 +1,197 @@
+<ui version="4.0" >
+ <class>BrushSettingsBarClass</class>
+ <widget class="QWidget" name="BrushSettingsBarClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>82</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <property name="leftMargin" >
+    <number>0</number>
+   </property>
+   <property name="topMargin" >
+    <number>0</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="MoodBox::PaletteWidget2" native="1" name="paletteWidget" >
+       <property name="minimumSize" >
+        <size>
+         <width>47</width>
+         <height>139</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>47</width>
+         <height>139</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>ColorsWidgetHint</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="paletteManagerButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>47</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>47</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>PalettesButtonHint</string>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+       <property name="arrowType" >
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <property name="bottomMargin" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="MoodBox::BrushSizeButton" name="sizeButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>SizeButtonHint</string>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="MoodBox::BrushAlphaButton" name="alphaButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>TransparencyButtonHint</string>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>41</width>
+         <height>29</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::PaletteWidget2</class>
+   <extends>QWidget</extends>
+   <header>palettewidget2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::BrushSizeButton</class>
+   <extends>QToolButton</extends>
+   <header>brushstylebuttons.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::BrushAlphaButton</class>
+   <extends>QToolButton</extends>
+   <header>brushstylebuttons.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="moodbox.qrc" />
+ </resources>
+ <connections/>
+</ui>

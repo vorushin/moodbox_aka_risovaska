@@ -1,0 +1,16 @@
+Информация обо всех таблицах (в том числе кол-во записей):
+ets:i().
+
+Показать содержимое таблицы в консоль:
+ets:i(notification_user).
+
+Информация об одной таблице:
+ets:info(notification_user).
+
+Удалить все из таблицы
+ets:info(notification_user).
+
+или так:
+ets:match_delete(notification_queue, {'_', '_', '_', '_', '_'}).
+
+ets:match_delete(notification_process, {'_', '_', '_'}).

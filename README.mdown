@@ -1,0 +1,18 @@
+# Structure
+
+## client
+
+Windows/Mac/Linux-compatible client app. C++, QT.
+
+## server
+
+Server-side written in Erlang.
+
+## velasquez
+
+Drawing engine. Used in **client**. C++, QT.
+
+# License
+
+Program code - MIT licensed.
+Clip arts & graphics - CC BY licensed.

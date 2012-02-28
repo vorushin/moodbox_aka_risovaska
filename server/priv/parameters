@@ -1,0 +1,5 @@
+MoodBox_Mode=single_server
+MoodBox_InitialPublicServerAddress=192.168.0.175
+MoodBox_IsHttpEnabled=false
+MoodBox_HttpPort=8888
+

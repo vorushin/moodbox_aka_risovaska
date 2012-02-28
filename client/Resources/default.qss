@@ -1,0 +1,1195 @@
+
+/*Tv Widgets**************************************/
+
+#tvFrame
+{
+	border-width: 14px;
+	border-image: url(:/MoodBox/Resources/panel_main.png) 14 14 14 14 stretch, stretch;
+	padding: -14px;
+}
+
+#buttonsFrame
+{
+	margin: 5 14 0 14;
+	border: none;
+}
+
+#PaletteListWidgetItemClass
+{
+	border-width: 1px;
+	border-image: url(:/MoodBox/Resources/palette_panel.png) 1 1 1 1 stretch, stretch;
+}
+
+#PaletteListWidgetItemClass:hover
+{
+	border-width: 1px;
+	border-image: url(:/MoodBox/Resources/palette_panel_selected.png) 1 1 1 1 stretch, stretch;
+}
+
+#tvBorderMainFrame
+{
+	margin: 0 14 0 14;
+
+	border-width: 15 12 14 12;
+	border-image: url(:/MoodBox/Resources/panel_main_border.png) 15 12 14 12 stretch, stretch;
+}
+
+QFrame[accessibleName="transBorder"]
+{
+	border: none;
+	background-color: rgba(0, 0, 0, 40%);
+}
+
+#newContactListWidget
+{
+	background: url(:/MoodBox/Resources/tv_background.png);
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#MainWindowClass
+{
+	min-width: 440px;
+	min-height: 367px;
+	max-width: 440px;
+	max-height: 367px;
+}
+
+QPushButton[accessibleName="obscenePushButton"]
+{
+	min-width: 40px;
+	min-height: 40px;
+	max-width: 40px;
+	max-height: 40px;
+	
+	border: none;
+	
+	image: url(:/MoodBox/Resources/obscene_button.png);
+}
+
+QPushButton[accessibleName="obscenePushButton"]:hover
+{
+	image: url(:/MoodBox/Resources/obscene_button_hover.png);
+}
+
+QPushButton[accessibleName="deleteMessagePushButton"]
+{
+	min-width: 40px;
+	min-height: 40px;
+	max-width: 40px;
+	max-height: 40px;
+	
+	border: none;
+	
+	image: url(:/MoodBox/Resources/delete_button.png);
+}
+
+QPushButton[accessibleName="deleteMessagePushButton"]:hover
+{
+	image: url(:/MoodBox/Resources/delete_button_hover.png);
+}
+
+/*Dialogs**************************************/
+
+#ChannelListItemClass QLabel#titleLabel
+{
+	color: rgb(0, 0, 0);
+	font: normal bold 11px "Tahoma";
+}
+
+#ChannelListItemClass QLabel#descriptionLabel
+{
+	color: rgb(127, 127, 127);
+	font: normal normal 11px "Tahoma";
+}
+
+#channelList
+{
+	border: 1px solid rgb(189, 189, 189);
+}
+
+QWidget#ColorEditorClass #colorFrame
+{
+	border: none;
+	background: url(:/MoodBox/Resources/panel_color_frame.png);
+} 
+
+#styledFrame
+{
+	border-width: 9;
+	border-image: url(:/MoodBox/Resources/panel.png) 9 9 9 9 repeat repeat;
+	padding: -9px;
+}
+
+#styledHistoryFrame
+{
+	border-width: 30;
+	border-image: url(:/MoodBox/Resources/panel_history.png) 30 30 30 30 repeat repeat;
+	padding: -30px;
+}
+
+#styledContactsFrame
+{
+	border-width: 12;
+	border-image: url(:/MoodBox/Resources/panel_contacts.png) 12 12 12 12 repeat repeat;
+	padding: -12px;
+}
+
+#mainDialogFrame, #publishedFrame, #publishingFrame
+{
+	background: rgb(240, 240, 240);
+	border-top: 1px solid rgb(182, 182, 182);
+	border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+#ClipartWindowClass #widget, #ClipartWindowClass #widget_2
+{
+	background-color: rgb(240, 240, 240);
+}
+
+#drawFrame
+{
+	border-width: 1 13 3 1;
+	border-image: url(:/MoodBox/Resources/border_draw.png) 1 13 3 1 stretch stretch;
+}
+
+#tvBarFrame
+{
+	min-height: 27px;
+	max-height: 27px;
+	
+	border: none;
+	background-image: url(:/MoodBox/Resources/tv_bar.png);
+	background-repeat: repeat-x;
+}
+
+#tvBarShadow
+{
+	min-height: 4px;
+	max-height: 4px;
+	
+	border: none;
+	
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                 stop:0 rgba(4, 5, 9, 44%), stop: 0.25 rgba(4, 5, 9, 27%),
+                 stop:0.5 rgba(4, 5, 9, 14%), stop:1 rgba(4, 5, 9, 6%)); /**/
+}
+
+#clBottomFrame #mottoLabel
+{
+	color: white;
+	font: normal normal 10px "Verdana";
+	
+	border-width: 4px;
+	border-image: url(:/MoodBox/Resources/motto_background.png) 4 4 4 4 stretch stretch;
+}
+
+QPlainTextEdit#messageEdit
+{
+	border: 1px solid rgb(182, 182, 182);
+}
+
+/*Labels*****************************************/
+
+QLabel[accessibleName="whiteLabel"],
+QCheckBox[accessibleName="whiteLabel"]
+{
+	color: white;
+	font: bold normal 11px "Verdana";
+}
+
+QLabel[accessibleName="redLabel"],
+QCheckBox[accessibleName="redLabel"]
+{
+	color: rgb(255, 0, 90);
+	font: bold normal 13px "Verdana";
+}
+
+QLabel[accessibleName="greyLabel"],
+QCheckBox[accessibleName="greyLabel"]
+{
+	color: grey;
+	font: bold normal 13px "Verdana";
+}
+
+QLabel[accessibleName="clBlueLabel"]
+{
+	color: rgb(0, 211, 253);
+	font: bold normal 13px "Verdana";
+}
+
+QLabel[accessibleName="titleLabel"]
+{
+	font: normal normal 14px "Verdana";
+}
+
+#AuthorizationDialogClass QLabel#authUserNameLabel
+{
+	color: rgb(127, 127, 127);
+	font: normal bold 11px "Verdana";
+}
+
+#MainWindowClass QLabel#chatLabel
+{
+	color: rgb(58, 172, 240);
+	font: bold normal 14px "Verdana";
+}
+
+#MainWindowClass #userNameButton
+{
+	border: none;
+	color: rgb(220, 220, 220);
+	font: normal bold 11px "Verdana";
+}
+
+#MainWindowClass QLabel[accessibleName="barGrayLabel"]
+{
+	color: rgb(200, 200, 200);
+	font: normal normal 11px "Verdana";
+}
+
+/*Check Box****************************************************/
+
+QCheckBox 
+{
+     spacing: 5px;
+}
+
+QCheckBox::indicator 
+{
+	width: 13px;
+	height: 13px;
+}
+
+QCheckBox::indicator:unchecked 
+{
+	image: url(:/MoodBox/Resources/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover 
+{
+	image: url(:/MoodBox/Resources/checkbox_unchecked_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed 
+{
+	image: url(:/MoodBox/Resources/checkbox_unchecked_pressed.png);
+}
+
+QCheckBox::indicator:checked
+{
+	image: url(:/MoodBox/Resources/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:hover 
+{
+	image: url(:/MoodBox/Resources/checkbox_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed 
+{
+	image: url(:/MoodBox/Resources/checkbox_checked_pressed.png);
+}
+
+QCheckBox::indicator:unchecked:disabled, QCheckBox::indicator:checked:disabled
+{
+	image: url(:/MoodBox/Resources/checkbox_disabled.png);
+}
+
+/*Table***********************************************/
+
+QTableWidget 
+{
+	alternate-background-color: rgb(230, 230, 230);
+/*	selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5, stop: 0 #FF92BB, stop: 1 white);
+*/
+}
+
+/*Scroll bars*****************************************/
+
+QScrollBar:vertical
+{
+	border-width: 5 1 4 1;
+	border-image: url(:/MoodBox/Resources/scrollbar_vertical.png) 5 1 4 1 stretch repeat;
+
+	width: 11px;
+}
+
+QScrollBar::handle:vertical
+{
+	min-height: 50px;
+	
+	margin: 0px 1px 0px 1px;
+	subcontrol-origin: margin;
+	
+	border-width: 6 1 6 1;
+	border-image: url(:/MoodBox/Resources/scrollbar_vertical_slider.png) 6 1 6 1 stretch repeat;
+}
+
+QScrollBar::handle:vertical:disabled
+{	
+	border-image: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical 
+{
+	background: none;
+}
+
+QScrollBar::sub-line:vertical
+{
+	background: none;
+	height: 0px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical
+{
+	background: none;
+	height: 0px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+#NewContactListWindowClass QScrollBar:vertical
+{
+	border-width: 0 2 0 2;
+	border-image: url(:/MoodBox/Resources/cl_scrollbar_vertical_page.png) 0 2 0 2 stretch repeat;
+
+	width: 13px;
+}
+
+#FindPeopleFrameClass QScrollBar:vertical
+{
+	border-width: 5 1 4 1;
+	border-image: url(:/MoodBox/Resources/scrollbar_vertical.png) 5 1 4 1 stretch repeat;
+
+	width: 11px;
+}
+
+#FindPeopleFrameClass QScrollBar::handle:vertical
+{
+	min-height: 50px;
+	
+	margin: 0px 1px 0px 1px;
+	subcontrol-origin: margin;
+	
+	border-width: 6 1 6 1;
+	border-image: url(:/MoodBox/Resources/scrollbar_vertical_slider.png) 6 1 6 1 stretch repeat;
+}
+
+#NewContactListWindowClass QScrollBar::handle:vertical
+{
+	min-height: 50px;
+	
+	margin: 0px 2px 0px 2px;
+	subcontrol-origin: margin;
+	
+	border-width: 6 1 6 1;
+	border-image: url(:/MoodBox/Resources/scrollbar_vertical_slider.png) 6 1 6 1 stretch repeat;
+}
+
+/*Buttons******************************/
+
+
+/*rect button********/
+
+QPushButton[accessibleName="rectButton"],
+QToolButton[accessibleName="rectButton"]
+{
+	min-width: 50px;
+	min-height: 12px;
+	max-height: 12px;
+	
+	border-width: 9px;
+	border-image: url(:/MoodBox/Resources/button.png) 9 9 9 9 stretch stretch;
+}
+
+QPushButton[accessibleName="rectButton"]:hover,
+QToolButton[accessibleName="rectButton"]:hover
+{
+	border-image: url(:/MoodBox/Resources/button_hover.png) 9 9 9 9 stretch stretch;
+}
+
+QPushButton[accessibleName="rectButton"]:pressed,
+QPushButton[accessibleName="rectButton"]:checked,
+QToolButton[accessibleName="rectButton"]:pressed,
+QToolButton[accessibleName="rectButton"]:checked
+{
+	color: white;
+	border-image: url(:/MoodBox/Resources/button_pressed.png) 9 9 9 9 stretch stretch;
+}
+
+/*big rect button********/
+
+QPushButton[accessibleName="bigRectButton"],
+QToolButton[accessibleName="bigRectButton"]
+{
+	min-width: 67px;
+	min-height: 14px;
+	max-height: 14px;
+	
+	border-width: 9px;
+	border-image: url(:/MoodBox/Resources/button.png) 9 9 9 9 stretch stretch;
+}
+
+QPushButton[accessibleName="bigRectButton"]:hover,
+QToolButton[accessibleName="bigRectButton"]:hover
+{
+	border-image: url(:/MoodBox/Resources/button_hover.png) 9 9 9 9 stretch stretch;
+}
+
+QPushButton[accessibleName="bigRectButton"]:pressed,
+QPushButton[accessibleName="bigRectButton"]:checked,
+QToolButton[accessibleName="bigRectButton"]:pressed,
+QToolButton[accessibleName="bigRectButton"]:checked
+{
+	color: white;
+	border-image: url(:/MoodBox/Resources/button_pressed.png) 9 9 9 9 stretch stretch;
+}
+
+/*round button********/
+
+QToolButton[accessibleName="roundButton"]
+{
+	min-width: 38px;
+	min-height: 38px;
+	max-width: 38px;
+	max-height: 38px;
+	
+	border: none;
+	background-image: url(:/MoodBox/Resources/button_round.png);
+	background-origin: margin;
+	background-clip: margin;
+}
+
+QToolButton[accessibleName="roundButton"]:hover
+{
+	background-image: url(:/MoodBox/Resources/button_round_hover.png);
+}
+
+QToolButton[accessibleName="roundButton"]:pressed, 
+QToolButton[accessibleName="roundButton"]:checked
+{
+	background-image: url(:/MoodBox/Resources/button_round_pressed.png);
+}
+
+QToolButton[accessibleName="transparentButton"]
+{
+	border: none;
+}
+
+QPushButton[accessibleName="bigBlueButton"]
+{
+	border: none;
+	color: rgb(0, 142, 224);
+	font: bold 17px "Verdana";
+}
+
+QPushButton[accessibleName="bigBlueButton"]:hover
+{
+	color: rgb(106, 200, 255);
+}
+
+QPushButton[accessibleName="blueButton"]
+{
+	border: none;
+	color: rgb(0, 142, 224);
+	font: bold 12px "Verdana";
+}
+
+QPushButton[accessibleName="blueButton"]:hover
+{
+	color: rgb(106, 200, 255);
+}
+
+QPushButton[accessibleName="blueButton14"]
+{
+	border: none;
+	color: rgb(0, 142, 224);
+	font: bold 14px "Verdana";
+}
+
+QPushButton[accessibleName="blueButton14"]:hover
+{
+	color: rgb(106, 200, 255);
+}
+
+QPushButton[accessibleName="blueButton8"]
+{
+	border: none;
+	color: rgb(0, 142, 224);
+	font: bold 8px "Verdana";
+}
+
+QPushButton[accessibleName="blueButton8"]:hover
+{
+	color: rgb(106, 200, 255);
+}
+
+
+QPushButton[accessibleName="redButton"]
+{
+	border: none;
+	color: #FF005A;
+	font: bold 13px "Verdana";
+}
+
+QPushButton[accessibleName="redButton"]:hover
+{
+	color: #FD83AE;
+}
+
+QPushButton[accessibleName="smallRedButton"]
+{
+	border: none;
+	color: #FF005A;
+	font: bold 11px "Verdana";
+}
+
+QPushButton[accessibleName="smallRedButton"]:hover
+{
+	color: #FD83AE;
+}
+
+/* ---------------------------------------------- */
+#italicButton, #boldButton, #underlineButton
+{
+	min-width: 10px;
+	border-width: 7px;	
+}
+
+#savePaletteButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/palette_add.png);
+}
+#savePaletteButton:hover
+{
+	image: url(:/MoodBox/Resources/palette_add_hover.png);
+}
+#savePaletteButton:pressed, #savePaletteButton:checked
+{
+	image: url(:/MoodBox/Resources/palette_add_pressed.png);
+}
+
+#deletePaletteButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/palette_delete.png);
+}
+#deletePaletteButton:hover
+{
+	image: url(:/MoodBox/Resources/palette_delete_hover.png);
+}
+#deletePaletteButton:pressed, #deletePaletteButton:checked
+{
+	image: url(:/MoodBox/Resources/palette_delete_pressed.png);
+}
+
+#paletteManagerButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/palette_show_button.png);
+}
+#paletteManagerButton:hover
+{
+	image: url(:/MoodBox/Resources/palette_show_button_hover.png);
+}
+#paletteManagerButton:pressed, #paletteManagerButton:checked
+{
+	image: url(:/MoodBox/Resources/palette_show_button_pressed.png);
+}
+
+#sendButton
+{
+	min-width: 130px;
+	min-height: 20px;
+}
+
+#findButton
+{
+	border-width: 5 0 5 5;
+	border-image: url(:/MoodBox/Resources/button.png) 5 9 5 5 stretch stretch;
+	
+	padding-top: 2px;
+	
+	image: url(:/MoodBox/Resources/button_findfriends_ico.png);
+}
+#findButton:hover
+{
+	border-image: url(:/MoodBox/Resources/button_hover.png) 5 9 5 5 stretch stretch;
+}
+#findButton:pressed, #findButton:checked
+{
+	border-image: url(:/MoodBox/Resources/button_pressed.png) 5 9 5 5 stretch stretch;
+	image: url(:/MoodBox/Resources/button_findfriends_pressed_ico.png);
+}
+
+#setupToolButton
+{	
+	border-width: 5 5 5 0;
+	border-image: url(:/MoodBox/Resources/button.png) 5 5 5 9 stretch stretch;
+	
+	padding-top: 2px;
+	
+	image: url(:/MoodBox/Resources/button_settings_ico.png);
+}
+#setupToolButton:hover
+{
+	border-image: url(:/MoodBox/Resources/button_hover.png) 5 5 5 9 stretch stretch;
+}
+#setupToolButton:pressed, #setupToolButton:checked
+{
+	border-image: url(:/MoodBox/Resources/button_pressed.png) 5 5 5 9 stretch stretch;
+	image: url(:/MoodBox/Resources/button_settings_pressed_ico.png);
+}
+
+#sizeButton, #alphaButton
+{
+	min-width: 41px;
+	min-height: 29px;
+	max-width: 41px;
+	max-height: 29px;
+	
+	border-width: 9px;
+	border-image: url(:/MoodBox/Resources/button.png) 9 9 9 9 stretch stretch;
+	padding: -8px;
+}
+#sizeButton:hover, #alphaButton:hover
+{
+	border-image: url(:/MoodBox/Resources/button_hover.png) 9 9 9 9 stretch stretch;
+}
+#sizeButton:pressed, #sizeButton:checked, #alphaButton:pressed, #alphaButton:checked
+{
+	border-image: url(:/MoodBox/Resources/button_pressed.png) 9 9 9 9 stretch stretch;
+}
+
+#closeToolButton
+{
+	max-width: 15px;
+	max-height: 15px;
+	min-width: 15px;
+	min-height: 15px;
+	image: url(:/MoodBox/Resources/button_close.png);
+}
+#closeToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_close_hover.png);
+}
+#closeToolButton:pressed
+{
+	image: url(:/MoodBox/Resources/button_close_pressed.png);
+}
+
+#tvCloseButton
+{
+	max-width: 27px;
+	max-height: 14px;
+	min-width: 27px;
+	min-height: 14px;
+	image: url(:/MoodBox/Resources/button_tv_close.png);
+}
+
+#ClipartWindowClass #closeToolButton
+{
+	margin: 4px 4px 0 0;
+}
+#ClipartWindowClass QTabWidget QToolButton
+{
+	icon-size: 24px;
+}
+
+#ClipartWindowClass QTabWidget QToolButton
+{
+	min-width: 38px;
+	min-height: 38px;
+	max-width: 38px;
+	max-height: 38px;
+	
+	border: none;
+	background-image: url(:/MoodBox/Resources/button_round.png);
+	background-origin: margin;
+	background-clip: margin;
+	
+	padding-left: 1px;
+}
+
+#ClipartWindowClass QTabWidget QToolButton:hover
+{
+	background-image: url(:/MoodBox/Resources/button_round_hover.png);
+}
+
+#ClipartWindowClass QTabWidget QToolButton:pressed, #ClipartWindowClass QTabWidget QToolButton:checked
+{
+	background-image: url(:/MoodBox/Resources/button_round_pressed.png);
+	padding-left: 1px;
+}
+
+#historyButton
+{
+	padding-left: 1px;
+	image: url(:/MoodBox/Resources/history_icon.png);
+}
+#historyButton:pressed, #historyButton:checked
+{
+	image: url(:/MoodBox/Resources/history_icon_pressed.png);
+}
+#historyButton:disabled
+{
+	image: url(:/MoodBox/Resources/history_icon_disabled.png);
+}
+
+QToolButton#nextButton
+{
+	image: url(:/MoodBox/Resources/right_icon.png);
+}
+QToolButton#nextButton:pressed, QToolButton#nextToolButton:checked
+{
+	image: url(:/MoodBox/Resources/right_icon_pressed.png);
+}
+QToolButton#nextButton:disabled
+{
+	image: url(:/MoodBox/Resources/right_icon_disabled.png);
+}
+
+#previousButton
+{
+	image: url(:/MoodBox/Resources/left_icon.png);
+}
+#previousButton:pressed, #previousToolButton:checked
+{
+	image: url(:/MoodBox/Resources/left_icon_pressed.png);
+}
+#previousButton:disabled
+{
+	image: url(:/MoodBox/Resources/left_icon_disabled.png);
+}
+
+#contactListButton
+{
+	min-width: 32px;
+	min-height: 32px;
+	
+	border: none;
+	
+	padding: 0px;
+}
+
+#penToolButton
+{
+	image: url(:/MoodBox/Resources/button_pen.png);
+}
+#penToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_pen_hover.png);
+}
+#penToolButton:checked, #penToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#simplebrushToolButton
+{
+	image: url(:/MoodBox/Resources/button_oilbrush_simple.png);
+}
+#simplebrushToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_oilbrush_simple_hover.png);
+}
+#simplebrushToolButton:checked, #simplebrushToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#oilbrushToolButton
+{
+	image: url(:/MoodBox/Resources/button_oilbrush.png);
+}
+#oilbrushToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_oilbrush_hover.png);
+}
+#oilbrushToolButton:checked, #oilbrushToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#sprayToolButton
+{
+	image: url(:/MoodBox/Resources/button_aerosol.png);
+}
+#sprayToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_aerosol_hover.png);
+}
+#sprayToolButton:checked, #sprayToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#eraserToolButton
+{
+	image: url(:/MoodBox/Resources/button_eraser.png);
+}
+#eraserToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_eraser_hover.png);
+}
+#eraserToolButton:checked, #eraserToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#textToolButton
+{
+	image: url(:/MoodBox/Resources/button_font.png);
+}
+#textToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_font_hover.png);
+}
+#textToolButton:checked, #textToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#picturesToolButton
+{
+	image: url(:/MoodBox/Resources/button_clipart.png);
+}
+#picturesToolButton:hover
+{
+	image: url(:/MoodBox/Resources/button_clipart_hover.png);
+}
+#picturesToolButton:checked, #picturesToolButton:pressed
+{
+	background: url(:/MoodBox/Resources/back_for_tools.png);
+}
+
+#undoButton
+{
+	image: url(:/MoodBox/Resources/undo_icon.png);
+}
+#undoButton:hover
+{
+	image: url(:/MoodBox/Resources/undo_icon_hover.png);
+}
+#undoButton:pressed, #undoButton:checked
+{
+	image: url(:/MoodBox/Resources/undo_icon_pressed.png);
+}
+#undoButton:disabled
+{
+	image: url(:/MoodBox/Resources/undo_icon_disabled.png);
+}
+
+#redoButton
+{
+	image: url(:/MoodBox/Resources/redo_icon.png);
+}
+#redoButton:hover
+{
+	image: url(:/MoodBox/Resources/redo_icon_hover.png);
+}
+#redoButton:pressed, #redoButton:checked
+{
+	image: url(:/MoodBox/Resources/redo_icon_pressed.png);
+}
+#redoButton:disabled
+{
+	image: url(:/MoodBox/Resources/redo_icon_disabled.png);
+}
+
+#clearButton
+{
+	image: url(:/MoodBox/Resources/clear_icon.png);
+}
+#clearButton:hover
+{
+	image: url(:/MoodBox/Resources/clear_icon_hover.png);
+}
+#clearButton:pressed, #clearButton:checked
+{
+	image: url(:/MoodBox/Resources/clear_icon_pressed.png);
+}
+#clearButton:disabled
+{
+	image: url(:/MoodBox/Resources/clear_icon_disabled.png);
+}
+
+QPushButton#drawButton
+{
+	image: url(:/MoodBox/Resources/button_draw_ico.png);
+}
+QPushButton#drawButton:hover
+{
+	image: url(:/MoodBox/Resources/button_draw_ico.png);
+}
+QPushButton#drawButton:pressed, QPushButton#drawButton:checked
+{
+	image: url(:/MoodBox/Resources/button_draw_pressed_ico.png);
+}
+QPushButton#drawButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_draw_disabled_ico.png);
+}
+
+QPushButton#publishButton
+{
+	image: url(:/MoodBox/Resources/button_publishselected_ico.png);
+}
+QPushButton#publishButton:pressed, QPushButton#publishButton:checked
+{
+	image: url(:/MoodBox/Resources/button_publishselected_pressed_ico.png);
+}
+QPushButton#publishButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_publishselected_disabled_ico.png);
+}
+
+#sendButton
+{
+	image: url(:/MoodBox/Resources/button_send_ico.png);
+}
+#sendButton:pressed, #sendButton:checked
+{
+	image: url(:/MoodBox/Resources/button_send_pressed_ico.png);
+}
+#sendButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_send_disabled_ico.png);
+}
+
+QToolButton#infoButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/button_info.png);
+}
+QToolButton#infoButton:hover
+{
+	image: url(:/MoodBox/Resources/button_info_hover.png);
+}
+
+QToolButton#infoButton:pressed, QToolButton#infoButton:checked
+{
+	image: url(:/MoodBox/Resources/button_info_pressed.png);
+}
+
+QToolButton#drawButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/button_draw.png);
+}
+
+QToolButton#drawButton:hover
+{
+	image: url(:/MoodBox/Resources/button_draw_hover.png);
+}
+
+QToolButton#drawButton:pressed, QToolButton#drawButton:checked
+{
+	image: url(:/MoodBox/Resources/button_draw_pressed.png);
+}
+
+#menuButton
+{
+	border: none;
+	image: url(:/MoodBox/Resources/button_cl_menu.png);
+}
+
+#menuButton:hover
+{
+	image: url(:/MoodBox/Resources/button_cl_menu_hover.png);
+}
+
+#menuButton:pressed, #menuButton:checked
+{
+	image: url(:/MoodBox/Resources/button_cl_menu_pressed.png);
+}
+
+#menuButton::menu-indicator
+{
+	image: none;
+}
+
+#textStyleButton1
+{
+	font: normal normal 12px "Arial";
+}
+
+#textStyleButton2
+{
+	font: normal normal 12px "Verdana";
+}
+
+#textStyleButton3
+{
+	font: normal normal 12px "Comic Sans MS";
+}
+
+#styleButton
+{
+	font: normal normal 12px "Arial";
+}
+
+
+QToolButton[accessibleName="infoButton"]
+{
+	border: none;
+	image: none;
+}
+
+QToolButton[accessibleName="infoButton"]:pressed
+{
+	padding: 0;
+}
+
+#StatusButtonClass
+{	
+	max-height: 34px;
+	min-height: 34px;
+
+	border: none;
+	background: url(:/MoodBox/Resources/cl_menu_button.png);
+}
+
+#contactAvatarToolButton:pressed
+{
+	padding: 0px;
+}
+
+#StatusButtonClass #textLabel, #StatusButtonClass #arrowLabel
+{
+	padding-top: 6px;
+}
+
+QPushButton#addChannelButton
+{
+	image: url(:/MoodBox/Resources/button_add.png);
+}
+QPushButton#addChannelButton:hover
+{
+	image: url(:/MoodBox/Resources/button_add.png);
+}
+QPushButton#addChannelButton:pressed
+{
+	image: url(:/MoodBox/Resources/button_add_pressed.png);
+}
+QPushButton#addChannelButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_add_pressed.png);
+}
+
+QPushButton#removeChannelButton
+{
+	image: url(:/MoodBox/Resources/button_remove.png);
+}
+QPushButton#removeChannelButton:hover
+{
+	image: url(:/MoodBox/Resources/button_remove.png);
+}
+QPushButton#removeChannelButton:pressed
+{
+	image: url(:/MoodBox/Resources/button_remove_pressed.png);
+}
+QPushButton#removeChannelButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_remove_pressed.png);
+}
+
+/*ContactList Menu******************************/
+
+#ContactListMenuClass #menuFrame
+{
+	border-width: 5;
+	border-image: url(:/MoodBox/Resources/cl_menu_background.png) 5 5 5 5 stretch, stretch;
+}
+
+#ContactListMenuClass #separatorFrame
+{
+	height: 2px;
+	border: none;
+	background: url(:/MoodBox/Resources/cl_menu_separator.png) repeat-x;
+}
+
+#ContactListMenuClass QToolButton
+{
+	border: none;
+	height: 32px;
+	
+	font: bold normal 13px "Verdana";
+	
+	image-position: left center;
+	padding-left: 5px;
+}
+
+#ContactListMenuClass QToolButton:hover
+{
+	border: none;
+	background: url(:/MoodBox/Resources/cl_menu_item_selected.png) repeat-x;
+}
+
+#ContactListMenuClass #onlineButton
+{
+	color: rgb(126, 208, 10);
+	image: url(:/MoodBox/Resources/tv_online.png);
+}
+#ContactListMenuClass #onlineButton:disabled
+{
+	color: gray;
+	image: url(:/MoodBox/Resources/tv_online_disabled.png);
+}
+
+#ContactListMenuClass #offlineButton
+{
+	color: rgb(255, 45, 104);
+	image: url(:/MoodBox/Resources/tv_offline.png);
+}
+#ContactListMenuClass #offlineButton:disabled
+{
+	color: gray;
+	image: url(:/MoodBox/Resources/tv_offline_disabled.png);
+}
+
+#ContactListMenuClass #logoutButton
+{
+	color: rgb(0, 177, 252);
+	image: url(:/MoodBox/Resources/tv_logout.png);
+}
+
+#ContactListMenuClass #exitButton
+{
+	color: rgb(255, 203, 31);
+	image: url(:/MoodBox/Resources/tv_exit.png);
+}
+
+#ContactListMenuClass #onlineButton:disabled, 
+#ContactListMenuClass #offlineButton:disabled
+{
+	color: grey;
+}
+
+
+
+/* List views *******************************/
+
+#ClipartWindowClass QListView, #HistoryWindowClass QListView
+{
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*QSizeGrip***************************************************/
+
+QSizeGrip
+{
+	image: url(:/MoodBox/Resources/size_grip.png);
+	
+	width: 19px;
+	height: 19px;
+}

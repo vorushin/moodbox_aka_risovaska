@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simpletypes>
+
+  <atom>atom1</atom>
+
+  <e>atom3</e>
+
+  <i>11</i>
+
+  <f>1.1</f>
+
+  <s>   
+  	   </s>
+
+  <b>true</b>
+
+  <bin>MTIz</bin>
+
+  <d>2008-07-25T15:33:22.000</d>
+
+  <t>
+    <c>some string</c>
+  </t>
+  
+</simpletypes>

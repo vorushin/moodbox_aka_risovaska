@@ -1,0 +1,9 @@
+S3 = erlaws_s3:new(?AWS_KEY, ?AWS_SEC_KEY, true).
+
+S3:list_buckets().
+
+S3:delete_bucket("moodbox_erlang_0_12beta").
+
+S3:list_contents("moodbox-system").
+
+S3:delete_object("moodbox-system", "ebs-test_$folder$").

@@ -1,0 +1,378 @@
+<ui version="4.0" >
+ <class>ProfileFrameClass</class>
+ <widget class="QFrame" name="ProfileFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>410</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="lineWidth" >
+   <number>0</number>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <widget class="QFrame" name="mainFrame" >
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth" >
+      <number>0</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <item row="0" column="0" >
+       <layout class="QGridLayout" name="mainGLayout" >
+        <property name="leftMargin" >
+         <number>30</number>
+        </property>
+        <property name="topMargin" >
+         <number>8</number>
+        </property>
+        <property name="rightMargin" >
+         <number>30</number>
+        </property>
+        <property name="horizontalSpacing" >
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing" >
+         <number>8</number>
+        </property>
+        <item row="4" column="0" >
+         <widget class="QLabel" name="nameLabel" >
+          <property name="minimumSize" >
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Name</string>
+          </property>
+          <property name="buddy" >
+           <cstring>nameEdit</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" >
+         <widget class="QLabel" name="countryLabel" >
+          <property name="text" >
+           <string>Country</string>
+          </property>
+          <property name="buddy" >
+           <cstring>countryCombo</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1" >
+         <widget class="QComboBox" name="countryCombo" />
+        </item>
+        <item row="6" column="0" >
+         <widget class="QLabel" name="cityLabel" >
+          <property name="text" >
+           <string>City</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1" >
+         <widget class="QComboBox" name="genderCombo" />
+        </item>
+        <item row="7" column="0" >
+         <widget class="QLabel" name="genderLabel" >
+          <property name="text" >
+           <string>Gender</string>
+          </property>
+          <property name="buddy" >
+           <cstring>genderCombo</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" >
+         <widget class="QLabel" name="aboutLabel" >
+          <property name="text" >
+           <string>About</string>
+          </property>
+          <property name="buddy" >
+           <cstring>aboutTextEdit</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1" >
+         <widget class="QTextEdit" name="aboutTextEdit" >
+          <property name="maximumSize" >
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" >
+         <widget class="QLabel" name="emailLabel" >
+          <property name="text" >
+           <string>Email</string>
+          </property>
+          <property name="buddy" >
+           <cstring>emailEdit</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" >
+         <widget class="QLineEdit" name="emailEdit" />
+        </item>
+        <item row="8" column="0" colspan="2" >
+         <widget class="QFrame" name="frame" >
+          <property name="minimumSize" >
+           <size>
+            <width>0</width>
+            <height>37</height>
+           </size>
+          </property>
+          <property name="frameShape" >
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow" >
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth" >
+           <number>0</number>
+          </property>
+          <widget class="MoodBox::PopUpComboBox" name="yearCombo" >
+           <property name="geometry" >
+            <rect>
+             <x>295</x>
+             <y>2</y>
+             <width>64</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="yearLabel" >
+           <property name="geometry" >
+            <rect>
+             <x>298</x>
+             <y>22</y>
+             <width>41</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text" >
+            <string>Year</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="dayCombo" >
+           <property name="geometry" >
+            <rect>
+             <x>107</x>
+             <y>1</y>
+             <width>51</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="dayLabel" >
+           <property name="geometry" >
+            <rect>
+             <x>110</x>
+             <y>22</y>
+             <width>31</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text" >
+            <string>Day</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="monthCombo" >
+           <property name="geometry" >
+            <rect>
+             <x>164</x>
+             <y>2</y>
+             <width>125</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="monthLabel" >
+           <property name="geometry" >
+            <rect>
+             <x>167</x>
+             <y>22</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text" >
+            <string>Month</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="birthdayLabel" >
+           <property name="geometry" >
+            <rect>
+             <x>0</x>
+             <y>1</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text" >
+            <string>Birthday</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="11" column="1" >
+         <widget class="QCheckBox" name="receiveNewsCheckBox" >
+          <property name="text" >
+           <string>NewsAndOffersCheckBox</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="2" >
+         <widget class="Line" name="line" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="2" >
+         <widget class="QCheckBox" name="allowWebTranslationCheckBox" >
+          <property name="text" >
+           <string>MoodTranslationCheckBox</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0" colspan="2" >
+         <widget class="QCheckBox" name="showMyFriendsCheckBox" >
+          <property name="text" >
+           <string>ShowFriendsCheckBox</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2" >
+         <widget class="Line" name="line_2" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="MoodBox::UserAvatarButton" name="avatarToolButton" >
+          <property name="toolTip" >
+           <string>AvatarButtonHint</string>
+          </property>
+          <property name="accessibleName" >
+           <string>transparentButton</string>
+          </property>
+          <property name="iconSize" >
+           <size>
+            <width>74</width>
+            <height>74</height>
+           </size>
+          </property>
+          <property name="checked" >
+           <bool>false</bool>
+          </property>
+          <property name="arrowType" >
+           <enum>Qt::NoArrow</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" >
+         <layout class="QHBoxLayout" name="horizontalLayout" >
+          <item>
+           <widget class="QLineEdit" name="nameEdit" />
+          </item>
+          <item>
+           <widget class="QToolButton" name="changePasswordButton" >
+            <property name="accessibleName" >
+             <string>rectButton</string>
+            </property>
+            <property name="text" >
+             <string>ChangePasswordButton</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="6" column="1" >
+         <widget class="QLineEdit" name="cityEdit" />
+        </item>
+        <item row="1" column="1" >
+         <layout class="QVBoxLayout" name="verticalLayout" >
+          <property name="spacing" >
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="mottoLabel" >
+            <property name="text" >
+             <string>Motto</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="mottoTextEdit" >
+            <property name="maximumSize" >
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::UserAvatarButton</class>
+   <extends>QToolButton</extends>
+   <header>useravatarbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::PopUpComboBox</class>
+   <extends>QComboBox</extends>
+   <header>popupcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>avatarToolButton</tabstop>
+  <tabstop>nameEdit</tabstop>
+  <tabstop>countryCombo</tabstop>
+  <tabstop>cityEdit</tabstop>
+  <tabstop>genderCombo</tabstop>
+  <tabstop>dayCombo</tabstop>
+  <tabstop>monthCombo</tabstop>
+  <tabstop>yearCombo</tabstop>
+  <tabstop>aboutTextEdit</tabstop>
+  <tabstop>emailEdit</tabstop>
+  <tabstop>receiveNewsCheckBox</tabstop>
+  <tabstop>allowWebTranslationCheckBox</tabstop>
+  <tabstop>showMyFriendsCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

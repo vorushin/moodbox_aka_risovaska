@@ -1,0 +1,110 @@
+QPushButton#drawButton
+{
+	image: url(:/MoodBox/Resources/button_draw_ico_ru.png);
+}
+QPushButton#drawButton:hover
+{
+	image: url(:/MoodBox/Resources/button_draw_ico_ru.png);
+}
+QPushButton#drawButton:pressed, QPushButton#drawButton:checked
+{
+	image: url(:/MoodBox/Resources/button_draw_pressed_ico_ru.png);
+}
+QPushButton#drawButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_draw_disabled_ico_ru.png);
+}
+
+#sendButton
+{
+	image: url(:/MoodBox/Resources/button_send_ico_ru.png);
+}
+#sendButton:pressed, #sendButton:checked
+{
+	image: url(:/MoodBox/Resources/button_send_pressed_ico_ru.png);
+}
+#sendButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_send_disabled_ico_ru.png);
+}
+
+QPushButton#publishButton
+{
+	image: url(:/MoodBox/Resources/button_publishselected_ico_ru.png);
+}
+QPushButton#publishButton:pressed, QPushButton#publishButton:checked
+{
+	image: url(:/MoodBox/Resources/button_publishselected_pressed_ico_ru.png);
+}
+QPushButton#publishButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_publishselected_disabled_ico_ru.png);
+}
+
+QPushButton#addChannelButton
+{
+	image: url(:/MoodBox/Resources/button_add_ru.png);
+}
+QPushButton#addChannelButton:hover
+{
+	image: url(:/MoodBox/Resources/button_add_ru.png);
+}
+QPushButton#addChannelButton:pressed
+{
+	image: url(:/MoodBox/Resources/button_add_pressed_ru.png);
+}
+QPushButton#addChannelButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_add_pressed_ru.png);
+}
+
+QPushButton#removeChannelButton
+{
+	image: url(:/MoodBox/Resources/button_remove_ru.png);
+}
+QPushButton#removeChannelButton:hover
+{
+	image: url(:/MoodBox/Resources/button_remove_ru.png);
+}
+QPushButton#removeChannelButton:pressed
+{
+	image: url(:/MoodBox/Resources/button_remove_pressed_ru.png);
+}
+QPushButton#removeChannelButton:disabled
+{
+	image: url(:/MoodBox/Resources/button_remove_pressed_ru.png);
+}
+
+#ContactListMenuClass #onlineButton
+{
+	color: rgb(126, 208, 10);
+	image: url(:/MoodBox/Resources/tv_online_ru.png);
+}
+#ContactListMenuClass #onlineButton:disabled
+{
+	color: gray;
+	image: url(:/MoodBox/Resources/tv_online_disabled_ru.png);
+}
+
+#ContactListMenuClass #offlineButton
+{
+	color: rgb(255, 45, 104);
+	image: url(:/MoodBox/Resources/tv_offline_ru.png);
+}
+#ContactListMenuClass #offlineButton:disabled
+{
+	color: gray;
+	image: url(:/MoodBox/Resources/tv_offline_disabled_ru.png);
+}
+
+#ContactListMenuClass #logoutButton
+{
+	color: rgb(0, 177, 252);
+	image: url(:/MoodBox/Resources/tv_logout_ru.png);
+}
+
+#ContactListMenuClass #exitButton
+{
+	color: rgb(255, 203, 31);
+	image: url(:/MoodBox/Resources/tv_exit_ru.png);
+}

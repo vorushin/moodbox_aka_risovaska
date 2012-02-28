@@ -1,0 +1,148 @@
+<ui version="4.0" >
+ <class>ColorEditorClass</class>
+ <widget class="QWidget" name="ColorEditorClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>235</width>
+    <height>238</height>
+   </rect>
+  </property>
+  <widget class="QFrame" name="styledFrame" >
+   <property name="geometry" >
+    <rect>
+     <x>24</x>
+     <y>0</y>
+     <width>211</width>
+     <height>238</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Maximum" hsizetype="Maximum" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth" >
+    <number>0</number>
+   </property>
+   <widget class="QPushButton" name="okButton" >
+    <property name="geometry" >
+     <rect>
+      <x>74</x>
+      <y>198</y>
+      <width>36</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>rectButton</string>
+    </property>
+    <property name="text" >
+     <string>OkButton</string>
+    </property>
+   </widget>
+   <widget class="MoodBox::ColorWheelWidget" native="1" name="colorWheel" >
+    <property name="geometry" >
+     <rect>
+      <x>32</x>
+      <y>10</y>
+      <width>147</width>
+      <height>147</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="closeToolButton" >
+    <property name="geometry" >
+     <rect>
+      <x>191</x>
+      <y>5</y>
+      <width>23</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="focusPolicy" >
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="accessibleName" >
+     <string>transparentButton</string>
+    </property>
+   </widget>
+   <widget class="MoodBox::ColorVolumeWidget" native="1" name="colorVolume" >
+    <property name="geometry" >
+     <rect>
+      <x>32</x>
+      <y>164</y>
+      <width>147</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="colorFrame" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>29</y>
+     <width>27</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth" >
+    <number>0</number>
+   </property>
+   <widget class="MoodBox::ColorWidget" native="1" name="colorWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>5</x>
+      <y>6</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::ColorVolumeWidget</class>
+   <extends>QWidget</extends>
+   <header>colorvolumewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::ColorWidget</class>
+   <extends>QWidget</extends>
+   <header>colorwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::ColorWheelWidget</class>
+   <extends>QWidget</extends>
+   <header>colorwheelwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

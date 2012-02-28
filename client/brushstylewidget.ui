@@ -1,0 +1,65 @@
+<ui version="4.0" >
+ <class>BrushStyleWidgetClass</class>
+ <widget class="QWidget" name="BrushStyleWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>43</width>
+    <height>206</height>
+   </rect>
+  </property>
+  <widget class="QListView" name="styleList" >
+   <property name="geometry" >
+    <rect>
+     <x>2</x>
+     <y>-1</y>
+     <width>44</width>
+     <height>207</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="lineWidth" >
+    <number>0</number>
+   </property>
+   <property name="verticalScrollBarPolicy" >
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy" >
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="editTriggers" >
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="showDropIndicator" stdset="0" >
+    <bool>false</bool>
+   </property>
+   <property name="dragDropMode" >
+    <enum>QAbstractItemView::NoDragDrop</enum>
+   </property>
+   <property name="iconSize" >
+    <size>
+     <width>41</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="movement" >
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow" >
+    <enum>QListView::LeftToRight</enum>
+   </property>
+   <property name="viewMode" >
+    <enum>QListView::IconMode</enum>
+   </property>
+   <property name="uniformItemSizes" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

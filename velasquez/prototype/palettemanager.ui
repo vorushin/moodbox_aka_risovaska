@@ -1,0 +1,124 @@
+<ui version="4.0" >
+ <class>PaletteManagerClass</class>
+ <widget class="QDialog" name="PaletteManagerClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>265</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Palette Manager</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" >
+    <widget class="PaletteWidget" native="1" name="currentPalette" />
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="standardTab" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>241</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>Standard</string>
+      </attribute>
+      <widget class="PaletteListWidget" name="standardPalettes" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>1</y>
+         <width>241</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="widgetResizable" >
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents" >
+        <property name="geometry" >
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>239</width>
+          <height>159</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="customTab" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>241</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>Custom</string>
+      </attribute>
+      <widget class="PaletteListWidget" name="customPalettes" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>241</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="widgetResizable" >
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2" >
+        <property name="geometry" >
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>239</width>
+          <height>159</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QToolButton" name="selectButton" >
+     <property name="text" >
+      <string>Выбрать</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>PaletteWidget</class>
+   <extends>QWidget</extends>
+   <header>palettewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PaletteListWidget</class>
+   <extends>QScrollArea</extends>
+   <header>palettelistwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

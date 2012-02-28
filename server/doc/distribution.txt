@@ -1,0 +1,9 @@
+monitor_node(Node, Flag) -> true
+
+Types:
+
+Node = node()
+Flag = bool()
+
+Monitors the status of the node Node. If Flag is true, monitoring is turned on; 
+if Flag is false, monitoring is turned off. 

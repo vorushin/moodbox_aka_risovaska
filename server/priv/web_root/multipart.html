@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Mood-test-Box - multipart</title>
+
+<style>
+    textarea {
+        width: 400px;
+        height: 200px;
+    }
+</style>
+
+</head>
+<body>
+
+<form action="/multi" enctype="multipart/form-data" method="POST">
+	<textarea name='xml'>
+	<?xml version="1.0" encoding="utf-8"?>
+	<envelope>
+	  <body>
+		  <getAuthTicket>
+			  <login>test1</login>
+			  <password>topsecret</password>
+		  </getAuthTicket>
+	  </body>
+	</envelope>
+	</textarea><br />
+	<input type="file" name="attachment" value="d:\test.txt"><br />
+<br />
+<input type="submit" value="press me!">
+
+</form>
+</body>
+</html>

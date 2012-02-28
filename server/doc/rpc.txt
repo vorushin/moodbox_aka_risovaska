@@ -1,0 +1,8 @@
+Удаленный вызов функции на ноде:
+rpc:call(Node, Module, Function, Args).
+
+Вызов функции сразу на нескольких нодах:
+rpc:multicall(Nodes, Module, Function, Args)
+
+Широковещательное сообщение на несколько нод зарегестрированному процессу с именем Name:
+sbcast(Nodes, Name, Msg)

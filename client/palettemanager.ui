@@ -1,0 +1,373 @@
+<ui version="4.0" >
+ <class>PaletteManagerClass</class>
+ <widget class="QWidget" name="PaletteManagerClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <widget class="QFrame" name="styledFrame" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>261</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Maximum" hsizetype="Maximum" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>12</x>
+      <y>14</y>
+      <width>228</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="MoodBox::PaletteViewWidget" native="1" name="currentPalette" >
+       <property name="minimumSize" >
+        <size>
+         <width>163</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>163</width>
+         <height>41</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>30</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="savePaletteButton" >
+       <property name="minimumSize" >
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip" >
+        <string>SavePaletteHint</string>
+       </property>
+       <property name="accessibleName" >
+        <string>transparentButton</string>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="paletteTabWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>3</x>
+      <y>71</y>
+      <width>256</width>
+      <height>257</height>
+     </rect>
+    </property>
+    <property name="tabPosition" >
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="currentIndex" >
+     <number>0</number>
+    </property>
+    <property name="elideMode" >
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <widget class="QWidget" name="standardPaletteTab" >
+     <attribute name="title" >
+      <string>CatalogueTab</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_2" >
+      <property name="verticalSpacing" >
+       <number>6</number>
+      </property>
+      <item row="1" column="0" >
+       <widget class="MoodBox::PaletteListWidget" name="standardPalettes" >
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth" >
+         <number>0</number>
+        </property>
+        <property name="horizontalScrollBarPolicy" >
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="widgetResizable" >
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents" >
+         <property name="geometry" >
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>232</width>
+           <height>176</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QFrame" name="topPaletteFrame" >
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label" >
+         <property name="geometry" >
+          <rect>
+           <x>12</x>
+           <y>8</y>
+           <width>222</width>
+           <height>6</height>
+          </rect>
+         </property>
+         <property name="pixmap" >
+          <pixmap resource="moodbox.qrc" >:/MoodBox/Resources/palette_horizontal_top_line.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QFrame" name="frame" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_2" >
+         <property name="geometry" >
+          <rect>
+           <x>12</x>
+           <y>-2</y>
+           <width>222</width>
+           <height>6</height>
+          </rect>
+         </property>
+         <property name="pixmap" >
+          <pixmap resource="moodbox.qrc" >:/MoodBox/Resources/palette_horizontal_bottom_line.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="customPaletteTab" >
+     <attribute name="title" >
+      <string>MyPalettesTab</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_3" >
+      <item row="1" column="0" >
+       <widget class="MoodBox::PaletteListWidget" name="customPalettes" >
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth" >
+         <number>0</number>
+        </property>
+        <property name="widgetResizable" >
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2" >
+         <property name="geometry" >
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>232</width>
+           <height>176</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QFrame" name="topPaletteFrame_2" >
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_3" >
+         <property name="geometry" >
+          <rect>
+           <x>12</x>
+           <y>8</y>
+           <width>222</width>
+           <height>6</height>
+          </rect>
+         </property>
+         <property name="pixmap" >
+          <pixmap resource="moodbox.qrc" >:/MoodBox/Resources/palette_horizontal_top_line.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QFrame" name="frame_2" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_4" >
+         <property name="geometry" >
+          <rect>
+           <x>12</x>
+           <y>-2</y>
+           <width>222</width>
+           <height>6</height>
+          </rect>
+         </property>
+         <property name="pixmap" >
+          <pixmap resource="moodbox.qrc" >:/MoodBox/Resources/palette_horizontal_bottom_line.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="closeToolButton" >
+    <property name="geometry" >
+     <rect>
+      <x>241</x>
+      <y>5</y>
+      <width>23</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="focusPolicy" >
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="accessibleName" >
+     <string>transparentButton</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>MoodBox::PaletteViewWidget</class>
+   <extends>QWidget</extends>
+   <header>paletteviewwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MoodBox::PaletteListWidget</class>
+   <extends>QScrollArea</extends>
+   <header>palettelistwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="moodbox.qrc" />
+ </resources>
+ <connections/>
+</ui>

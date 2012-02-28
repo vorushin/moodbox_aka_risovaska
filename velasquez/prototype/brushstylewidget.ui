@@ -1,0 +1,58 @@
+<ui version="4.0" >
+ <class>BrushStyleWidgetClass</class>
+ <widget class="QWidget" name="BrushStyleWidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>113</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>BrushStyleWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <property name="horizontalSpacing" >
+    <number>1</number>
+   </property>
+   <property name="margin" >
+    <number>1</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QListView" name="styleList" >
+     <property name="editTriggers" >
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="showDropIndicator" stdset="0" >
+      <bool>false</bool>
+     </property>
+     <property name="dragDropMode" >
+      <enum>QAbstractItemView::NoDragDrop</enum>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>75</width>
+       <height>75</height>
+      </size>
+     </property>
+     <property name="movement" >
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="flow" >
+      <enum>QListView::LeftToRight</enum>
+     </property>
+     <property name="viewMode" >
+      <enum>QListView::IconMode</enum>
+     </property>
+     <property name="uniformItemSizes" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>
