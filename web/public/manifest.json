@@ -1,0 +1,17 @@
+{
+  "name": "Risovaska",
+  "short_name": "Risovaska",
+  "description": "A creative drawing app — draw, create, share!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1b2e",
+  "theme_color": "#6366f1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

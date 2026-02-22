@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas-bg: #f5f0eb;
+  --color-toolbar-bg: #1e1b2e;
+  --color-toolbar-active: #6366f1;
+  --color-toolbar-text: #e2e0ea;
+  --color-panel-bg: #2a2640;
+  --color-accent: #f472b6;
+  --color-accent-2: #38bdf8;
+  --font-family-display: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--font-family-display);
+}
+
+input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+  touch-action: auto;
+}
+
+.panel-slide-up {
+  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.cursor-draw { cursor: crosshair; }
+.cursor-erase { cursor: cell; }
+.cursor-move { cursor: grab; }
+.cursor-text { cursor: text; }
+
+.panel-scroll::-webkit-scrollbar { width: 4px; }
+.panel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in { animation: fade-in 0.4s ease-out; }
+.animate-scale-in { animation: scale-in 0.3s ease-out; }
+
+@keyframes bounce-in {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.animate-bounce-in { animation: bounce-in 0.4s cubic-bezier(0.32, 0.72, 0, 1); }
