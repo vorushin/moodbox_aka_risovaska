@@ -125,7 +125,7 @@ export default function DrawingCanvas({ engineRef }: Props) {
   return (
     <div
       ref={containerRef}
-      className={`flex-1 relative overflow-hidden ${cursorClass}`}
+      className={`w-full h-full relative overflow-hidden ${cursorClass}`}
       style={{ backgroundColor }}
     >
       <canvas

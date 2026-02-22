@@ -210,6 +210,70 @@ export const sprayBrush: Brush = {
 };
 
 // ============================================================
+// WATERCOLOR — soft, transparent, builds up gently
+// Multiple overlapping transparent circles for a watery feel
+// ============================================================
+
+export const watercolorBrush: Brush = {
+  type: 'watercolor',
+  tracksSpeed: true,
+
+  getSpacing(settings) {
+    return Math.max(3, sizeToPixels(settings.size, 3, 8));
+  },
+
+  begin(ctx) {
+    ctx.globalCompositeOperation = 'source-over';
+  },
+
+  paint(ctx, stroke, _prev, settings) {
+    const baseWidth = sizeToPixels(settings.size, 12, 70);
+
+    // Speed affects spread (faster = wider, more watery)
+    const maxSpeed = 2.0;
+    const speedNorm = Math.min(stroke.speed, maxSpeed) / maxSpeed;
+    const spread = baseWidth * (1 + speedNorm * 0.5);
+
+    // Multiple overlapping transparent blobs for watercolor effect
+    const layers = 3;
+    const rgb = hexToRgb(settings.color);
+
+    ctx.save();
+
+    for (let i = 0; i < layers; i++) {
+      // Each layer: slightly different position, size, and color
+      const offsetX = (Math.random() - 0.5) * spread * 0.3;
+      const offsetY = (Math.random() - 0.5) * spread * 0.3;
+      const layerSize = spread * (0.6 + Math.random() * 0.4);
+      const layerAlpha = settings.opacity * (0.03 + Math.random() * 0.04);
+
+      // Subtle color variation
+      const vr = Math.max(0, Math.min(255, rgb.r + (Math.random() - 0.5) * 15));
+      const vg = Math.max(0, Math.min(255, rgb.g + (Math.random() - 0.5) * 15));
+      const vb = Math.max(0, Math.min(255, rgb.b + (Math.random() - 0.5) * 15));
+
+      ctx.globalAlpha = layerAlpha;
+      ctx.beginPath();
+      ctx.ellipse(
+        stroke.x + offsetX,
+        stroke.y + offsetY,
+        layerSize / 2,
+        layerSize / 2 * (0.8 + Math.random() * 0.4),
+        Math.random() * Math.PI,
+        0,
+        Math.PI * 2,
+      );
+      ctx.fillStyle = `rgb(${vr|0}, ${vg|0}, ${vb|0})`;
+      ctx.fill();
+    }
+
+    ctx.restore();
+  },
+
+  end() {},
+};
+
+// ============================================================
 // ERASER — draws opaque shapes on active canvas,
 // engine composites with destination-out onto main canvas.
 // ============================================================
@@ -254,6 +318,7 @@ export const brushes: Record<string, Brush> = {
   pencil: pencilBrush,
   marker: markerBrush,
   oil: oilBrush,
+  watercolor: watercolorBrush,
   spray: sprayBrush,
   eraser: eraserBrush,
 };

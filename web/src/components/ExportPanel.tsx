@@ -10,7 +10,6 @@ interface Props {
 
 export default function ExportPanel({ engineRef }: Props) {
   const activePanel = useAppStore(s => s.activePanel);
-  const setActivePanel = useAppStore(s => s.setActivePanel);
   const username = useAppStore(s => s.username);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);

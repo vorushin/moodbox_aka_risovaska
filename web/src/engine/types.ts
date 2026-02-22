@@ -13,7 +13,7 @@ export interface BrushStroke {
   angle: number;
 }
 
-export type BrushType = 'pencil' | 'marker' | 'oil' | 'spray' | 'eraser';
+export type BrushType = 'pencil' | 'marker' | 'oil' | 'watercolor' | 'spray' | 'eraser';
 
 export interface BrushSettings {
   type: BrushType;

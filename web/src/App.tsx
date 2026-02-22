@@ -13,6 +13,7 @@ import ClipartPanel from './components/ClipartPanel';
 import TextPanel from './components/TextPanel';
 import Gallery from './components/Gallery';
 import ExportPanel from './components/ExportPanel';
+import CreativePrompt from './components/CreativePrompt';
 
 export default function App() {
   const username = useAppStore(s => s.username);
@@ -60,7 +61,10 @@ export default function App() {
   return (
     <div className="flex flex-col h-full bg-gray-900">
       <TopBar engineRef={engineRef} />
-      <DrawingCanvas engineRef={engineRef} />
+      <div className="flex-1 relative overflow-hidden">
+        <DrawingCanvas engineRef={engineRef} />
+        <CreativePrompt />
+      </div>
 
       {/* Panels (slide up from bottom) */}
       <ColorPicker />
