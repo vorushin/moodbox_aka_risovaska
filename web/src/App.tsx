@@ -14,6 +14,7 @@ import TextPanel from './components/TextPanel';
 import Gallery from './components/Gallery';
 import ExportPanel from './components/ExportPanel';
 import CreativePrompt from './components/CreativePrompt';
+import OnboardingHint from './components/OnboardingHint';
 
 export default function App() {
   const username = useAppStore(s => s.username);
@@ -64,6 +65,7 @@ export default function App() {
       <div className="flex-1 relative overflow-hidden">
         <DrawingCanvas engineRef={engineRef} />
         <CreativePrompt />
+        <OnboardingHint />
       </div>
 
       {/* Panels (slide up from bottom) */}
