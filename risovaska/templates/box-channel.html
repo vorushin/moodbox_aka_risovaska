@@ -1,0 +1,13 @@
+{% load risovaska_filters %}
+
+<div class="frow frow1">
+	<img style="background: url('{{ channel.get_logo_url }}') no-repeat center;" src="{{ MEDIA_URL }}/img/tv_frame.png" class="userpic" />
+	<div class="h"></div>
+	<div class="c">
+		<a href="{% url risovaska-channel channel.id %}" class="user">{{ channel.title }}</a>
+		<div class="desc">{{ channel.short_description|safe }}</div>
+		<div class="sign">Создан {{ channel.created|ago }}</div>
+	</div>
+	<div class="b"></div>
+</div>
+<div class="clr"></div>

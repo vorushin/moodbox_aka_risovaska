@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Рисоваська &mdash; это "аська", в которой рисуют с друзьями{% endblock %}
+
+{% block body %}
+<div id="page"><div id="page2"><img src="{{ MEDIA_URL }}/img/line_left.jpg" id="line_left"><img src="{{ MEDIA_URL }}/img/line_right.jpg" id="line_right">
+<div id="cont">
+<div class="fmenu">
+<a href="{% url risovaska-index %}" id="fmenu1" class="act"></a>
+<a href="{% url risovaska-tour %}" id="fmenu2"></a>
+<a href="#" id="fmenu3"></a>
+<a href="{% url risovaska-users %}" id="fmenu4"></a>
+<a href="{% url risovaska-channels %}" id="fmenu5"></a>
+<a href="{% url risovaska-comics %}" id="fmenu6"></a>
+<a href="http://community.livejournal.com/risovaska" id="fmenu7"></a>
+</div>
+
+<div id="tvbox"><img src="{{ MEDIA_URL }}/img/tvbox.jpg"></div>
+<div id="moodbox"><img src="{{ MEDIA_URL }}/img/moodbox.jpg"></div>
+<a href="{% url risovaska-tour %}"><div id="blueback" onclick="javascript:window.location='{% url risovaska-tour %}';">
+		<div id="main_motto1"><img src="{{ MEDIA_URL }}/img/main_motto1.jpg"></div>
+		<div id="main_motto2"><img src="{{ MEDIA_URL }}/img/main_motto2.jpg"></div>
+		<div id="main_motto3"><img src="{{ MEDIA_URL }}/img/main_motto3.jpg"></div>
+</div></a>
+<div id="icont">
+<div class="header">Рисоваська &mdash; это "аська", в которой рисуют с друзьями. Самый креативный инструмент общения на планете! Работала с 15 декабря 2008 года по 01 декабря 2010 года, на платформах Win, Mac, Linux.</div>
+
+<p>
+    16 дек 2008 <a href="http://mashable.com/2008/12/16/moodbox/">Статья в Mashable. Запуск англоязычной версии</a><br>
+    27 янв 2009 <a href="http://habrahabr.ru/blogs/i_am_advertising/50427/">Статья на Хабре. Запуск русской версии</a><br>
+    09 фев 2009 Толик Востряков про техническое устройство Рисоваськи: <a href="http://habrahabr.ru/blogs/erlang/51517/">1</a>, <a href="http://habrahabr.ru/blogs/erlang/51796/">2</a><br>
+    13 фев 2009 <a href="http://community.livejournal.com/risovaska/24056.html">Про Рисоваську пишут: Ведомости, CNews и другие</a><br>
+    06 мар 2009 <a href="http://plushev.com/2009/03/06/3662/">Плющев про Рисоваську в эфире "Эхо Москвы"</a><br>
+    14 мар 2009 <a href="http://www.youtube.com/watch?v=HwvZt3AltNQ">Видео-ролик Love Messages</a><br>
+    07 мая 2009 <a href="http://habrahabr.ru/blogs/apple/59057/">Версия под Mac OS X</a><br>
+    01 июл 2009 Рисоваську показали на MTV в передаче "Телепорт"</a><br>
+    05 июл 2009 <a href="http://www.linux.org.ru/news/linux-general/3845915/">Версия под Linux</a><br>
+    08 июл 2009 <a href="http://habrahabr.ru/blogs/django/63858/">Портировали сайт. PHP -> Python + Django</a><br>
+    01 дек 2010 <a href="http://community.livejournal.com/risovaska/32588.html">Сервер больше не работает. Как найти свою историю переписки</a><br>
+</p>
+
+{% comment %}
+{% for post in blog_posts %}
+<p>
+<br />
+<a href="{{ post.link }}">{{ post.title|safe }} ({{ post.date|date:"d M Y" }})</a><br />
+{{ post.message|safe|linebreaksbr }}
+</p>
+{% endfor %}
+
+<a href="/news/">Архив новостей</a><br/>
+{% endcomment %}
+
+</div>
+{# {% include "box-download.html" %} #}
+{% include "box-networking.html" %}
+<div class="clr"></div>
+
+</div>
+
+<div class="clr"></div>
+
+
+<div id="btns">
+<a href="{% url risovaska-channels %}"><img src="{{ MEDIA_URL }}/img/channel_list.jpg" id="f_friends"></a>
+<a href="{% url risovaska-comics %}"><img src="{{ MEDIA_URL }}/img/explore_moodstrips.jpg" id="e_moodstrips"></a>
+</div>
+
+
+<div id="footerb">
+</div>
+<div id="footer">
+<div id="footer2">
+<a href="{% url risovaska-about %}">Команда</a> | <a href="{% url risovaska-eula %}">Пользовательское соглашение</a> | <a href="{% url risovaska-feedback %}">Обратная связь</a><br><br>
+&copy; 2009-2010 &laquo;Инструменты живого общения&raquo;. Powered by <a href="http://djangoproject.com">Django</a>.
+</div></div>
+</div></div>
+{% endblock body%}

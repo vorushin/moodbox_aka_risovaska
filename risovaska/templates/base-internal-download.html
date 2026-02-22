@@ -1,0 +1,60 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Скачать{% endblock %}
+
+{% block body-internal %}
+<div id="multitv"><img src="{{ MEDIA_URL }}/img/multitv.jpg"></div>
+<div id="dsel1"></div>
+<div id="dsec1" class="dsec">
+	<div class="logo" style="padding-top:17px;"><img src="{{ MEDIA_URL }}/img/win_logo_d.png"></div>
+	<div class="link" style="padding-top:26px; width:230px;"><a href="{{ MEDIA_URL }}/RisovaskaSetup.exe">Рисоваська для Windows</a></div>
+	<div class="desc">
+	<b>Системные требования</b><br />
+	Windows XP/Vista, 20 Мб дискового пространства, соединение с интернетом<br />
+	<b>Технические детали</b><br />
+	Версия 1.5 бета. Размер файла 6.5 Мб.<br />Дата выпуска: 6 мая 2009 г.
+	</div>
+	<div class="down" style="padding-top:10px;"><a href="{{ MEDIA_URL }}/RisovaskaSetup.exe"><img border="0" src="{{ MEDIA_URL }}/img/download_win.png"></a></div>
+</div>
+<div id="dsec1" class="dsec">
+	<div style="font-size: 10px; color: #454545; padding-left:10em;">
+	<b>Инсталляция программ запрещена злым администратором?</b> <br>
+	Скачайте <a href="{{ MEDIA_URL }}/Risovaska.zip">архив Risovaska.zip</a>, распакуйте его в любую папку и запустите Risovaska.exe
+	</div>
+</div>
+<div id="dsec2" class="dsec">
+	<div class="logo" style="padding-top:20px;"><img src="{{ MEDIA_URL }}/img/mac_logo_d.png"></div>
+	<div class="link" style="padding-top:30px; width:230px;"><a href="{{ MEDIA_URL }}/Risovaska_Mac.zip">Рисоваська для Mac</a></div>
+	<div class="desc">
+	<b>Системные требования</b><br />
+	Mac OS X 10.5.5 или позднее, 50 Мб дискового пространства, соединение с интернетом<br />
+	<b>Технические детали</b><br />
+	Версия 1.5 бета. Размер файла 14 Мб.<br />Дата выпуска: 6 мая 2009 г.
+	</div>
+	<div class="down" style="padding-top:10px;"><a href="{{ MEDIA_URL }}/Risovaska_Mac.zip"><img border="0" src="{{ MEDIA_URL }}/img/download_mac.png"></a></div>
+</div>
+<div id="dsec1" class="dsec">
+	<div class="logo" style="padding-top:17px;"><img src="{{ MEDIA_URL }}/img/linux_logo_d.png"></div>
+	<div class="link" style="padding-top:26px; width:230px;"><a href="{{ MEDIA_URL }}/risovaska_1.5.0-0ubuntu_i386.deb">Рисоваська для Linux</a></div>
+	<div class="desc">
+	<b>Системные требования</b><br />
+	Ubuntu/Debian, 31.5 Мб дискового пространства, соединение с интернетом<br />
+	<b>Технические детали</b><br />
+	Версия 1.5 бета. Размер файла 12.7 Мб.<br />Дата выпуска: 2 июля 2009 г.
+	</div>
+	<div class="down" style="padding-top:10px;"><a href="{{ MEDIA_URL }}/risovaska_1.5.0-0ubuntu_i386.deb"><img border="0" src="{{ MEDIA_URL }}/img/download_linux.png"></a></div>
+</div>
+<div id="dsec1" class="dsec">
+	<div style="font-size: 10px; color: #454545; padding-left:10em;">
+		<b>У вас другая версия Линукс?</b> <br>
+		Есть несколько вариантов: <br>
+		1. Вы можете скачать и установить <a href="{{ MEDIA_URL }}/risovaska-1.5.0-0.i386.rpm"/>RPM-пакет</a> <br>
+		2. Или скачайте <a href="{{ MEDIA_URL }}/Risovaska.tar.gz">32-битный архив Risovaska.tar.gz</a> или <a href="{{ MEDIA_URL }}/Risovaska_amd64.tar.gz">64-битный архив Risovaska_amd64.tar.gz</a>, распакуйте его в любую папку, скопируйте папки Avatars, Clipart и Sound в папку <b>/usr/share/moodbox</b> и запустите MoodBox.bin
+	</div>
+</div>
+<div id="dsel2"></div>
+
+
+<div class="clr"></div>
+
+{% endblock body-internal %}

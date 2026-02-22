@@ -1,0 +1,16 @@
+{% load risovaska_filters %}
+
+<div class="top3">НОВЫЕ КОМИКСЫ</div>
+
+<div id="download_box">
+<div id="tsel1"></div>
+<div class="tsec">
+{% for comic in latest_comics %}
+	<div>
+		<a href="{% url risovaska-comic comic.id %}"><img src="{{ comic.get_url }}" width="150" border="0"></a>
+		{% if comic.author %}<span>автор: <a href="{% url risovaska-user comic.author.id %}">{{ comic.author.login|truncate:"18" }}</a></span>{% endif %}
+	</div>
+{% endfor %}
+</div>
+<div id="tsel2"></div>
+</div>

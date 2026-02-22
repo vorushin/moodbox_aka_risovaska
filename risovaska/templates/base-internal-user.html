@@ -1,0 +1,70 @@
+{% extends "base-internal.html" %}
+{% load risovaska_filters %}
+
+{% block additional-js %}
+<script type="text/javascript" src="{{ MEDIA_URL }}/js/AC_RunActiveContent.js"></script>
+{% endblock additional-js %}
+
+{% block title %}{{ user.login }}{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	{% include "box-user.html" %}
+	<a href="moodbox:{{ user.login }}?addfriend"><img src="{{ MEDIA_URL }}/img/addfriend.png"></a>
+
+	<div class="friends">
+	{% if user.allow_show_friends %}
+		<h1>ДРУЗЬЯ: {{ user_contacts|length }}</h1>
+	{% endif %}
+
+	{% if not user_contacts %}
+		{% if not user.allow_show_friends %}
+			<p>Список друзей скрыт</p>
+		{% else %}
+			<p>Нет друзей в Рисоваське</p>
+		{% endif %}
+	{% endif %}
+
+	{% for c in user_contacts %}
+		{% ifequal forloop.counter0 contacts_show_limit %}
+			<span id="hidden-contacts-toggle" onclick="javascript:this.style.display='none'; document.getElementById('hidden-contacts').style.display='inline';">...</span><div id="hidden-contacts">
+		{% endifequal %}
+		<a href="{% url risovaska-user c.contact_user.id %}">{{ c.contact_user.login }}</a>{% if not forloop.last %}, {% endif %}
+	{% endfor %}
+
+	{% if user_contacts|length|greater_or_equal:contacts_show_limit %}</div>{% endif %}
+
+	{% if not contacts_are_hidden %}
+		<h1 style="padding-top:1em;">Каналов: {{ user_channels|length }}</h1>
+	{% endif %}
+
+	{% for c in user_channels %}
+		<a href="{% url risovaska-channel c.id %}">{{ c.title }}</a>{% if not forloop.last %}, {% endif %}
+	{% endfor %}
+	</div>
+
+	{% if user.allow_publishing %}
+	<div class="friends">
+        {# <h1>ПРЯМАЯ ТРАНСЛЯЦИЯ</h1> #}
+        {# {% include "box-flash.html" %} #}
+		<div class="clr"></div>
+	</div>
+	<div class="clr"></div>
+	{% else %}
+	<div class="friends"><p>Пользователь закрыл доступ к прямой трансляции своих сообщений</p></div>
+	{% endif %}
+
+	{% if user_comics %}
+	<div class="friends" id="comics_list_on_profile">
+		<h1>КОМИКСЫ:</h1>
+		{% include "box-navigation-info.html" %}
+		{% include "box-navigation-pane.html" %}
+		{% for comic in user_comics %}
+			{% include "box-moodstrip.html" %}
+		{% endfor %}
+		{% include "box-navigation-pane.html" %}
+		{% include "box-navigation-info.html" %}
+	</div>
+	{% endif %}
+</div>
+{% endblock body-internal %}

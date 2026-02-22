@@ -1,0 +1,30 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Обратная связь{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	<img src="{{ MEDIA_URL }}/img/feedback.png">
+	<div class="feedtext">
+		<h1>Сообщество "Друзья Рисоваськи"</h1>
+		<p>Сообщайте об ошибках, задавайте вопросы и предлагайте новые возможности
+		через <a href="http://groups.google.com/group/risovaska2">Гугл-Группу "Друзья Рисоваськи"</a>.
+		Вам ответит кто-то из команды и активные пользователи Рисоваськи.</p>
+		
+		<p>Написать сообщение можно двумя способами:</p>
+		<ul>
+			<li>Через веб-интерфейс группы -
+			<a href="http://groups.google.com/group/risovaska2">http://groups.google.com/group/risovaska2</a>
+			(нажмите кнопку сверху-справа "New post" или "Добавить сообщение")</li>
+			<li>Написав письмо на адрес <a href="mailto:risovaska2@googlegroups.com">risovaska2@googlegroups.com</a></li>
+		</ul>
+			
+		
+		<h1>Другие возможности для контакта</h1>
+		<p>На странице <a href="{% url risovaska-about %}">Команда</a> есть ссылки на блоги всей нашей команды,
+		через них можно связаться именно с тем, кто вам нужен.</p>
+		<p>Конфиденциальную информацию отправляйте на <a href="mailto:vorushin@risovaska.ru">vorushin@risovaska.ru</a></p>
+	</div>
+	<div class="clr"></div>
+</div>
+{% endblock body-internal %}

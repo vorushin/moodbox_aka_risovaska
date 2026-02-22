@@ -1,1 +1,6 @@
 .DS_Store
+*.pyc
+risovaska/.hg/
+risovaska/local_settings.py
+risovaska/dump.sql
+risovaska/risovaska.sql

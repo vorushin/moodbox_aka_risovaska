@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load risovaska_filters %}
+
+{% block body %}
+<div id="in_page"><div id="in{{ layout }}_page2">
+<div id="in_cont">
+<div class="fmenu">
+<a href="{% url risovaska-index %}" id="imenu1" class="{{ menu_item|to_menu_class:"1" }}"></a>
+<a href="{% url risovaska-tour %}" id="imenu2" class="{{ menu_item|to_menu_class:"2" }}"></a>
+<a href="#" id="imenu3" class="{{ menu_item|to_menu_class:"3" }}"></a>
+<a href="{% url risovaska-users %}" id="imenu4" class="{{ menu_item|to_menu_class:"4" }}"></a>
+<a href="{% url risovaska-channels %}" id="imenu5" class="{{ menu_item|to_menu_class:"5" }}"></a>
+<a href="{% url risovaska-comics %}" id="imenu6" class="{{ menu_item|to_menu_class:"6" }}"></a>
+<a href="http://community.livejournal.com/risovaska/" id="imenu7" class="{{ menu_item|to_menu_class:"7" }}"></a>
+</div>
+
+{% block body-internal %}{% endblock %}
+{% ifequal box_right "download_button_last_comics" %}
+	<div class="right">
+
+    {# {% include "box-download.html" %} #}
+
+	{% if link_to_comics %}
+		<a href="{% url risovaska-comics %}" class="exp"><img src="{{ MEDIA_URL }}/img/explore.png"></a>
+	{% else %}
+		<a href="{% url risovaska-channels %}" class="exp"><img src="{{ MEDIA_URL }}/img/channels_list.png"></a>
+	{% endif %}
+	{% include "box-last-moodstrips.html" %}
+	</div>
+	<div class="clr"></div>
+{% endifequal %}
+{% ifequal box_right "download_tour" %}
+	<div class="right">
+
+    {# {% include "box-download.html" %} #}
+
+	<a href="{% url risovaska-tour %}"><img src="{{ MEDIA_URL }}/img/quickbanner.png" class="quickban" border="0"></a>
+	<div class="quickdiv"><a href="{% url risovaska-tour %}">Обзор Рисоваськи</a></div>
+
+	</div>
+	<div class="clr"></div>
+{% endifequal %}
+
+</div>
+<div id="in{{ layout }}_footerb">
+</div>
+<div id="in{{ layout }}_footer"><div id="in{{ layout }}_footer2">
+<div id="foot_copy">&copy; 2009-2010 &laquo;Инструменты живого общения&raquo;</div>
+<div id="foot_link">
+		<a href="{% url risovaska-about %}">Команда</a> | <a href="{% url risovaska-eula %}">Пользовательское соглашение</a> | <a href="{% url risovaska-feedback %}">Обратная связь</a><br><br>
+</div>
+
+</div></div>
+</div></div>
+
+{% endblock body %}

@@ -1,0 +1,9 @@
+{% load risovaska_filters %}
+
+{% if is_last_page and page_no|equals:1 and current_page_size|equals:0 %}
+{% else %}
+<div id="ucnt1"><b>{{ from_item }}
+{% ifnotequal from_item to_item %} &mdash; {{ to_item }}{% endifnotequal %}
+</b> из <b>{{ to_item }}</b>{% if not is_last_page %}+{% endif %}
+</div>
+{% endif %}

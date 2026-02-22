@@ -1,0 +1,33 @@
+<script language="javascript">
+	if (AC_FL_RunContent == 0) {
+		alert("This page requires AC_RunActiveContent.js.");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0',
+			'width', '447',
+			'height', '398',
+			'src', '{{ MEDIA_URL }}/img/box',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'top',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'noscale',
+			'wmode', 'transparent',
+			'devicefont', 'false',
+			'id', 'got2b_site',
+			'bgcolor', '#000000',
+			'name', 'got2b_site',
+			'menu', 'true',
+			'allowFullScreen', 'false',
+			'allowScriptAccess','sameDomain',
+			'movie', '{{ MEDIA_URL }}/img/box',
+			'salign', '',
+			'flashvars', '{{ flashvars }}'
+			); //end AC code
+	}
+</script>
+<noscript>
+	{{ widget_code|safe }}
+</noscript>
+<label>Код:</label><input type="text" value="{{ widget_code }}" onclick="javascript:this.select();">

@@ -1,0 +1,23 @@
+{% load risovaska_filters %}
+
+<div class="moodrow">
+	<div class="moodpic marleft">
+		<div>
+			<div>
+				<a href="{% url risovaska-comic comic.id %}">
+				<img src="{{ comic.get_url }}" class="moodpic" width="194">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="desc">
+		<a class="title" href="{% url risovaska-comic comic.id %}">
+			{{ comic.title }}
+		</a>
+		создан {{ comic.send_date|ago }}
+		{% if comic.author %}<br />автор: <a href="{% url risovaska-user comic.author.id %}">{{ comic.author.login }}</a>{% endif %}
+		{% if comic.images_count %}
+			<br />содержит картинок: {{ comic.images_count }}
+		{% endif %}
+	</div>
+</div>

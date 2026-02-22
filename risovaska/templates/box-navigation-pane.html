@@ -1,0 +1,43 @@
+{% load risovaska_filters %}
+
+{% if page_no|equals:1 and is_last_page %}
+{% else %}
+	<div class="upages">
+	
+	{% if page_no|greater_than:1 %}
+		<a class="prev" href="{{ page_no|add:-1|build_page_url:getparams }}"><span>Назад</span></a>
+	{% endif %}
+	{% if not is_last_page %}
+		<a class="next" href="{{ page_no|add:1|build_page_url:getparams }}"><span>Вперед</span></a>
+	{% endif %}
+	
+	<div>
+	
+	{% comment %}
+	// Output page numbers
+	$minPage = max(1, $this->pageNo - self::PageNumberOffset);
+	if ($this->isLastPage) {
+		$maxPage = $this->pageNo;
+	} else {
+		$maxPage = $this->pageNo + self::PageNumberOffset;
+	}
+	{% endcomment %}	
+	
+	{% if min_page|greater_than:1 %}
+		<a href="{{ min_page|add:-1|build_page_url:getparams }}">&hellip;</a>
+	{% endif %}
+	
+	{% for p in navigation_pages %}
+		{% ifequal p page_no %}
+			<a class="act">{{ p }}</a>
+		{% else %}
+			<a href="{{ p|build_page_url:getparams }}">{{ p }}</a>
+		{% endifequal %}
+	{% endfor %}
+	
+	{% if not is_last_page %}
+		<a href="{{ navigation_pages|last|add:1|build_page_url:getparams }}">&hellip;</a>
+	{% endif %}
+	
+	</div></div>
+{% endif %}

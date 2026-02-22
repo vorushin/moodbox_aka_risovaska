@@ -1,0 +1,28 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Каналы{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	<img src="{{ MEDIA_URL }}/img/channels.png" style="float: left;">
+	<div class="clr"></div>
+	
+	<div><br>
+		<a href="http://community.livejournal.com/risovaska/22162.html">Правила хорошего тона</a><br>
+		<a href="http://community.livejournal.com/risovaska/22654.html">Создать канал</a><br>
+		<a href="http://community.livejournal.com/risovaska/21847.html">Стать модератором</a>
+	</div>
+	
+	{% if not channels %}
+		<p>Каналы не найдены.</p>
+	{% else %}
+		{% include "box-navigation-info.html" %}
+		{% include "box-navigation-pane.html" %}
+		{% for channel in channels %}
+			{% include "box-channel.html" %}
+		{% endfor %}	
+		{% include "box-navigation-pane.html" %}
+		{% include "box-navigation-info.html" %}
+	{% endif %}
+</div>
+{% endblock body-internal %}

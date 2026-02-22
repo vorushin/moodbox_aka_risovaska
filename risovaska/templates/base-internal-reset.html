@@ -1,0 +1,23 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Сброс пароля{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	{% if not new_password %}
+	<p>Привет!</p>
+	<p>Вы использовали неправильную ссылку для сброса пароля.</p>
+	<p>Используйте ссылку, полученную в ПОСЛЕДНЕМ письме от службы поддержки.</p>
+	<br />
+	<p>С уважением,<br />
+	Команда Рисоваськи</p>
+	{% else %}
+	<p>Привет!</p>
+	<p>Сброс пароля успешно завершен, ваш новый пароль - <b>{{ new_password }}</b></p>
+	<br />
+	<p>С уважением,<br />
+	Команда Рисоваськи</p>
+	{% endif %}
+	<div class="clr"></div>
+</div>
+{% endblock body-internal %}

@@ -1,0 +1,12 @@
+{% extends "base-internal.html" %}
+
+{% block title %}500 - ошибка на сервере{% endblock %}
+
+{% block body-internal %}
+<br><br><br><br><br>
+<h1>Ошибка на сервере</h1>
+<p><big>Произошла ошибка на сервере. Разработчики Рисоваськи получат уведомление об ошибке и постараются её устранить.
+Если ошибка происходит снова и снова - <a href="{% url risovaska-feedback %}">свяжитесь с нами</a></big></p>
+
+<div class="clr"></div>
+{% endblock body-internal %}

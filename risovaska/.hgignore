@@ -1,0 +1,7 @@
+syntax: glob
+*.pyc
+old_*
+settings_proxy.py
+.DS_Store
+*.sql
+local_settings.py

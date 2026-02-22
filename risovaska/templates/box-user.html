@@ -1,0 +1,29 @@
+{% load risovaska_filters %}
+
+<div class="frow frow1">
+	<img style="background: url({{ user.get_userpic_url }}) no-repeat center;" src="{{ MEDIA_URL }}/img/tv_frame.png" class="userpic" />
+	<div class="h"></div>
+	<div class="c">
+		<a href="{% url risovaska-user user.id %}" class="user">{{ user.login }}</a>
+		<div class="city">{{ user.city|truncatewords:1|capfirst }}</div>
+		{% if user.country %}
+			<img class="flag" title="{{ user.country|to_country_name }}" src="{{ MEDIA_URL }}/img/flags/{{ user.country|lower }}.png">
+		{% endif %}
+		<div class="age">
+			{% if user.birth_day %} Возраст: {{ user.birth_day|age }} {% endif %}
+		</div>
+		{% ifnotequal user.sex "undefined" %}
+			<img class="sex" title="
+				{% ifequal user.sex "male" %} Мужской {% else %} Женский {% endifequal %}
+			" src="{{ MEDIA_URL }}/img/{{ user.sex }}.png">
+		{% endifnotequal %}
+		<div class="name">{{ user.name }}&nbsp;</div>
+		<div class="clr"></div>
+		{% if user.motto %}
+			<div class="desc">{{ user.motto }}</div>
+		{% endif %}
+		<div class="sign">Зарегистрирован {{ user.created|ago }}</div>
+	</div>
+	<div class="b"></div>
+</div>
+<div class="clr"></div>

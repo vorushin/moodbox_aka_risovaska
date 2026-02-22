@@ -1,0 +1,57 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Обзор{% endblock %}
+
+{% block body-internal %}
+<div id="qhead">
+<img src="{{ MEDIA_URL }}/img/quicktour.png"><br><br>
+<img src="{{ MEDIA_URL }}/img/quicktour_text.png">
+</div>
+<div id="qheadtv">
+<img src="{{ MEDIA_URL }}/img/quick_tv.jpg">
+</div>
+<div class="qrow">
+	<div class="qblock">
+		<img src="{{ MEDIA_URL }}/img/shots/quick_tour_01.jpg">
+	</div>
+	<div class="qspace"></div>
+	<div class="qblock qtxt" style="padding-top:3em;">
+		<h1 id="num1">Рисуй легко и быстро!</h1>
+		<p>Главные инструменты - кисти, клипарты и картинки. Кистями ты можешь нарисовать всё что угодно и это будет выглядеть красиво!</p>
+		<p>Клипарты - это как супер-смайлики :)))) А картинки ты можешь перетаскивать отовсюду - из веб-браузера, с рабочего стола, из любого окна Рисоваськи.</p>
+	</div>
+</div>
+<div class="qrow">
+	<div class="qblock qtxt" style="padding-top:3em;">
+		<h1 id="num2">Общайся картинками!</h1>
+		<p>Первый рисованный чат был придуман Шариком из Простоквашино, когда он сказал Матроскину "А я тебе ответ - нарисую!". Ты рисуешь и все твои друзья получают твои рисованные сообщения. Они отвечают - дорисовывают что-то поверх, или рисуют с чистого листа.</p>
+		<p>Уже через минуту ты переключаешься в креативное состояние, сопровождающееся смехом, весельем и потоком гениально смешных рисунков :))))</p>
+	</div>
+	<div class="qspace"></div>
+	<div class="qblock" style="padding-top:4em;">
+		<img src="{{ MEDIA_URL }}/img/shots/quick_tour_02.jpg">
+	</div>
+</div>
+<div class="qrow">
+	<div class="qblock" style="padding-top:4em;">
+		<img src="{{ MEDIA_URL }}/img/shots/quick_tour_03.jpg">
+	</div>
+	<div class="qspace"></div>
+	<div class="qblock qtxt" style="padding-top:11em;">
+		<h1 id="num3">Создай рисованное ТВ!</h1>
+		<p>Во-первых, ты можешь создавать <a href="{% url risovaska-comics %}">комиксы</a> из нарисованных сообщений и вставлять их в свой ЖЖ, сайт или пересылать друзьям.</p>
+		<p>Во-вторых, в Рисоваське есть <a href="{% url risovaska-channels %}">каналы</a> - это сообщества, где кипит рисовальная жизнь на заданные темы.</p>
+		<p>В-третьих, сама Рисоваська похожа на телевизорик, а в-четвертых ты можешь транслировать все свои рисунки из канала "Все друзья" в персональный виджет!</p>
+	</div>
+</div>
+<div class="clr"></div><div style="margin: 20px 0px 0px 272px; width: 198px;">
+
+{#{% include "box-download.html" %}#}
+
+</div><div class="clr"></div>
+
+<h3>Хочешь узнать больше?</h3>
+<p><a href="{% url risovaska-help %}">Справка</a></p>
+<div class="clr"></div>
+
+{% endblock body-internal %}

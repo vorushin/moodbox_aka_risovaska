@@ -1,0 +1,14 @@
+<div class="s_sel2">
+	{% for type in time_types %}
+	<div id="ss_2{{ forloop.counter }}">
+		{% ifequal time_type forloop.counter0|stringformat:"s" %}
+			{{ type.1 }}
+		{% else %}
+			<a href="?{% if search_text %}search-text={{ search_text|urlencode }}&{% endif %}time-type={{ forloop.counter0 }}">
+				{{ type.1 }}
+			</a>
+		{% endifequal %}
+	</div>	
+	{% endfor %}
+</div>
+<div class="clr"></div>

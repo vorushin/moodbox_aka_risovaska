@@ -1,0 +1,51 @@
+{% extends "base-internal.html" %}
+
+{% block additional-js %}
+<script type="text/javascript" src="{{ MEDIA_URL }}/js/AC_RunActiveContent.js"></script>
+{% endblock additional-js %}
+
+{% block title %}Канал &laquo;{{ channel.title }}&raquo;{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	{% include "box-channel.html" %}
+	<div>{{ channel.full_description|safe }}</div>
+
+	<div class="friends">
+	<h1>Подписчиков: {{ channel.user_count }}</h1>
+		</div>
+	
+	{% comment %}
+	<div class="friends">
+	<h1>Модераторы:</h1>
+		{% if not moderators %}
+			Пока нет. <a href="http://community.livejournal.com/risovaska/21847.html">Хочешь стать?</a>
+		{% else %}
+			{% for m in moderators %}
+				<a href="{% url risovaska-user m.contact_id %}">{{ m.login }}</a>{% if not forloop.last %}, {% endif %}
+			{% endfor %}
+		{% endif %}
+	</div>
+	{% endcomment %}
+	
+	<div class="friends">
+    {# <h1>ПРЯМАЯ ТРАНСЛЯЦИЯ</h1> #}
+    {# {% include "box-flash.html" %} #}
+		<div class="clr"></div>
+	</div>
+	<div class="clr"></div>
+	
+	{% if channel_comics %}
+	<div class="friends">
+		<h1>Комиксы канала:</h1>
+		{% include "box-navigation-info.html" %}
+		{% include "box-navigation-pane.html" %}
+		{% for comic in channel_comics %}
+			{% include "box-moodstrip.html" %}
+		{% endfor %}
+		{% include "box-navigation-pane.html" %}
+		{% include "box-navigation-info.html" %}
+	</div>
+	{% endif %}
+</div>
+{% endblock body-internal %}

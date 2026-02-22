@@ -1,0 +1,33 @@
+{% extends "base-internal.html" %}
+
+{% block title %}Комиксы{% endblock %}
+
+{% block body-internal %}
+<div class="left">
+	<img src="{{ MEDIA_URL }}/img/moodstrips.png" style="float: left;">
+	<div class="clr"></div>
+	<form method="get">
+	<input type="text" class="smart" value="{{ search_text }}" name="search-text">
+	<input type="submit" class="smart_btn" value="">
+	</form>
+	<div class="clr"></div>
+	{% if not search_text %}
+		{% include "box-datefilter.html" %}
+	{% endif %}
+	
+	<div class="friends">
+	{% if not comics %}
+		<p>Комиксы не найдены.</p>
+	{% else %}
+		<p>Используйте SHIFT и CTRL для публикации комикса из нескольких картинок.</p>
+		{% include "box-navigation-info.html" %}
+		{% include "box-navigation-pane.html" %}
+		{% for comic in comics %}
+			{% include "box-moodstrip.html" %}
+		{% endfor %}
+		{% include "box-navigation-pane.html" %}
+		{% include "box-navigation-info.html" %}
+	{% endif %}
+	</div>
+</div>
+{% endblock body-internal %}
