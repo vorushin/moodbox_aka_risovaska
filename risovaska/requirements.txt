@@ -1,5 +1,5 @@
 Django==4.2.30
-Fabric==0.9.3
+Fabric==1.1.0
 MySQL-python==1.2.3
 paramiko==2.0.9
 pycrypto==2.6.1
