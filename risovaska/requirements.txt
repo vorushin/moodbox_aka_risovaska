@@ -1,7 +1,7 @@
 Django==4.2.30
 Fabric==1.1.0
 MySQL-python==1.2.3
-pycryptodome==3.9.9
+pycryptodome==3.19.1
 paramiko==2.0.9
 python-memcached==1.47
 wsgiref==0.1.2
